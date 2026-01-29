@@ -223,22 +223,15 @@ class MTFRSIEMAStrategy:
 
     def log_strategy_execution(self, connection, config_id, signal_type, volume, price=None, trade_uuid=None):
         try:
-            current_time = datetime.now(pytz.UTC)
-            print(f"[DEBUG LOG] Starting at {current_time.strftime('%H:%M:%S.%f')}")  # ДОБАВЬ
-            print(f"[DEBUG LOG] Starting: config={config_id}, signal={signal_type}, volume={volume}")  # ДОБАВЬ
-
             cursor = connection.cursor()
             cursor.execute("EXEC logs.sp_LogStrategyExecution @configID=?, @signalType=?, @volume=?, @price=?, @trade_uuid=?",
                            (config_id, signal_type, volume, price, trade_uuid))
             row = cursor.fetchone()
-            print(f"[DEBUG LOG] Stored procedure executed, row={row} at {datetime.now(pytz.UTC).strftime('%H:%M:%S.%f')}")  # ДОБАВЬ
-            print(f"[DEBUG LOG] Stored procedure executed, row={row}")  # ДОБАВЬ
 
             connection.commit()
             cursor.close()
 
             execution_id = row.executionID if row else None
-            print(f"[DEBUG LOG] Returning executionID={execution_id}")  # ДОБАВЬ
             return execution_id
 
         except Exception as e:
@@ -257,19 +250,16 @@ class MTFRSIEMAStrategy:
             cursor.execute("SELECT algo.fn_GetStrategyPositionIDs(?)", self.configuration_id)
 
             row = cursor.fetchone()
-            print(f"[DEBUG] Raw JSON from fn_GetStrategyPositionIDs: {row[0] if row and row[0] else 'None or empty'}")
 
             if row and row[0]:
                 try:
                     # Parse JSON array
                     import json
                     positions_data = json.loads(row[0])
-                    print(f"[DEBUG] Parsed JSON type: {type(positions_data)}, data: {positions_data}")
 
                     # Check if it's a list
                     if isinstance(positions_data, list):
                         for pos_data in positions_data:
-                            print(f"[DEBUG] Position data item: {pos_data}")
                             positions.append({
                                 'id': pos_data.get('id'),
                                 'direction': pos_data.get('direction', '').strip(),
@@ -277,22 +267,17 @@ class MTFRSIEMAStrategy:
                                 'orderUUID': pos_data.get('orderUUID'),
                                 'ticker': pos_data.get('ticker')
                             })
-                    else:
-                        print(f"[DEBUG] Expected list but got: {type(positions_data)}")
 
                 except json.JSONDecodeError as e:
                     print(f"Error parsing JSON: {e}, Raw: {row[0]}")
-                except KeyError as e:
-                    print(f"Missing key in JSON: {e}")
                 except Exception as e:
                     print(f"Error processing positions: {e}")
 
-            cursor.close()  # Только close, без commit
+            cursor.close()
 
         except Exception as e:
             print(f"Error getting positions: {e}")
 
-        print(f"[DEBUG] Returning {len(positions)} positions")
         return positions
 
     def get_market_info(self, connection, ticker, ticker_jid, close_time_utc):
@@ -384,7 +369,7 @@ class MTFRSIEMAStrategy:
                 print(f"Position confirmed: ID={pos['id']}, Direction={pos['direction']}")
                 return positions[0]
 
-            print(f"  Check {check + 1}/{max_checks}: Position not yet confirmed...")
+            # print(f"  Check {check + 1}/{max_checks}: Position not yet confirmed...")
 
         print("Warning: Position not confirmed after maximum checks")
         return None

@@ -131,17 +131,45 @@ class LocalConnectionProvider(ConnectionProvider):
 class StrategyBase:
     """Base class for all trading strategies"""
 
-    def __init__(self, configuration_id: int, connection_provider=None):
+    # Timeframe mapping: timeframeID -> seconds
+    TIMEFRAME_MAP = {
+        1: 60,    # M1
+        2: 300,   # M5
+        3: 900,   # M15
+        4: 1800,  # M30
+        5: 3600,  # H1
+        6: 14400, # H4
+        7: 86400, # D1
+        8: 604800,# W1
+        9: 2592000 # MN1
+    }
+
+    def __init__(self, configuration_id: int, timeframe_id: int,
+                 connection_provider=None, timer_interval=0.5):
         """
         Args:
             configuration_id: Strategy configuration ID from database
+            timeframe_id: Minimum timeframe ID for bar checking (e.g., 1 for M1)
             connection_provider: ConnectionProvider instance (optional)
+            timer_interval: Timer interval in seconds (default 0.5s = 500ms)
         """
         self.configuration_id = configuration_id
+        self.timeframe_id = timeframe_id
+        self.timer_interval = timer_interval
+
+        # Calculate n (number of timer intervals per timeframe)
+        timeframe_seconds = self.TIMEFRAME_MAP.get(timeframe_id)
+        if not timeframe_seconds:
+            raise ValueError(f"Unknown timeframe_id: {timeframe_id}")
+
+        self.n = int(timeframe_seconds / timer_interval)
+        self.current_cycle = 0
+
+        print(f"Strategy {configuration_id} initialized: "
+              f"timeframe={timeframe_id}, interval={timer_interval}s, n={self.n}")
 
         # Initialize connection provider
         if connection_provider is None:
-            # Use default local provider
             self.connection_provider = LocalConnectionProvider()
         else:
             self.connection_provider = connection_provider
@@ -149,8 +177,6 @@ class StrategyBase:
         # Initialize helpers
         self.db = DatabaseHelper(self.connection_provider)
         self.position_manager = PositionManager(self)
-
-        print(f"Strategy {configuration_id} initialized")
 
     def get_connection(self, autocommit=False):
         """Get database connection"""

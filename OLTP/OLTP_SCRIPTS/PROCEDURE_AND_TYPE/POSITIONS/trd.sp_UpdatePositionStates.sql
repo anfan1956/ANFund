@@ -50,7 +50,7 @@ BEGIN
                     source.commission, source.swap, source.stopLoss, 
                     source.takeProfit, source.netProfit, source.grossProfit);
         
-        PRINT 'Position states updated successfully.';
+
         
     END TRY
     BEGIN CATCH
