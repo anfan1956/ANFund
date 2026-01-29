@@ -77,7 +77,7 @@ def safe_import_modules():
 execute_signal_procedure, StrategyTerminationService = safe_import_modules()
 
 
-class MTFRSIEMAStrategy:
+class MTFRSIEMAStrategy(StrategyBase):
     """
     MTF RSI EMA Strategy class
     Loads configuration from database and operates according to Technical Specification
@@ -92,31 +92,27 @@ class MTFRSIEMAStrategy:
         print(f"[STRATEGY] Working directory: {os.getcwd()}")
 
         self.configuration_id = configuration_id
+        # Вызов родительского конструктора с временным timeframe_id=1
+        # timeframe_id будет обновлён в _setup_parameters
+        super().__init__(configuration_id, timeframe_id=1, timer_interval=0.5)
+
         self.last_signal_bar_time = None
         self.last_confirmation_bar_time = None
         self.last_trend_bar_time = None
         self.last_heartbeat_time = None
 
-        # Используем ANFramework вместо прямого подключения
-        self.connection_provider = LocalConnectionProvider()
-        self.db_helper = DatabaseHelper(self.connection_provider)
-
         try:
             self.config = self._load_configuration_from_db()
             self._setup_parameters()
 
-            # Устанавливаем 30-секундный цикл вместо 60
-            self.strategy_interval_seconds = 30  # Изменено с 60 на 30
-            self.check_interval_seconds = self.strategy_interval_seconds  # Синхронизируем с конфигурацией
-
-            # Используем DatabaseHelper для соединения
-            init_conn = self.db_helper.get_connection()
+            # Используем self.db из родительского класса StrategyBase
+            init_conn = self.db.get_connection()
             try:
                 self._update_tracker_state(init_conn, 'start')
             finally:
-                self.db_helper.return_connection(init_conn)
+                self.db.return_connection(init_conn)
 
-            # Получаем строку подключения из провайдера для termination service
+            # Получаем строку подключения для termination service
             connection_string = self.connection_provider.connection_string
             self.termination_service = StrategyTerminationService(connection_string)
 
@@ -184,8 +180,9 @@ class MTFRSIEMAStrategy:
         self.trading_start_utc = self.config['trading_start_utc']
         self.broker_id = self.config['broker_id']
         self.platform_id = self.config['platform_id']
-        self.max_position_checks = self.config['max_position_checks']
-        self.check_interval_seconds = self.config['check_interval_seconds']
+
+        # Обновляем timeframe_id в родительском классе
+        self.timeframe_id = self.timeframe_signal_id
 
         print(f"Parameters setup complete:")
         print(f"  Symbol: {self.symbol}")

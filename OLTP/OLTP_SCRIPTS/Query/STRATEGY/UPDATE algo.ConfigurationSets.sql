@@ -21,12 +21,12 @@ WHERE Id = 1;
 UPDATE algo.ConfigurationSets 
 SET ParameterValuesJson = '{
   "ticker": "XAGUSD",
-  "timeframe_signal": "M5",
-  "timeframe_confirmation": "M30",
-  "timeframe_trend": "H4",
+  "timeframe_signal": "M1",
+  "timeframe_confirmation": "M15",
+  "timeframe_trend": "H1",
   "open_volume": 0.01,
-  "trading_close_utc": "22:00",
-  "trading_start_utc": "00:00",
+  "trading_close_utc": "null",
+  "trading_start_utc": "null",
   "broker_id": 2,
   "platform_id": 1,
   "max_position_checks": 15,

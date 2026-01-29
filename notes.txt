@@ -1,0 +1,4 @@
+mtf_rsi_ema_strategy_v3.py
+
+Sasha@SERVER MINGW64 /d/TradingSystems/PythonScripts (main)
+$ python mtf_rsi_ema_strategy_v3.py --config-id 1

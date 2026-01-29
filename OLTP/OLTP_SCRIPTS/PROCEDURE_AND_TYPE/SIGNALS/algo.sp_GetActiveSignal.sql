@@ -53,7 +53,7 @@ SET NOCOUNT ON;
         FROM algo.tradingSignals ts
             INNER JOIN @ProcessingSignals ps ON ts.signalID = ps.SignalID
         WHERE ts.signalTypeID IN (
-            SELECT ID FROM algo.strategySignalType WHERE TypeName IN ('BUY', 'SELL')
+            SELECT ID FROM algo.strategySignalType WHERE UPPER(TypeName) IN ('BUY', 'SELL')
         );
 
         -- Commit the transaction
