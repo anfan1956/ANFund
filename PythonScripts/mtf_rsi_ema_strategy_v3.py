@@ -110,7 +110,7 @@ class MTFRSIEMAStrategy:
             self.check_interval_seconds = self.strategy_interval_seconds  # Синхронизируем с конфигурацией
 
             # Используем DatabaseHelper для соединения
-            init_conn = self.db_helper.get_connection(autocommit=True)
+            init_conn = self.db_helper.get_connection()
             try:
                 self._update_tracker_state(init_conn, 'start')
             finally:
@@ -139,7 +139,7 @@ class MTFRSIEMAStrategy:
         Raises ValueError if configuration not found
         """
         try:
-            conn = self.db_helper.get_connection(autocommit=True)
+            conn = self.db_helper.get_connection()
             cursor = conn.cursor()
 
             cursor.execute("SELECT * FROM algo.fn_GetStrategyConfiguration(?)",
@@ -749,7 +749,7 @@ class MTFRSIEMAStrategy:
                                            self.ticker_jid, self.trading_close_utc)
 
         # 3. Get current trading signal from SQL function
-        trading_signal = self.get_current_signals(connection)
+        trading_signal = self.get_current_signals()
 
         # 4. Get trend for display (отдельно для отображения)
         trend_display = self.get_trend_for_display() if hasattr(self, 'get_trend_for_display') else None
@@ -856,7 +856,7 @@ class MTFRSIEMAStrategy:
                 termination = self.termination_service.check_my_termination(self.configuration_id)
                 if termination:
                     # Close all open positions
-                    term_conn = self.db_helper.get_connection(autocommit=True)
+                    term_conn = self.db_helper.get_connection()
                     try:
                         positions = self.get_open_positions(term_conn)
                         if positions:
@@ -887,7 +887,7 @@ class MTFRSIEMAStrategy:
                         print(f"[CYCLE] Strategy execution at {now.strftime('%H:%M:%S')} UTC")
 
                         # Create connection for strategy cycle
-                        strategy_conn = self.db_helper.get_connection(autocommit=True)
+                        strategy_conn = self.db_helper.get_connection()
                         try:
                             should_terminate = self.run_strategy(strategy_conn)
 
@@ -914,7 +914,7 @@ class MTFRSIEMAStrategy:
 
                 # ===== HEARTBEAT (every 60 seconds) =====
                 if last_heartbeat_sent is None or (now - last_heartbeat_sent).total_seconds() >= 60:
-                    heartbeat_conn = self.db_helper.get_connection(autocommit=True)
+                    heartbeat_conn = self.db_helper.get_connection()
                     try:
                         self.send_heartbeat(heartbeat_conn, self.configuration_id)
                         last_heartbeat_sent = now
@@ -930,7 +930,7 @@ class MTFRSIEMAStrategy:
             print("=" * 70)
 
             # Final position status and update tracker
-            final_conn = self.db_helper.get_connection(autocommit=True)
+            final_conn = self.db_helper.get_connection()
             try:
                 positions = self.get_open_positions(final_conn)
                 if positions:
