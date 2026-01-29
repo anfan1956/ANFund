@@ -1,0 +1,25 @@
+ID	clientCode	firstName	lastName	email	phone
+1	CLI001	Alexander	Fedorov	alexander.n.fedorov@gmail.com	+79167834248
+
+
+ID	accountNumber	accountTypeID	platformID	brokerID	clientID	currencyID	modifiedDate
+2	5161801	2	1	2	1	1	2025-12-25 03:52:27.347
+
+
+ID	platformCode	platformName	platformVersion
+1	CTRADER	cTrader	5.5.13.46616
+
+
+ID	brokerCode	brokerName	email	phone	website
+2	BROK001	Pepperstone	support@pepperstone.com	1300 033 375	https://pepperstone.com/en-au/
+
+
+ID	typeCode	typeName	description	leverage	minDeposit
+2	DEMO	DEMO	CFD Account	30.00	100.00
+
+
+ID	currencyCode	currencyName
+1	USD	US Dollar
+2	EUR	Euro
+3	GBP	British Pound
+4	JPY	Japanese Yen
