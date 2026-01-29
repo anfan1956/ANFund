@@ -1,0 +1,52 @@
+{
+  "EURUSD_MA_Crossover": {
+    "symbol": "EURUSD",
+    "strategy": "MA_Crossover",
+    "total_return": 0.08912651384342274,
+    "annual_return": 0.09850580222974226,
+    "sharpe_ratio": 1.3820417581432922,
+    "max_drawdown": -0.03623812453152335,
+    "volatility": 0.06973725147366054,
+    "win_rate": 0.6666666666666666
+  },
+  "GBPUSD_MA_Crossover": {
+    "symbol": "GBPUSD",
+    "strategy": "MA_Crossover",
+    "total_return": 0.07562771993196926,
+    "annual_return": 0.08353267055625668,
+    "sharpe_ratio": 1.3330436543007356,
+    "max_drawdown": -0.038149828261414595,
+    "volatility": 0.06161030409778779,
+    "win_rate": 0.5
+  },
+  "USDJPY_MA_Crossover": {
+    "symbol": "USDJPY",
+    "strategy": "MA_Crossover",
+    "total_return": 0.004574191476048206,
+    "annual_return": 0.005034762766281453,
+    "sharpe_ratio": 0.10703288332410406,
+    "max_drawdown": -0.0635965787474575,
+    "volatility": 0.06919934738542327,
+    "win_rate": 0.25
+  },
+  "AAPL_MA_Crossover": {
+    "symbol": "AAPL",
+    "strategy": "MA_Crossover",
+    "total_return": 0.1562650517369104,
+    "annual_return": 0.18005582984889545,
+    "sharpe_ratio": 0.922611300651707,
+    "max_drawdown": -0.1508149443707077,
+    "volatility": 0.2011868037459715,
+    "win_rate": 0.3333333333333333
+  },
+  "SPY_MA_Crossover": {
+    "symbol": "SPY",
+    "strategy": "MA_Crossover",
+    "total_return": 0.15054274719872107,
+    "annual_return": 0.17339890880248898,
+    "sharpe_ratio": 1.6502989547817677,
+    "max_drawdown": -0.05313049090936255,
+    "volatility": 0.09993736692682352,
+    "win_rate": 0.5
+  }
+}

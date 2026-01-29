@@ -1,0 +1,1 @@
+create signal -> call procedure (python) -> record to table algo.tradingSignals -> scanned by Bot in ExecuteSignal method -> writes back the trading result

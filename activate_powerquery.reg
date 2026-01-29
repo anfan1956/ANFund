@@ -1,0 +1,12 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Registry]
+"Mondo"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Configuration]
+"ProductReleaseIds"="" 
+"Platform"="" 
+"ClientCulture"="" 
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\16.0\Common\COM Compatibility\{B4B3E0A4-4C4A-4B8A-9B0A-5E5D8D4D4D4D}]
+"Compatibility Flags"=dword:00000000

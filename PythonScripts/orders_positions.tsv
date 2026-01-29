@@ -1,0 +1,4 @@
+	XAUUSD		1 Oz	Buy	4446.66	4899.96			06/01/2026 00:15:40	222.34	0.00	Sgl_Mkt_Order_3				
+	XAUUSD		1 Oz	Buy	4446.66	4899.96			06/01/2026 00:15:40	222.34	0.00	Sgl_Mkt_Order_3				
+
+Print($"ticker: {ticker}, volumme: {volume}, orderPrice: {orderPrice}, stopLoss: {stopLoss}, takeProfit: {takeProfit}, tradeType: {tradeType}, signalID: {signalId}");

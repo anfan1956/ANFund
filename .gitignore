@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Database
+*.bak
+*.trn
+*.mdf
+*.ldf
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup files
+backup/
+temp/
+
+# Secrets
+*.pem
+*.key
+*.crt
+config.json
+secrets.ini

@@ -1,0 +1,400 @@
+```markdown
+# ТЕХНИЧЕСКОЕ ЗАДАНИЕ: Архитектура системы торговых стратегий
+
+## 1. ОБЩИЕ ПРИНЦИПЫ АРХИТЕКТУРЫ
+Система использует трехуровневую иерархию для управления торговыми стратегиями:
+1. **Класс стратегии (Strategy Class)** - абстрактный тип стратегии (например, "MTF RSI EMA", "Трендовая", "Скальпинг")
+2. **Стратегия (Strategy)** - конкретная реализация с уникальной логикой
+3. **Конфигурация (Configuration)** - экземпляр стратегии с конкретными параметрами для инструмента
+
+## 2. ЖИЗНЕННЫЙ ЦИКЛ СТРАТЕГИИ
+### 2.1. Запуск стратегии:
+- Каждая стратегия запускается с ключом `algo.ConfigurationSets.Id`
+- Python-скрипт получает все параметры из соответствующей конфигурации
+- При запуске отправляет статус `start` в `algo.strategyTracker`
+
+### 2.2. Работа стратегии:
+- Мониторит команды на завершение из `algo.strategy_termination_queue`
+- Периодически отправляет `heartbeat` (рекомендуется каждые 60 секунд)
+- Исполняет торговую логику, специфичную для типа стратегии
+- Использует данные из таблиц `tms.bars`, `tms.EMA`, `tms.Indicators_Momentum`
+
+### 2.3. Завершение стратегии:
+- При получении команды завершения: закрывает позиции, отправляет статус `stop`
+- При ошибке: отправляет статус `stop` с описанием ошибки
+- При ручном останове (Ctrl+C): отправляет статус `stop`
+
+## 3. ТРЕБОВАНИЯ К РЕАЛИЗАЦИИ
+### 3.1. Python-класс стратегии должен:
+- Иметь конструктор, принимающий `configuration_id` (algo.strategy_configurations.ID)
+- Наследовать/использовать `StrategyTerminationService`
+- Реализовывать метод `run()` как основной цикл
+- Поддерживать обработку сигналов завершения
+- Логировать все действия в базу данных
+
+### 3.2. Структура параметров:
+- Единая JSON-схема в `algo.ParameterSets.ParameterSetJson` для всех конфигураций одной стратегии
+- Конкретные значения в `algo.ConfigurationSets.ParameterValuesJson`
+- Пример параметров для MTF RSI EMA:
+```json
+{
+  "open_volume": 0.01,
+  "close_time_utc": "21:45",
+  "broker_id": 2,
+  "platform_id": 1,
+  "rsi_period": 14,
+  "ema_fast": 20,
+  "ema_slow": 50
+}
+```
+
+### 3.3. Интерфейс запуска:
+```
+python <strategy_code>.py --config-id <ID>
+```
+Где:
+- `<strategy_code>` - имя файла стратегии (совпадает с `algo.strategies.strategy_code`)
+- `<ID>` - `algo.strategy_configurations.ID`
+
+## 4. ПРИМЕР РАБОТЫ СИСТЕМЫ
+**Для стратегии "MTF RSI EMA" (strategy_code = "mtf_rsi_ema"):**
+1. В `algo.strategy_classes`: запись "MTF RSI EMA стратегия"
+2. В `algo.strategies`: запись "mtf_rsi_ema" с ссылкой на класс
+3. В `algo.ParameterSets`: JSON-схема параметров для этой стратегии
+4. В `algo.ConfigurationSets`:
+   - Конфигурация 1: параметры для XAUUSD
+   - Конфигурация 2: параметры для XAGUSD
+5. В `algo.strategy_configurations`:
+   - Конфигурация 1: XAUUSD + ConfigurationSet 1
+   - Конфигурация 2: XAGUSD + ConfigurationSet 2
+
+**Запуск:**
+```bash
+python mtf_rsi_ema.py --config-id 1  # Запуск для XAUUSD
+python mtf_rsi_ema.py --config-id 2  # Запуск для XAGUSD
+```
+
+## 5. МОНИТОРИНГ И УПРАВЛЕНИЕ
+- Статусы стратегий отслеживаются в `algo.strategyTracker`
+- Возможность принудительной остановки через `algo.strategy_termination_queue`
+- Heartbeat-система для контроля работоспособности
+- Централизованное логирование в `algo.tradeLog`
+
+## 6. СТРУКТУРА БАЗЫ ДАННЫХ
+
+### 6.1. Основные таблицы:
+| Схема | Тип объекта | Имя объекта | Колонка | DataType | KeyType | Nullable |
+|-------|-------------|-------------|---------|----------|---------|----------|
+| algo | TABLE | ConfigurationSets | Id | int | PK | NO |
+| algo | TABLE | ConfigurationSets | ParameterSetId | int | FK | NO |
+| algo | TABLE | ConfigurationSets | ParameterValuesJson | nvarchar |  | NO |
+| algo | TABLE | ConfigurationSets | ParameterValuesHash | varbinary | FK | YES |
+| algo | TABLE | ConfigurationSets | CreatedAt | datetime |  | YES |
+| algo | TABLE | ParameterSets | Id | int | PK | NO |
+| algo | TABLE | ParameterSets | ParameterSetJson | nvarchar |  | NO |
+| algo | TABLE | ParameterSets | ParameterValuesHash | varbinary | FK | YES |
+| algo | TABLE | ParameterSets | CreatedAt | datetime |  | YES |
+| algo | TABLE | strategies | ID | int | PK | NO |
+| algo | TABLE | strategies | strategy_name | nvarchar |  | NO |
+| algo | TABLE | strategies | strategy_code | nvarchar |  | NO |
+| algo | TABLE | strategies | strategy_class_id | int | FK | NO |
+| algo | TABLE | strategies | logic_description | nvarchar |  | YES |
+| algo | TABLE | strategies | created_by | nvarchar |  | YES |
+| algo | TABLE | strategies | created_date | datetime |  | YES |
+| algo | TABLE | strategies | modified_date | datetime |  | YES |
+| algo | TABLE | strategies | ParameterSetId | int | FK | YES |
+| algo | TABLE | strategy_classes | ID | int | PK | NO |
+| algo | TABLE | strategy_classes | class_name | nvarchar |  | NO |
+| algo | TABLE | strategy_classes | class_code | nvarchar |  | NO |
+| algo | TABLE | strategy_classes | category | nvarchar |  | YES |
+| algo | TABLE | strategy_classes | description | nvarchar |  | YES |
+| algo | TABLE | strategy_classes | typical_instruments | nvarchar |  | YES |
+| algo | TABLE | strategy_classes | typical_timeframes | nvarchar |  | YES |
+| algo | TABLE | strategy_classes | required_data_frequency | nvarchar |  | YES |
+| algo | TABLE | strategy_classes | required_history_days | int |  | YES |
+| algo | TABLE | strategy_classes | typical_position_hold_time | nvarchar |  | YES |
+| algo | TABLE | strategy_classes | requires_realtime_data | bit |  | YES |
+| algo | TABLE | strategy_classes | requires_news_feed | bit |  | YES |
+| algo | TABLE | strategy_classes | requires_multiple_instruments | bit |  | YES |
+| algo | TABLE | strategy_classes | requires_options_data | bit |  | YES |
+| algo | TABLE | strategy_classes | requires_fundamental_data | bit |  | YES |
+| algo | TABLE | strategy_classes | implementation_complexity | tinyint |  | YES |
+| algo | TABLE | strategy_classes | backtesting_complexity | tinyint |  | YES |
+| algo | TABLE | strategy_classes | maintenance_complexity | tinyint |  | YES |
+| algo | TABLE | strategy_classes | risk_level | tinyint |  | YES |
+| algo | TABLE | strategy_classes | capital_requirements | nvarchar |  | YES |
+| algo | TABLE | strategy_classes | drawdown_characteristics | nvarchar |  | YES |
+| algo | TABLE | strategy_classes | feasible_with_current_setup | bit |  | YES |
+| algo | TABLE | strategy_classes | recommended_for_start | bit |  | YES |
+| algo | TABLE | strategy_classes | created_date | datetime |  | YES |
+| algo | TABLE | strategy_classes | modified_date | datetime |  | YES |
+| algo | TABLE | strategy_configurations | ID | int | PK | NO |
+| algo | TABLE | strategy_configurations | strategy_id | int | FK | NO |
+| algo | TABLE | strategy_configurations | instrument_symbol | nvarchar |  | NO |
+| algo | TABLE | strategy_configurations | instrument_jid | int |  | YES |
+| algo | TABLE | strategy_configurations | primary_timeframe_id | int |  | NO |
+| algo | TABLE | strategy_configurations | secondary_timeframe_id | int |  | YES |
+| algo | TABLE | strategy_configurations | parameters_json | nvarchar |  | YES |
+| algo | TABLE | strategy_configurations | trading_start_time | time |  | YES |
+| algo | TABLE | strategy_configurations | trading_end_time | time |  | YES |
+| algo | TABLE | strategy_configurations | trade_days_mask | tinyint |  | YES |
+| algo | TABLE | strategy_configurations | created_date | datetime |  | YES |
+| algo | TABLE | strategy_configurations | modified_date | datetime |  | YES |
+| algo | TABLE | strategy_configurations | ConfigurationSetId | int | FK | YES |
+| tms | TABLE | bars | ID | bigint | PK | NO |
+| tms | TABLE | bars | TickerJID | int | FK | NO |
+| tms | TABLE | bars | barTime | datetime | FK | NO |
+| tms | TABLE | bars | timeframeID | int | FK | NO |
+| tms | TABLE | bars | openValue | float |  | NO |
+| tms | TABLE | bars | closeValue | float |  | NO |
+| tms | TABLE | bars | highValue | float |  | NO |
+| tms | TABLE | bars | lowValue | float |  | NO |
+| tms | TABLE | bars | sourceID | int | FK | NO |
+| tms | TABLE | EMA | ID | bigint | PK | NO |
+| tms | TABLE | EMA | BarID | bigint | FK | NO |
+| tms | TABLE | EMA | TickerJID | int | FK | NO |
+| tms | TABLE | EMA | BarTime | datetime |  | NO |
+| tms | TABLE | EMA | TimeFrameID | int |  | NO |
+| tms | TABLE | EMA | EMA_5_SHORT | decimal |  | YES |
+| tms | TABLE | EMA | EMA_9_MACD_SIGNAL | decimal |  | YES |
+| tms | TABLE | EMA | EMA_12_MACD_FAST | decimal |  | YES |
+| tms | TABLE | EMA | EMA_20_SHORT | decimal |  | YES |
+| tms | TABLE | EMA | EMA_26_MACD_SLOW | decimal |  | YES |
+| tms | TABLE | EMA | EMA_50_MEDIUM | decimal |  | YES |
+| tms | TABLE | EMA | EMA_100_LONG | decimal |  | YES |
+| tms | TABLE | EMA | EMA_200_LONG | decimal |  | YES |
+| tms | TABLE | EMA | EMA_21_FIBO | decimal |  | YES |
+| tms | TABLE | EMA | EMA_55_FIBO | decimal |  | YES |
+| tms | TABLE | EMA | EMA_144_FIBO | decimal |  | YES |
+| tms | TABLE | EMA | EMA_233_FIBO | decimal |  | YES |
+| tms | TABLE | EMA | CreatedDate | datetime |  | YES |
+| tms | TABLE | EMA | EMA_8_SHORT | decimal |  | YES |
+| tms | TABLE | Indicators_Momentum | ID | bigint | FK | NO |
+| tms | TABLE | Indicators_Momentum | TickerJID | int | FK | NO |
+| tms | TABLE | Indicators_Momentum | BarTime | datetime2 | FK | NO |
+| tms | TABLE | Indicators_Momentum | TimeFrameID | int | FK | NO |
+| tms | TABLE | Indicators_Momentum | SourceID | int | FK | NO |
+| tms | TABLE | Indicators_Momentum | RSI_14 | decimal |  | YES |
+| tms | TABLE | Indicators_Momentum | RSI_7 | decimal |  | YES |
+| tms | TABLE | Indicators_Momentum | RSI_21 | decimal |  | YES |
+| tms | TABLE | Indicators_Momentum | RSI_ZScore | decimal |  | YES |
+| tms | TABLE | Indicators_Momentum | RSI_Percentile | decimal |  | YES |
+| tms | TABLE | Indicators_Momentum | RSI_Slope_5 | decimal |  | YES |
+| tms | TABLE | Indicators_Momentum | Stoch_K_14 | decimal |  | YES |
+| tms | TABLE | Indicators_Momentum | Stoch_D_14 | decimal |  | YES |
+| tms | TABLE | Indicators_Momentum | Stoch_Slope | decimal |  | YES |
+| tms | TABLE | Indicators_Momentum | ROC_14 | decimal |  | YES |
+| tms | TABLE | Indicators_Momentum | ROC_7 | decimal |  | YES |
+| tms | TABLE | Indicators_Momentum | Momentum_Score | decimal |  | YES |
+| tms | TABLE | Indicators_Momentum | Overbought_Flag | bit |  | YES |
+| tms | TABLE | Indicators_Momentum | Oversold_Flag | bit |  | YES |
+| tms | TABLE | Indicators_Momentum | BatchID | uniqueidentifier |  | YES |
+| tms | TABLE | Indicators_Momentum | CalculationTimeMS | int |  | YES |
+| tms | TABLE | Indicators_Momentum | CreatedDate | datetime2 |  | YES |
+| tms | TABLE | Indicators_Momentum | ModifiedDate | datetime2 |  | YES |
+| tms | TABLE | timeframes | ID | int | PK | NO |
+| tms | TABLE | timeframes | timeframeCode | varchar | FK | NO |
+| tms | TABLE | timeframes | timeframeName | nvarchar |  | NO |
+| tms | TABLE | timeframes | minutes | int |  | NO |
+| trd | VIEW | trades_v | ID | int |  | NO |
+| trd | VIEW | trades_v | orderUUID | uniqueidentifier |  | YES |
+| trd | VIEW | trades_v | tradeType | varchar |  | NO |
+| trd | VIEW | trades_v | ticker | nvarchar |  | NO |
+| trd | VIEW | trades_v | direction | nvarchar |  | NO |
+| trd | VIEW | trades_v | entryPrice | decimal |  | YES |
+| trd | VIEW | trades_v | createdTime | datetime |  | NO |
+| trd | VIEW | trades_v | volume | decimal |  | NO |
+| trd | VIEW | trades_v | margin | decimal |  | YES |
+| trd | VIEW | trades_v | creationOrder | bigint |  | YES |
+
+### 6.2. Ключевые связи:
+| ParentSchema | ParentTable | ParentColumn | ReferencedSchema | ReferencedTable | ReferencedColumn | ForeignKeyName |
+|--------------|-------------|--------------|------------------|-----------------|------------------|----------------|
+| algo | ConfigurationSets | ParameterSetId | algo | ParameterSets | Id | FK_ConfigurationSets_ParameterSets |
+| algo | strategies | ParameterSetId | algo | ParameterSets | Id | FK_strategies_ParameterSets |
+| algo | strategies | strategy_class_id | algo | strategy_classes | ID | FK_strategies_strategy_classes |
+| algo | strategy_configurations | ConfigurationSetId | algo | ConfigurationSets | Id | FK_strategy_configurations_ConfigurationSets |
+| algo | strategy_configurations | strategy_id | algo | strategies | ID | FK_strategy_configurations_strategies |
+| tms | bars | TickerJID | ref | assetMasterTable | ID | fk_bars_tickers |
+| tms | bars | timeframeID | tms | timeframes | ID | fk_bars_timeFrames |
+| tms | EMA | BarID | tms | bars | ID | FK_EMA_Bars_BarID |
+| tms | EMA | TickerJID | ref | assetMasterTable | ID | FK_EMA_AssetMaster_TickerJID |
+| tms | Indicators_Momentum | ID | tms | bars | ID | fk_IndicatorsMomentuv_Bars |
+| tms | Indicators_Momentum | TickerJID | ref | assetMasterTable | ID | FK_IndicatorsMomentum_Ticker |
+| tms | Indicators_Momentum | TimeFrameID | tms | timeframes | ID | FK_IndicatorsMomentum_TimeFrame |
+
+## 7. ВНЕШНИЕ ЗАВИСИМОСТИ
+- `sp_create_signal.py` - функция `execute_signal_procedure` для отправки торговых сигналов
+- `StrategyTerminationService` - сервис для обработки команд завершения
+- `pyodbc` - подключение к SQL Server
+- `pytz` - работа с часовыми поясами
+
+*Документ подготовлен для разработки и интеграции торговых стратегий*
+```
+
+
+
+Разрабатываем MTF RSI EMA стратегию по ТЗ:
+- Класс MTFRSIEMAStrategy принимает configuration_id
+- Загружает конфигурацию из algo.strategy_configurations
+- Параметры из algo.ConfigurationSets.ParameterValuesJson
+- Интегрирует StrategyTerminationService
+- Обновляет algo.strategyTracker
+
+Текущий статус:
+- Загрузка конфигурации работает
+- Парсинг параметров нуждается в исправлении (JSON структура)
+- Нужно добавить основную торговую логику из strategy_xau_m1_m15.py
+
+
+
+```markdown
+# АРХИТЕКТУРА СИСТЕМЫ ТОРГОВЫХ СТРАТЕГИЙ (ОБНОВЛЕННАЯ)
+
+## ТЕКУЩЕЕ СОСТОЯНИЕ:
+- **Таблица `algo.strategy_configurations` УДАЛЕНА**
+- **Упрощённая структура:** strategies → ParameterSets → ConfigurationSets
+- **Данные готовы** для стратегии MTF RSI EMA (config_id = 1, 2, 3)
+
+## 1. ОБНОВЛЕННАЯ АРХИТЕКТУРА
+
+### 1.1. Основные таблицы:
+| Таблица | Назначение | Ключевые колонки |
+|---------|------------|------------------|
+| `algo.strategies` | Описание стратегий | `ID`, `strategy_code`, `strategy_name` |
+| `algo.ParameterSets` | Список параметров стратегии | `Id`, `strategy_id`, `ParameterSetJson` (JSON array) |
+| `algo.ConfigurationSets` | Значения параметров | `Id`, `parameter_set_id`, `ParameterValuesJson` (JSON object) |
+
+### 1.2. Связи:
+- `ParameterSets.strategy_id` → `strategies.ID`
+- `ConfigurationSets.parameter_set_id` → `ParameterSets.Id`
+
+### 1.3. Пример данных для MTF RSI EMA:
+
+**ParameterSets.ParameterSetJson:**
+```json
+["ticker", "timeframe_signal", "timeframe_confirmation", "timeframe_trend", "open_volume", "trading_close_utc", "trading_start_utc", "broker_id", "platform_id", "max_position_checks", "check_interval_seconds"]
+```
+
+**ConfigurationSets.ParameterValuesJson:**
+```json
+{
+  "ticker": "XAUUSD",
+  "timeframe_signal": 1,
+  "timeframe_confirmation": 3,
+  "timeframe_trend": 5,
+  "open_volume": 0.01,
+  "trading_close_utc": "22:00",
+  "trading_start_utc": "23:00",
+  "broker_id": 2,
+  "platform_id": 1,
+  "max_position_checks": 10,
+  "check_interval_seconds": 10
+}
+```
+
+## 2. ИЗМЕНЕНИЯ В PYTHON СТРАТЕГИИ
+
+### 2.1. Новый интерфейс:
+```bash
+python mtf_rsi_ema.py --config-id <ConfigurationSets.Id>
+```
+
+### 2.2. Изменения в коде:
+1. **Запрос к БД:** Получать данные из `ConfigurationSets` по `Id`
+2. **Парсинг:** Всё в `ParameterValuesJson` (один JSON вместо двух таблиц)
+3. **Атрибуты:** Все параметры из JSON становятся атрибутами класса
+
+### 2.3. Нужно обновить:
+- `_load_configuration_from_db()` → запрашивать `ConfigurationSets` напрямую
+- `_setup_parameters()` → парсить JSON с новыми именами полей
+- Убрать зависимость от `strategy_configurations`
+
+## 3. ТЕКУЩИЙ ПРОГРЕСС
+
+### СДЕЛАНО:
+✅ Упрощена структура БД (удалена strategy_configurations)  
+✅ Очищены таблицы (удалены UNIQUE constraints и hash колонки)  
+✅ Данные подготовлены в новой структуре  
+✅ 3 конфигурации созданы (config_id: 1, 2, 3)  
+
+### НУЖНО СДЕЛАТЬ:
+1. **Обновить Python стратегию** для работы с новой структурой
+2. **Протестировать** загрузку конфигурации
+3. **Добавить торговую логику** из `strategy_xau_m1_m15.py`
+4. **Интегрировать** heartbeat и termination service
+
+## 4. SQL ДЛЯ ПРОВЕРКИ ТЕКУЩИХ ДАННЫХ
+
+```sql
+-- Все конфигурации для MTF RSI EMA стратегии
+SELECT 
+    cs.Id as config_id,
+    s.strategy_code,
+    ps.ParameterSetJson as parameter_list,
+    cs.ParameterValuesJson as parameter_values
+FROM algo.strategies s
+INNER JOIN algo.ParameterSets ps ON s.ID = ps.strategy_id
+INNER JOIN algo.ConfigurationSets cs ON ps.Id = cs.parameter_set_id
+WHERE s.strategy_code = 'mtf_rsi_ema'
+ORDER BY cs.Id;
+```
+
+**Результат:** 3 конфигурации с одинаковыми параметрами (config_id: 1, 2, 3)
+
+## 5. СЛЕДУЮЩИЕ ШАГИ
+
+### Шаг 1: Обновить Python код
+- Изменить `_load_configuration_from_db()` для запроса к `ConfigurationSets`
+- Обновить `_setup_parameters()` для парсинга нового JSON
+
+### Шаг 2: Протестировать
+```bash
+python mtf_rsi_ema.py --config-id 1
+```
+
+### Шаг 3: Перенос логики
+- Перенести ВСЕ функции из `strategy_xau_m1_m15.py`
+- Интегрировать с новой системой параметров
+
+### Шаг 4: Завершение
+- Добавить heartbeat (каждые 60 сек)
+- Протестировать termination service
+- Проверить обновление `algo.strategyTracker`
+
+## 6. КЛЮЧЕВЫЕ ИЗМЕНЕНИЯ
+
+| Что было | Что стало |
+|----------|-----------|
+| `strategy_configurations.ID` | `ConfigurationSets.Id` |
+| Две таблицы для параметров | Один JSON в `ParameterValuesJson` |
+| Сложные связи | Простая связь strategies→ParameterSets→ConfigurationSets |
+| `instrument_symbol` в таблице | `ticker` в JSON |
+| `timeframe_m1`, `m15`, `h1` | `timeframe_signal`, `confirmation`, `trend` |
+
+## 7. ЗАПУСК СТРАТЕГИИ
+
+**Python:**
+```python
+strategy = MTFRSIEMAStrategy(configuration_id=1)  # ConfigurationSets.Id = 1
+strategy.run()
+```
+
+**Командная строка:**
+```bash
+python mtf_rsi_ema.py --config-id 1
+```
+
+**Через run_all_strategies.py:**
+```python
+# Запуск всех конфигураций MTF RSI EMA
+processes = [
+    subprocess.Popen(['python', 'mtf_rsi_ema.py', '--config-id', '1']),
+    subprocess.Popen(['python', 'mtf_rsi_ema.py', '--config-id', '2']),
+    subprocess.Popen(['python', 'mtf_rsi_ema.py', '--config-id', '3'])
+]
+```
+
+---
+*Документ обновлён 2026-01-23 после упрощения архитектуры БД*
+```

@@ -1,0 +1,6 @@
+D:\TradingSystems\CLR\SQL_CLR_EMA\bin\Debug\SQL_CLR_EMA.dacpac
+D:\TradingSystems\CLR\SQL_CLR_EMA\bin\Debug\SQL_CLR_EMA.dll
+D:\TradingSystems\CLR\SQL_CLR_EMA\bin\Debug\SQL_CLR_EMA.pdb
+D:\TradingSystems\CLR\SQL_CLR_EMA\obj\Debug\SQL_CLR_EMA.sqlproj.AssemblyReference.cache
+D:\TradingSystems\CLR\SQL_CLR_EMA\obj\Debug\SQL_CLR_EMA.dll
+D:\TradingSystems\CLR\SQL_CLR_EMA\obj\Debug\SQL_CLR_EMA.pdb

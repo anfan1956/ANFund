@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36811.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SQL_CLR_EMA", "SQL_CLR_EMA.sqlproj", "{A51060A7-142F-4030-902E-E3AACC9DE66B}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SQL_CLR_MarketRegime", "..\SQL_CLR_MarketRegime\SQL_CLR_MarketRegime.sqlproj", "{F2FDF134-67A4-46DA-80E1-2075F10FDB6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A51060A7-142F-4030-902E-E3AACC9DE66B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A51060A7-142F-4030-902E-E3AACC9DE66B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A51060A7-142F-4030-902E-E3AACC9DE66B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A51060A7-142F-4030-902E-E3AACC9DE66B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A51060A7-142F-4030-902E-E3AACC9DE66B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A51060A7-142F-4030-902E-E3AACC9DE66B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F2FDF134-67A4-46DA-80E1-2075F10FDB6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2FDF134-67A4-46DA-80E1-2075F10FDB6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2FDF134-67A4-46DA-80E1-2075F10FDB6D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F2FDF134-67A4-46DA-80E1-2075F10FDB6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2FDF134-67A4-46DA-80E1-2075F10FDB6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2FDF134-67A4-46DA-80E1-2075F10FDB6D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A8A72773-2C94-4174-8E3A-544B69FB4FAF}
+	EndGlobalSection
+EndGlobal

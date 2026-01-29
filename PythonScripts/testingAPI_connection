@@ -1,0 +1,9 @@
+import requests
+
+def test_api_access():
+    try:
+        # Some APIs have HTTP endpoints for status
+        response = requests.get('https://demo.ctraderapi.com:5035/', timeout=10)
+        print(f"HTTP Status: {response.status_code}")
+    except requests.exceptions.RequestException as e:
+        print(f"HTTP test failed: {e}")

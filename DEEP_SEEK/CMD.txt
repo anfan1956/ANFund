@@ -1,0 +1,71 @@
+
+D:\TradingSystems\PythonScripts>python mtf_rsi_ema_strategy.py --config-id 3
+Parameters setup complete:
+  Symbol: BTCUSD
+  Ticker JID: 56
+  Signal TF ID: 1
+  Confirmation TF ID: 3
+  Trend TF ID: 5
+  Volume: 0.02
+  Trading hours: 00:00:00 to 00:00:00
+Strategy 3 running for BTCUSD
+======================================================================
+Config ID: 3
+Ticker: BTCUSD
+Volume: 0.02 lots
+Daily Close: 00:00:00 UTC
+Press Ctrl+C to stop
+======================================================================
+
+No existing position found.
+Opening initial position...
+
+Opening initial BUY position for BTCUSD
+Volume: 0.02 lots
+[2026-01-24 22:23:24] Signal SENT: BTCUSD buy volume=0.02, Trade ID: None, Type: None
+Waiting for position confirmation...
+  Check 1/20: Position not yet confirmed...
+Position confirmed: ID=5861, Direction=Buy
+Initial position opened successfully
+  Position ID: 5861
+
+======================================================================
+Strategy monitoring started
+======================================================================
+[Termination DB] Found 0 pending termination(s)
+[Termination Service] No termination for config_id: 3
+DEBUG: Running strategy iteration 1
+[19:24:24] BTCUSD: 89132.37 | Pos: ID:5861 Buy | Signal: NO_SIGNAL | Confirmation: NO_SIGNAL | Trend: NO_DATA | Close: TIME_PASSED
+[Termination DB] Found 0 pending termination(s)
+[Termination Service] No termination for config_id: 3
+DEBUG: Running strategy iteration 2
+[19:25:00] BTCUSD: 89132.37 | Pos: ID:5861 Buy | Signal: NO_SIGNAL | Confirmation: NO_SIGNAL | Trend: BULLISH | Close: TIME_PASSED
+[Termination DB] Found 0 pending termination(s)
+[Termination Service] No termination for config_id: 3
+DEBUG: Running strategy iteration 3
+[19:26:00] BTCUSD: 89143.76 | Pos: ID:5861 Buy | Signal: BUY | Confirmation: NO_SIGNAL | Trend: NO_DATA | Close: TIME_PASSED
+[Termination DB] Found 0 pending termination(s)
+[Termination Service] No termination for config_id: 3
+DEBUG: Running strategy iteration 4
+[19:27:01] BTCUSD: 89146.06 | Pos: ID:5861 Buy | Signal: NO_SIGNAL | Confirmation: NO_SIGNAL | Trend: NO_DATA | Close: TIME_PASSED
+[Termination DB] Found 0 pending termination(s)
+[Termination Service] No termination for config_id: 3
+DEBUG: Running strategy iteration 5
+[19:28:00] BTCUSD: 89139.80 | Pos: ID:5861 Buy | Signal: NO_SIGNAL | Confirmation: NO_SIGNAL | Trend: NO_DATA | Close: TIME_PASSED
+[Termination DB] Found 1 pending termination(s)
+[Termination DB] Config 3: ID 17, Requested 2026-01-24 19:28:43.127000
+[Termination Service] Found termination for config_id: 3
+[Termination Service] Details: {'termination_id': 17, 'requested_at': datetime.datetime(2026, 1, 24, 19, 28, 43, 127000)}
+
+[Termination] Strategy 3 termination requested at 2026-01-24 19:28:43.127000
+[Termination] Termination ID: 17
+[Termination] Closing 1 open position(s)...
+  Closing position ID=5861 (Direction: Buy)
+[2026-01-24 22:29:00] Signal SENT: BTCUSD drop volume=0.02, Trade ID: 5861, Type: POSITION
+
+======================================================================
+[Termination] Strategy 3 terminated successfully
+Exiting program...
+======================================================================
+
+D:\TradingSystems\PythonScripts>

@@ -1,0 +1,16 @@
+﻿Parameter,Value,ExportTime
+AccountNumber,5161801,2025-12-29 22:56:34
+Broker,Pepperstone,
+Balance,49946.83,
+Equity,50198.43,
+FreeMargin,49183.72,
+UsedMargin,1014.71,
+MarginLevel,4947.08%,
+Currency,USD,
+AccountType,Hedged,
+Leverage,30,
+PositionsCount,6,
+PendingOrdersCount,3,
+UserId,401326,
+ServerTime,2025-12-29 19:56:33,
+TimeZone,(UTC+03:00) Moscow, St. Petersburg,

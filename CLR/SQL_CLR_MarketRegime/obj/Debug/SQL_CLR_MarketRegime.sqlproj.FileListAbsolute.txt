@@ -1,0 +1,10 @@
+D:\TradingSystems\CLR\SQL_CLR_MarketRegime\obj\Debug\SQL_CLR_MarketRegime.sqlproj.AssemblyReference.cache
+D:\TradingSystems\CLR\SQL_CLR_MarketRegime\bin\Debug\SQL_CLR_MarketRegime.dacpac
+D:\TradingSystems\CLR\SQL_CLR_MarketRegime\bin\Debug\SQL_CLR_MarketRegime.dll
+D:\TradingSystems\CLR\SQL_CLR_MarketRegime\bin\Debug\SQL_CLR_MarketRegime.pdb
+D:\TradingSystems\CLR\SQL_CLR_MarketRegime\obj\Debug\Model.xml
+D:\TradingSystems\CLR\SQL_CLR_MarketRegime\obj\Debug\refactor.xml
+D:\TradingSystems\CLR\SQL_CLR_MarketRegime\obj\Debug\postdeploy.sql
+D:\TradingSystems\CLR\SQL_CLR_MarketRegime\obj\Debug\predeploy.sql
+D:\TradingSystems\CLR\SQL_CLR_MarketRegime\obj\Debug\SQL_CLR_MarketRegime.dll
+D:\TradingSystems\CLR\SQL_CLR_MarketRegime\obj\Debug\SQL_CLR_MarketRegime.pdb

@@ -1,0 +1,2501 @@
+.:
+total 252
+drwxr-xr-x 1 Sasha 197121      0 Dec 15 19:50 ANFAN-Fund-Dashboard/
+drwxr-xr-x 1 Sasha 197121      0 Dec 25 00:48 OLTP/
+-rw-r--r-- 1 Sasha 197121      0 Dec 25 16:37 TheProjectStructure.txt
+-rw-r--r-- 1 Sasha 197121      0 Dec 25 16:21 absolute_paths.txt
+-rw-r--r-- 1 Sasha 197121 209507 Dec 25 16:24 detailed_files.txt
+-rw-r--r-- 1 Sasha 197121      0 Dec 25 16:21 dir_structure.txt
+-rw-r--r-- 1 Sasha 197121  36547 Dec 25 16:21 folders_tree.txt
+-rw-r--r-- 1 Sasha 197121      0 Dec 25 16:21 full_structure.txt
+-rw-r--r-- 1 Sasha 197121      0 Dec 25 16:35 structure.txt
+-rw-r--r-- 1 Sasha 197121      0 Dec 25 16:21 structure_3levels.txt
+
+./ANFAN-Fund-Dashboard:
+total 67
+drwxr-xr-x 1 Sasha 197121    0 Dec 25 04:19 ALGO/
+-rw-r--r-- 1 Sasha 197121 2933 Dec 14 01:11 PROJECT_SUMMARY.md
+-rw-r--r-- 1 Sasha 197121 2004 Dec 14 01:03 README.md
+-rw-r--r-- 1 Sasha 197121  598 Dec 13 00:44 SESSION_2024-12-12.md
+-rw-r--r-- 1 Sasha 197121  955 Dec 13 01:26 SESSION_2024-12-13_CAPE_EXTRACTOR.md
+-rw-r--r-- 1 Sasha 197121  799 Dec 13 01:50 SESSION_2024-12-13_ENHANCED_EXTRACTORS.md
+-rw-r--r-- 1 Sasha 197121  421 Dec 13 00:37 SESSION_SUMMARY.md
+drwxr-xr-x 1 Sasha 197121    0 Dec 13 05:48 __pycache__/
+-rw-r--r-- 1 Sasha 197121 3822 Dec 13 05:00 alpha_extractor.py
+drwxr-xr-x 1 Sasha 197121    0 Dec 12 23:58 config/
+-rw-r--r-- 1 Sasha 197121  373 Dec 13 05:07 config.py
+drwxr-xr-x 1 Sasha 197121    0 Dec 12 23:58 data/
+-rw-r--r-- 1 Sasha 197121 6584 Dec 13 05:46 data_manager.py
+drwxr-xr-x 1 Sasha 197121    0 Dec 14 01:08 docs/
+-rw-r--r-- 1 Sasha 197121 4065 Dec 13 04:35 fred_extractor.py
+drwxr-xr-x 1 Sasha 197121    0 Dec 13 01:49 logs/
+-rw-r--r-- 1 Sasha 197121 4851 Dec 13 05:53 main_dashboard.py
+-rw-r--r-- 1 Sasha 197121  885 Dec 13 05:58 requirements.txt
+drwxr-xr-x 1 Sasha 197121    0 Dec 25 00:42 scripts/
+drwxr-xr-x 1 Sasha 197121    0 Dec 25 00:50 sql/
+drwxr-xr-x 1 Sasha 197121    0 Dec 13 03:52 src/
+-rw-r--r-- 1 Sasha 197121  796 Dec 13 00:33 test_connection_simple.py
+drwxr-xr-x 1 Sasha 197121    0 Dec 12 23:58 tests/
+drwxr-xr-x 1 Sasha 197121    0 Dec 13 01:10 venv/
+
+./ANFAN-Fund-Dashboard/ALGO:
+total 209
+-rw-r--r-- 1 Sasha 197121    432 Dec 15 19:50 ANFundMA_Long, US500 h1.cbotset
+-rw-r--r-- 1 Sasha 197121  18904 Dec 25 04:16 I understand.ini
+-rw-r--r-- 1 Sasha 197121  20034 Dec 25 04:18 I understand.md
+-rw-r--r-- 1 Sasha 197121 168266 Dec 25 04:19 I understand.pdf
+
+./ANFAN-Fund-Dashboard/__pycache__:
+total 13
+-rw-r--r-- 1 Sasha 197121  379 Dec 13 05:09 config.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 8992 Dec 13 05:48 data_manager.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/config:
+total 0
+
+./ANFAN-Fund-Dashboard/data:
+total 0
+drwxr-xr-x 1 Sasha 197121 0 Dec 12 23:58 processed/
+drwxr-xr-x 1 Sasha 197121 0 Dec 12 23:58 raw/
+
+./ANFAN-Fund-Dashboard/data/processed:
+total 0
+
+./ANFAN-Fund-Dashboard/data/raw:
+total 0
+
+./ANFAN-Fund-Dashboard/docs:
+total 0
+drwxr-xr-x 1 Sasha 197121 0 Dec 14 01:08 api-docs/
+drwxr-xr-x 1 Sasha 197121 0 Dec 14 01:01 architecture/
+drwxr-xr-x 1 Sasha 197121 0 Dec 14 01:02 database/
+drwxr-xr-x 1 Sasha 197121 0 Dec 14 01:02 deployment/
+drwxr-xr-x 1 Sasha 197121 0 Dec 14 01:02 operations/
+
+./ANFAN-Fund-Dashboard/docs/api-docs:
+total 4
+drwxr-xr-x 1 Sasha 197121 0 Dec 13 16:51 cTrader/
+
+./ANFAN-Fund-Dashboard/docs/api-docs/cTrader:
+total 448
+-rw-r--r-- 1 Sasha 197121  59102 Dec 13 16:50 Create your application - Open API.docx
+-rw-r--r-- 1 Sasha 197121 232031 Dec 13 16:44 Create your application - Open API.pdf
+-rw-r--r-- 1 Sasha 197121  13288 Dec 13 16:49 Getting started - Open API.docx
+-rw-r--r-- 1 Sasha 197121 145803 Dec 13 16:43 Getting started - Open API.pdf
+
+./ANFAN-Fund-Dashboard/docs/architecture:
+total 4
+-rw-r--r-- 1 Sasha 197121 2206 Dec 14 01:01 system-overview.md
+
+./ANFAN-Fund-Dashboard/docs/database:
+total 4
+-rw-r--r-- 1 Sasha 197121 1657 Dec 14 01:02 schema-reference.md
+
+./ANFAN-Fund-Dashboard/docs/deployment:
+total 4
+-rw-r--r-- 1 Sasha 197121 1827 Dec 14 01:02 setup-guide.md
+
+./ANFAN-Fund-Dashboard/docs/operations:
+total 4
+-rw-r--r-- 1 Sasha 197121 1861 Dec 14 01:02 monitoring-guide.md
+
+./ANFAN-Fund-Dashboard/logs:
+total 0
+-rw-r--r-- 1 Sasha 197121 0 Dec 13 01:49 etl.log
+
+./ANFAN-Fund-Dashboard/scripts:
+total 141
+-rw-r--r-- 1 Sasha 197121 3353 Dec 13 02:56 check_all_indicators.py
+-rw-r--r-- 1 Sasha 197121 1412 Dec 13 01:57 check_data.py
+-rw-r--r-- 1 Sasha 197121 9775 Dec 13 20:19 check_database.py
+-rw-r--r-- 1 Sasha 197121  543 Dec 13 03:10 check_database_writer.py
+-rw-r--r-- 1 Sasha 197121 1118 Dec 13 02:56 check_etl_writing.py
+-rw-r--r-- 1 Sasha 197121 1847 Dec 13 03:19 check_final_status.py
+-rw-r--r-- 1 Sasha 197121  369 Dec 13 03:23 check_fred_key.py
+-rw-r--r-- 1 Sasha 197121  656 Dec 13 02:43 check_indicators.py
+-rw-r--r-- 1 Sasha 197121  845 Dec 13 03:12 check_insert_values.py
+-rw-r--r-- 1 Sasha 197121  670 Dec 13 03:43 check_market_signal.py
+-rw-r--r-- 1 Sasha 197121  572 Dec 13 03:13 check_params.py
+-rw-r--r-- 1 Sasha 197121 1692 Dec 13 03:41 check_pmi_data.py
+-rw-r--r-- 1 Sasha 197121 2267 Dec 13 02:56 check_raw_data.py
+-rw-r--r-- 1 Sasha 197121  569 Dec 13 03:08 check_schema.py
+-rw-r--r-- 1 Sasha 197121 3389 Dec 13 03:01 check_schema_properly.py
+-rw-r--r-- 1 Sasha 197121 1062 Dec 13 03:09 check_spy_data.py
+-rw-r--r-- 1 Sasha 197121 3107 Dec 13 17:44 check_sqlserver.py
+-rw-r--r-- 1 Sasha 197121 3000 Dec 13 17:47 check_sqlserver_simple.py
+-rw-r--r-- 1 Sasha 197121 1541 Dec 13 02:52 check_table_names.py
+-rw-r--r-- 1 Sasha 197121  860 Dec 13 03:46 check_updated_signal.py
+-rw-r--r-- 1 Sasha 197121 1729 Dec 13 02:56 check_updated_signals.py
+-rw-r--r-- 1 Sasha 197121  380 Dec 13 01:19 clear_data.py
+-rw-r--r-- 1 Sasha 197121  640 Dec 13 03:16 clear_spy_data.py
+-rw-r--r-- 1 Sasha 197121 1438 Dec 13 02:15 create_dashboard_views.py
+-rw-r--r-- 1 Sasha 197121 3063 Dec 13 17:48 examine_tables.py
+-rw-r--r-- 1 Sasha 197121  779 Dec 13 03:46 execute_pmi_sql.py
+-rw-r--r-- 1 Sasha 197121 1373 Dec 13 02:48 execute_spy_sql.py
+-rw-r--r-- 1 Sasha 197121 3558 Dec 13 03:01 final_summary.py
+-rw-r--r-- 1 Sasha 197121 1111 Dec 13 03:12 find_database_insert.py
+-rwxr-xr-x 1 Sasha 197121 1757 Dec 13 01:17 run_cape_etl.py*
+-rwxr-xr-x 1 Sasha 197121 4913 Dec 13 03:36 run_complete_etl.py*
+-rwxr-xr-x 1 Sasha 197121 2438 Dec 13 00:34 test_db_connection.py*
+-rw-r--r-- 1 Sasha 197121 2756 Dec 13 04:01 test_eodhd_api.py
+-rw-r--r-- 1 Sasha 197121  606 Dec 13 03:10 test_extractor_output.py
+-rw-r--r-- 1 Sasha 197121 2077 Dec 13 02:23 test_final_system.py
+-rw-r--r-- 1 Sasha 197121 3420 Dec 13 03:01 test_spy_fix.py
+-rw-r--r-- 1 Sasha 197121 2338 Dec 13 03:36 update_etl_for_pmi.py
+-rw-r--r-- 1 Sasha 197121 1741 Dec 13 02:44 update_etl_for_spy.py
+-rw-r--r-- 1 Sasha 197121 1107 Dec 13 03:18 verify_spy_data.py
+
+./ANFAN-Fund-Dashboard/sql:
+total 12
+drwxr-xr-x 1 Sasha 197121 0 Dec 25 00:41 New folder/
+drwxr-xr-x 1 Sasha 197121 0 Dec 14 01:08 data/
+drwxr-xr-x 1 Sasha 197121 0 Dec 14 00:58 maintenance/
+drwxr-xr-x 1 Sasha 197121 0 Dec 14 00:55 procedures/
+drwxr-xr-x 1 Sasha 197121 0 Dec 14 00:55 setup/
+drwxr-xr-x 1 Sasha 197121 0 Dec 14 00:57 test_execute/
+drwxr-xr-x 1 Sasha 197121 0 Dec 14 00:55 views/
+
+./ANFAN-Fund-Dashboard/sql/New folder:
+total 0
+
+./ANFAN-Fund-Dashboard/sql/data:
+total 33
+-rw-r--r-- 1 Sasha 197121  611 Dec 13 22:25 check_actual_procedures.sql
+-rw-r--r-- 1 Sasha 197121 1036 Dec 13 21:25 check_core_data.sql
+-rw-r--r-- 1 Sasha 197121 1091 Dec 13 20:33 check_data_vault.sql
+-rw-r--r-- 1 Sasha 197121 1211 Dec 13 22:12 check_etl_procedures.sql
+-rw-r--r-- 1 Sasha 197121 5938 Dec 14 00:09 init_staging.sql
+-rw-r--r-- 1 Sasha 197121  996 Dec 13 21:26 run_test_etl.sql
+-rw-r--r-- 1 Sasha 197121 2376 Dec 13 20:42 verify_dv_complete.sql
+-rw-r--r-- 1 Sasha 197121 3107 Dec 13 21:32 verify_etl_results_final.sql
+
+./ANFAN-Fund-Dashboard/sql/maintenance:
+total 12
+-rw-r--r-- 1 Sasha 197121 8737 Dec 14 00:58 clean_all_data.sql
+
+./ANFAN-Fund-Dashboard/sql/procedures:
+total 40
+-rw-r--r-- 1 Sasha 197121   938 Dec 13 23:33 PROCEDURE etl.LogProcess.sql
+-rw-r--r-- 1 Sasha 197121 13027 Dec 13 23:58 create_master_etl_procedure.sql
+-rw-r--r-- 1 Sasha 197121  6946 Dec 14 00:22 etl.Load_Accounts_CoreToDV.sql
+-rw-r--r-- 1 Sasha 197121  6732 Dec 14 00:23 etl.Load_Instruments_CoreToDV.sql
+-rw-r--r-- 1 Sasha 197121  1102 Dec 13 23:31 etl.ProcessLog.sql
+
+./ANFAN-Fund-Dashboard/sql/setup:
+total 109
+-rw-r--r-- 1 Sasha 197121  1559 Dec 13 00:11 01_schema.sql
+-rw-r--r-- 1 Sasha 197121  1104 Dec 13 00:19 02_sample_data.sql
+-rw-r--r-- 1 Sasha 197121  3480 Dec 13 02:15 03_dashboard_views.sql
+-rw-r--r-- 1 Sasha 197121  4289 Dec 13 02:48 04_add_spy_200dma.sql
+-rw-r--r-- 1 Sasha 197121  5710 Dec 13 03:01 04_fix_spy_200dma.sql
+-rw-r--r-- 1 Sasha 197121  4435 Dec 13 03:44 05_add_pmi_to_marketsignal.sql
+-rw-r--r-- 1 Sasha 197121  5001 Dec 13 18:09 Step1_Staging_Schema.sql
+-rw-r--r-- 1 Sasha 197121 13458 Dec 13 18:13 Step2_Core_3NF_Schema.sql
+-rw-r--r-- 1 Sasha 197121 21132 Dec 13 20:27 Step3_Data_Vault_Schema.sql
+-rw-r--r-- 1 Sasha 197121 12025 Dec 13 20:45 Step4_ETL_Procedures.sql
+-rw-r--r-- 1 Sasha 197121  3160 Dec 13 20:09 cleanup_duplicate_fks.sql
+-rw-r--r-- 1 Sasha 197121  3827 Dec 13 22:40 create_all_archive_tables.sql
+-rw-r--r-- 1 Sasha 197121   453 Dec 13 22:38 create_archive_schema.sql
+-rw-r--r-- 1 Sasha 197121  2149 Dec 13 20:40 run_dv_schema.sql
+
+./ANFAN-Fund-Dashboard/sql/test_execute:
+total 5
+-rw-r--r-- 1 Sasha 197121 995 Dec 14 00:57 RunProcs.sql
+-rw-r--r-- 1 Sasha 197121 223 Dec 14 00:57 test_select.sql
+
+./ANFAN-Fund-Dashboard/sql/views:
+total 1
+-rw-r--r-- 1 Sasha 197121 548 Dec 13 23:40 VIEW etl.vw_ETL_Monitoring.sql
+
+./ANFAN-Fund-Dashboard/src:
+total 1
+-rw-r--r-- 1 Sasha 197121 86 Dec 13 00:02 __init__.py
+drwxr-xr-x 1 Sasha 197121  0 Dec 13 03:54 config/
+drwxr-xr-x 1 Sasha 197121  0 Dec 12 23:58 dashboard/
+drwxr-xr-x 1 Sasha 197121  0 Dec 12 23:58 data_pipeline/
+drwxr-xr-x 1 Sasha 197121  0 Dec 13 01:44 utilities/
+
+./ANFAN-Fund-Dashboard/src/config:
+total 1
+drwxr-xr-x 1 Sasha 197121   0 Dec 13 04:02 __pycache__/
+-rw-r--r-- 1 Sasha 197121 570 Dec 13 04:00 settings.py
+
+./ANFAN-Fund-Dashboard/src/config/__pycache__:
+total 1
+-rw-r--r-- 1 Sasha 197121 575 Dec 13 04:02 settings.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/src/dashboard:
+total 0
+
+./ANFAN-Fund-Dashboard/src/data_pipeline:
+total 4
+drwxr-xr-x 1 Sasha 197121 0 Dec 13 03:35 extractors/
+drwxr-xr-x 1 Sasha 197121 0 Dec 13 01:16 loaders/
+drwxr-xr-x 1 Sasha 197121 0 Dec 12 23:58 transformers/
+
+./ANFAN-Fund-Dashboard/src/data_pipeline/extractors:
+total 60
+drwxr-xr-x 1 Sasha 197121    0 Dec 13 03:36 __pycache__/
+-rw-r--r-- 1 Sasha 197121 5567 Dec 13 01:45 cape_extractor.py
+-rw-r--r-- 1 Sasha 197121 5433 Dec 13 01:46 fear_greed_extractor.py
+-rw-r--r-- 1 Sasha 197121 7268 Dec 13 02:11 fear_greed_improved.py
+-rw-r--r-- 1 Sasha 197121 7592 Dec 13 03:35 ism_pmi_extractor.py
+-rw-r--r-- 1 Sasha 197121 3960 Dec 13 03:16 spy_200dma_extractor.py
+-rw-r--r-- 1 Sasha 197121 6542 Dec 13 02:56 spy_200dma_extractor_old.py
+-rw-r--r-- 1 Sasha 197121 3994 Dec 13 03:14 spy_200dma_fixed.py
+-rw-r--r-- 1 Sasha 197121 5336 Dec 13 01:46 yield_curve_extractor.py
+
+./ANFAN-Fund-Dashboard/src/data_pipeline/extractors/__pycache__:
+total 68
+-rw-r--r-- 1 Sasha 197121 8110 Dec 13 01:49 cape_extractor.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 7667 Dec 13 01:49 fear_greed_extractor.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 8543 Dec 13 02:02 fear_greed_extractor_fixed.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 9486 Dec 13 02:12 fear_greed_improved.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 8596 Dec 13 03:36 ism_pmi_extractor.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 5401 Dec 13 03:17 spy_200dma_extractor.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 7338 Dec 13 01:49 yield_curve_extractor.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/src/data_pipeline/loaders:
+total 8
+drwxr-xr-x 1 Sasha 197121    0 Dec 13 01:16 __pycache__/
+-rw-r--r-- 1 Sasha 197121 4456 Dec 13 01:15 database_writer.py
+
+./ANFAN-Fund-Dashboard/src/data_pipeline/loaders/__pycache__:
+total 8
+-rw-r--r-- 1 Sasha 197121 6586 Dec 13 01:16 database_writer.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/src/data_pipeline/transformers:
+total 0
+
+./ANFAN-Fund-Dashboard/src/utilities:
+total 12
+drwxr-xr-x 1 Sasha 197121    0 Dec 13 01:49 __pycache__/
+-rw-r--r-- 1 Sasha 197121 1055 Dec 13 00:34 database.py
+-rw-r--r-- 1 Sasha 197121 4676 Dec 13 01:44 http_client.py
+
+./ANFAN-Fund-Dashboard/src/utilities/__pycache__:
+total 12
+-rw-r--r-- 1 Sasha 197121 1571 Dec 13 00:35 database.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 6597 Dec 13 01:49 http_client.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/tests:
+total 0
+drwxr-xr-x 1 Sasha 197121 0 Dec 12 23:58 integration/
+drwxr-xr-x 1 Sasha 197121 0 Dec 12 23:58 unit/
+
+./ANFAN-Fund-Dashboard/tests/integration:
+total 0
+
+./ANFAN-Fund-Dashboard/tests/unit:
+total 0
+
+./ANFAN-Fund-Dashboard/venv:
+total 5
+drwxr-xr-x 1 Sasha 197121   0 Dec 13 01:10 Include/
+drwxr-xr-x 1 Sasha 197121   0 Dec 13 01:10 Lib/
+drwxr-xr-x 1 Sasha 197121   0 Dec 13 01:10 Scripts/
+-rw-r--r-- 1 Sasha 197121 202 Dec 13 01:10 pyvenv.cfg
+
+./ANFAN-Fund-Dashboard/venv/Include:
+total 0
+
+./ANFAN-Fund-Dashboard/venv/Lib:
+total 4
+drwxr-xr-x 1 Sasha 197121 0 Dec 13 01:10 site-packages/
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages:
+total 21
+drwxr-xr-x 1 Sasha 197121   0 Dec 13 01:10 _distutils_hack/
+-rw-r--r-- 1 Sasha 197121 151 Dec 13 01:10 distutils-precedence.pth
+drwxr-xr-x 1 Sasha 197121   0 Dec 13 01:10 pip/
+drwxr-xr-x 1 Sasha 197121   0 Dec 13 01:10 pip-23.1.2.dist-info/
+drwxr-xr-x 1 Sasha 197121   0 Dec 13 01:10 pkg_resources/
+drwxr-xr-x 1 Sasha 197121   0 Dec 13 01:10 setuptools/
+drwxr-xr-x 1 Sasha 197121   0 Dec 13 01:10 setuptools-65.5.0.dist-info/
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/_distutils_hack:
+total 9
+-rw-r--r-- 1 Sasha 197121 6128 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121    0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121   44 Dec 13 01:10 override.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/_distutils_hack/__pycache__:
+total 13
+-rw-r--r-- 1 Sasha 197121 11163 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   320 Dec 13 01:10 override.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip:
+total 18
+-rw-r--r-- 1 Sasha 197121  357 Dec 13 01:10 __init__.py
+-rw-r--r-- 1 Sasha 197121 1198 Dec 13 01:10 __main__.py
+-rw-r--r-- 1 Sasha 197121 1444 Dec 13 01:10 __pip-runner__.py
+drwxr-xr-x 1 Sasha 197121    0 Dec 13 01:10 __pycache__/
+drwxr-xr-x 1 Sasha 197121    0 Dec 13 01:10 _internal/
+drwxr-xr-x 1 Sasha 197121    0 Dec 13 01:10 _vendor/
+-rw-r--r-- 1 Sasha 197121  286 Dec 13 01:10 py.typed
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/__pycache__:
+total 12
+-rw-r--r-- 1 Sasha 197121  775 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 1084 Dec 13 01:10 __main__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 2512 Dec 13 01:10 __pip-runner__.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal:
+total 130
+-rw-r--r-- 1 Sasha 197121   573 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 10243 Dec 13 01:10 build_env.py
+-rw-r--r-- 1 Sasha 197121  9661 Dec 13 01:10 cache.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 cli/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 commands/
+-rw-r--r-- 1 Sasha 197121 13529 Dec 13 01:10 configuration.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 distributions/
+-rw-r--r-- 1 Sasha 197121 23741 Dec 13 01:10 exceptions.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 index/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 locations/
+-rw-r--r-- 1 Sasha 197121   340 Dec 13 01:10 main.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 metadata/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 models/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 network/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 operations/
+-rw-r--r-- 1 Sasha 197121  7161 Dec 13 01:10 pyproject.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 req/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 resolution/
+-rw-r--r-- 1 Sasha 197121  8167 Dec 13 01:10 self_outdated_check.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 utils/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 vcs/
+-rw-r--r-- 1 Sasha 197121 11842 Dec 13 01:10 wheel_builder.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/__pycache__:
+total 136
+-rw-r--r-- 1 Sasha 197121   958 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 16078 Dec 13 01:10 build_env.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 13572 Dec 13 01:10 cache.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 19234 Dec 13 01:10 configuration.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 37616 Dec 13 01:10 exceptions.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   758 Dec 13 01:10 main.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  5620 Dec 13 01:10 pyproject.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 11328 Dec 13 01:10 self_outdated_check.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 15262 Dec 13 01:10 wheel_builder.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/cli:
+total 114
+-rw-r--r-- 1 Sasha 197121   132 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  6676 Dec 13 01:10 autocompletion.py
+-rw-r--r-- 1 Sasha 197121  8176 Dec 13 01:10 base_command.py
+-rw-r--r-- 1 Sasha 197121 30030 Dec 13 01:10 cmdoptions.py
+-rw-r--r-- 1 Sasha 197121   774 Dec 13 01:10 command_context.py
+-rw-r--r-- 1 Sasha 197121  2816 Dec 13 01:10 main.py
+-rw-r--r-- 1 Sasha 197121  4338 Dec 13 01:10 main_parser.py
+-rw-r--r-- 1 Sasha 197121 10817 Dec 13 01:10 parser.py
+-rw-r--r-- 1 Sasha 197121  1968 Dec 13 01:10 progress_bars.py
+-rw-r--r-- 1 Sasha 197121 18328 Dec 13 01:10 req_command.py
+-rw-r--r-- 1 Sasha 197121  5118 Dec 13 01:10 spinners.py
+-rw-r--r-- 1 Sasha 197121   116 Dec 13 01:10 status_codes.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/cli/__pycache__:
+total 134
+-rw-r--r-- 1 Sasha 197121   293 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 10083 Dec 13 01:10 autocompletion.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 11538 Dec 13 01:10 base_command.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 33754 Dec 13 01:10 cmdoptions.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2115 Dec 13 01:10 command_context.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2585 Dec 13 01:10 main.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  5529 Dec 13 01:10 main_parser.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 17030 Dec 13 01:10 parser.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3177 Dec 13 01:10 progress_bars.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 20276 Dec 13 01:10 req_command.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  8842 Dec 13 01:10 spinners.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   381 Dec 13 01:10 status_codes.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/commands:
+total 156
+-rw-r--r-- 1 Sasha 197121  3882 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  7581 Dec 13 01:10 cache.py
+-rw-r--r-- 1 Sasha 197121  1684 Dec 13 01:10 check.py
+-rw-r--r-- 1 Sasha 197121  4129 Dec 13 01:10 completion.py
+-rw-r--r-- 1 Sasha 197121  9815 Dec 13 01:10 configuration.py
+-rw-r--r-- 1 Sasha 197121  6591 Dec 13 01:10 debug.py
+-rw-r--r-- 1 Sasha 197121  5182 Dec 13 01:10 download.py
+-rw-r--r-- 1 Sasha 197121  2951 Dec 13 01:10 freeze.py
+-rw-r--r-- 1 Sasha 197121  1703 Dec 13 01:10 hash.py
+-rw-r--r-- 1 Sasha 197121  1132 Dec 13 01:10 help.py
+-rw-r--r-- 1 Sasha 197121  4793 Dec 13 01:10 index.py
+-rw-r--r-- 1 Sasha 197121  3188 Dec 13 01:10 inspect.py
+-rw-r--r-- 1 Sasha 197121 28722 Dec 13 01:10 install.py
+-rw-r--r-- 1 Sasha 197121 12343 Dec 13 01:10 list.py
+-rw-r--r-- 1 Sasha 197121  5697 Dec 13 01:10 search.py
+-rw-r--r-- 1 Sasha 197121  6419 Dec 13 01:10 show.py
+-rw-r--r-- 1 Sasha 197121  3886 Dec 13 01:10 uninstall.py
+-rw-r--r-- 1 Sasha 197121  6324 Dec 13 01:10 wheel.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/commands/__pycache__:
+total 196
+-rw-r--r-- 1 Sasha 197121  4461 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 10560 Dec 13 01:10 cache.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2311 Dec 13 01:10 check.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  5473 Dec 13 01:10 completion.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 14902 Dec 13 01:10 configuration.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 12010 Dec 13 01:10 debug.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7698 Dec 13 01:10 download.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4147 Dec 13 01:10 freeze.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3363 Dec 13 01:10 hash.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1975 Dec 13 01:10 help.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7798 Dec 13 01:10 index.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4451 Dec 13 01:10 inspect.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 31115 Dec 13 01:10 install.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 17155 Dec 13 01:10 list.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  8957 Dec 13 01:10 search.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 11300 Dec 13 01:10 show.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  5151 Dec 13 01:10 uninstall.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  9155 Dec 13 01:10 wheel.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/distributions:
+total 28
+-rw-r--r-- 1 Sasha 197121  858 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121    0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 1221 Dec 13 01:10 base.py
+-rw-r--r-- 1 Sasha 197121  729 Dec 13 01:10 installed.py
+-rw-r--r-- 1 Sasha 197121 6494 Dec 13 01:10 sdist.py
+-rw-r--r-- 1 Sasha 197121 1164 Dec 13 01:10 wheel.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/distributions/__pycache__:
+total 28
+-rw-r--r-- 1 Sasha 197121 1043 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 2415 Dec 13 01:10 base.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 1552 Dec 13 01:10 installed.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 8954 Dec 13 01:10 sdist.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 2146 Dec 13 01:10 wheel.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/index:
+total 69
+-rw-r--r-- 1 Sasha 197121    30 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 16504 Dec 13 01:10 collector.py
+-rw-r--r-- 1 Sasha 197121 37873 Dec 13 01:10 package_finder.py
+-rw-r--r-- 1 Sasha 197121  6556 Dec 13 01:10 sources.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/index/__pycache__:
+total 81
+-rw-r--r-- 1 Sasha 197121   247 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 24553 Dec 13 01:10 collector.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 44225 Dec 13 01:10 package_finder.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 11029 Dec 13 01:10 sources.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/locations:
+total 36
+-rw-r--r-- 1 Sasha 197121 15365 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  6100 Dec 13 01:10 _distutils.py
+-rw-r--r-- 1 Sasha 197121  7680 Dec 13 01:10 _sysconfig.py
+-rw-r--r-- 1 Sasha 197121  2556 Dec 13 01:10 base.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/locations/__pycache__:
+total 44
+-rw-r--r-- 1 Sasha 197121 18185 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7594 Dec 13 01:10 _distutils.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  8889 Dec 13 01:10 _sysconfig.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4010 Dec 13 01:10 base.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/metadata:
+total 52
+-rw-r--r-- 1 Sasha 197121  4280 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  2595 Dec 13 01:10 _json.py
+-rw-r--r-- 1 Sasha 197121 25277 Dec 13 01:10 base.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 importlib/
+-rw-r--r-- 1 Sasha 197121  9773 Dec 13 01:10 pkg_resources.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/metadata/__pycache__:
+total 72
+-rw-r--r-- 1 Sasha 197121  6418 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3572 Dec 13 01:10 _json.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 38017 Dec 13 01:10 base.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 16865 Dec 13 01:10 pkg_resources.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/metadata/importlib:
+total 21
+-rw-r--r-- 1 Sasha 197121  107 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121    0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 1882 Dec 13 01:10 _compat.py
+-rw-r--r-- 1 Sasha 197121 8181 Dec 13 01:10 _dists.py
+-rw-r--r-- 1 Sasha 197121 7457 Dec 13 01:10 _envs.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/metadata/importlib/__pycache__:
+total 37
+-rw-r--r-- 1 Sasha 197121   364 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3571 Dec 13 01:10 _compat.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 14587 Dec 13 01:10 _dists.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 12425 Dec 13 01:10 _envs.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/models:
+total 73
+-rw-r--r-- 1 Sasha 197121    63 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121   990 Dec 13 01:10 candidate.py
+-rw-r--r-- 1 Sasha 197121  6931 Dec 13 01:10 direct_url.py
+-rw-r--r-- 1 Sasha 197121  2520 Dec 13 01:10 format_control.py
+-rw-r--r-- 1 Sasha 197121  1030 Dec 13 01:10 index.py
+-rw-r--r-- 1 Sasha 197121  2619 Dec 13 01:10 installation_report.py
+-rw-r--r-- 1 Sasha 197121 18817 Dec 13 01:10 link.py
+-rw-r--r-- 1 Sasha 197121   738 Dec 13 01:10 scheme.py
+-rw-r--r-- 1 Sasha 197121  4643 Dec 13 01:10 search_scope.py
+-rw-r--r-- 1 Sasha 197121  1907 Dec 13 01:10 selection_prefs.py
+-rw-r--r-- 1 Sasha 197121  3858 Dec 13 01:10 target_python.py
+-rw-r--r-- 1 Sasha 197121  3600 Dec 13 01:10 wheel.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/models/__pycache__:
+total 97
+-rw-r--r-- 1 Sasha 197121   281 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2100 Dec 13 01:10 candidate.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 12808 Dec 13 01:10 direct_url.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4664 Dec 13 01:10 format_control.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1906 Dec 13 01:10 index.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2620 Dec 13 01:10 installation_report.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 26875 Dec 13 01:10 link.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1272 Dec 13 01:10 scheme.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  5835 Dec 13 01:10 search_scope.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2003 Dec 13 01:10 selection_prefs.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4765 Dec 13 01:10 target_python.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6428 Dec 13 01:10 wheel.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/network:
+total 73
+-rw-r--r-- 1 Sasha 197121    50 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 20435 Dec 13 01:10 auth.py
+-rw-r--r-- 1 Sasha 197121  2145 Dec 13 01:10 cache.py
+-rw-r--r-- 1 Sasha 197121  6096 Dec 13 01:10 download.py
+-rw-r--r-- 1 Sasha 197121  7638 Dec 13 01:10 lazy_wheel.py
+-rw-r--r-- 1 Sasha 197121 18442 Dec 13 01:10 session.py
+-rw-r--r-- 1 Sasha 197121  4073 Dec 13 01:10 utils.py
+-rw-r--r-- 1 Sasha 197121  1791 Dec 13 01:10 xmlrpc.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/network/__pycache__:
+total 93
+-rw-r--r-- 1 Sasha 197121   269 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 23990 Dec 13 01:10 auth.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  5192 Dec 13 01:10 cache.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  9584 Dec 13 01:10 download.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 13030 Dec 13 01:10 lazy_wheel.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 21297 Dec 13 01:10 session.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2418 Dec 13 01:10 utils.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3197 Dec 13 01:10 xmlrpc.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/operations:
+total 52
+-rw-r--r-- 1 Sasha 197121     0 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 build/
+-rw-r--r-- 1 Sasha 197121  5122 Dec 13 01:10 check.py
+-rw-r--r-- 1 Sasha 197121  9816 Dec 13 01:10 freeze.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 install/
+-rw-r--r-- 1 Sasha 197121 27696 Dec 13 01:10 prepare.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/operations/__pycache__:
+total 49
+-rw-r--r-- 1 Sasha 197121   207 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6640 Dec 13 01:10 check.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 11603 Dec 13 01:10 freeze.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 27541 Dec 13 01:10 prepare.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/operations/build:
+total 36
+-rw-r--r-- 1 Sasha 197121    0 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121    0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 4133 Dec 13 01:10 build_tracker.py
+-rw-r--r-- 1 Sasha 197121 1422 Dec 13 01:10 metadata.py
+-rw-r--r-- 1 Sasha 197121 1474 Dec 13 01:10 metadata_editable.py
+-rw-r--r-- 1 Sasha 197121 2198 Dec 13 01:10 metadata_legacy.py
+-rw-r--r-- 1 Sasha 197121 1075 Dec 13 01:10 wheel.py
+-rw-r--r-- 1 Sasha 197121 1417 Dec 13 01:10 wheel_editable.py
+-rw-r--r-- 1 Sasha 197121 3064 Dec 13 01:10 wheel_legacy.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/operations/build/__pycache__:
+total 37
+-rw-r--r-- 1 Sasha 197121  213 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 8136 Dec 13 01:10 build_tracker.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 2284 Dec 13 01:10 metadata.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 2320 Dec 13 01:10 metadata_editable.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 3720 Dec 13 01:10 metadata_legacy.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 1950 Dec 13 01:10 wheel.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 2394 Dec 13 01:10 wheel_editable.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 4501 Dec 13 01:10 wheel_legacy.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/operations/install:
+total 33
+-rw-r--r-- 1 Sasha 197121    51 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  1282 Dec 13 01:10 editable_legacy.py
+-rw-r--r-- 1 Sasha 197121 27475 Dec 13 01:10 wheel.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/operations/install/__pycache__:
+total 45
+-rw-r--r-- 1 Sasha 197121   281 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2194 Dec 13 01:10 editable_legacy.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 40247 Dec 13 01:10 wheel.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/req:
+total 116
+-rw-r--r-- 1 Sasha 197121  2738 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 16610 Dec 13 01:10 constructors.py
+-rw-r--r-- 1 Sasha 197121 17872 Dec 13 01:10 req_file.py
+-rw-r--r-- 1 Sasha 197121 32782 Dec 13 01:10 req_install.py
+-rw-r--r-- 1 Sasha 197121  2858 Dec 13 01:10 req_set.py
+-rw-r--r-- 1 Sasha 197121 24678 Dec 13 01:10 req_uninstall.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/req/__pycache__:
+total 144
+-rw-r--r-- 1 Sasha 197121  4395 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 20707 Dec 13 01:10 constructors.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 22752 Dec 13 01:10 req_file.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 37811 Dec 13 01:10 req_install.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6009 Dec 13 01:10 req_set.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 37489 Dec 13 01:10 req_uninstall.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/resolution:
+total 5
+-rw-r--r-- 1 Sasha 197121   0 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121   0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 583 Dec 13 01:10 base.py
+drwxr-xr-x 1 Sasha 197121   0 Dec 13 01:10 legacy/
+drwxr-xr-x 1 Sasha 197121   0 Dec 13 01:10 resolvelib/
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/resolution/__pycache__:
+total 5
+-rw-r--r-- 1 Sasha 197121  207 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 1378 Dec 13 01:10 base.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/resolution/legacy:
+total 24
+-rw-r--r-- 1 Sasha 197121     0 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 24128 Dec 13 01:10 resolver.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/resolution/legacy/__pycache__:
+total 25
+-rw-r--r-- 1 Sasha 197121   214 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 23804 Dec 13 01:10 resolver.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/resolution/resolvelib:
+total 104
+-rw-r--r-- 1 Sasha 197121     0 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  5220 Dec 13 01:10 base.py
+-rw-r--r-- 1 Sasha 197121 18864 Dec 13 01:10 candidates.py
+-rw-r--r-- 1 Sasha 197121 27845 Dec 13 01:10 factory.py
+-rw-r--r-- 1 Sasha 197121  5705 Dec 13 01:10 found_candidates.py
+-rw-r--r-- 1 Sasha 197121  9824 Dec 13 01:10 provider.py
+-rw-r--r-- 1 Sasha 197121  3094 Dec 13 01:10 reporter.py
+-rw-r--r-- 1 Sasha 197121  5454 Dec 13 01:10 requirements.py
+-rw-r--r-- 1 Sasha 197121 11538 Dec 13 01:10 resolver.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/resolution/resolvelib/__pycache__:
+total 133
+-rw-r--r-- 1 Sasha 197121   218 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  9631 Dec 13 01:10 base.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 28748 Dec 13 01:10 candidates.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 31930 Dec 13 01:10 factory.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6766 Dec 13 01:10 found_candidates.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 11457 Dec 13 01:10 provider.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  5296 Dec 13 01:10 reporter.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 11128 Dec 13 01:10 requirements.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 12318 Dec 13 01:10 resolver.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/utils:
+total 174
+-rw-r--r-- 1 Sasha 197121     0 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  3351 Dec 13 01:10 _jaraco_text.py
+-rw-r--r-- 1 Sasha 197121  1015 Dec 13 01:10 _log.py
+-rw-r--r-- 1 Sasha 197121  1665 Dec 13 01:10 appdirs.py
+-rw-r--r-- 1 Sasha 197121  1884 Dec 13 01:10 compat.py
+-rw-r--r-- 1 Sasha 197121  5377 Dec 13 01:10 compatibility_tags.py
+-rw-r--r-- 1 Sasha 197121   242 Dec 13 01:10 datetime.py
+-rw-r--r-- 1 Sasha 197121  3627 Dec 13 01:10 deprecation.py
+-rw-r--r-- 1 Sasha 197121  3206 Dec 13 01:10 direct_url_helpers.py
+-rw-r--r-- 1 Sasha 197121  2118 Dec 13 01:10 egg_link.py
+-rw-r--r-- 1 Sasha 197121  1169 Dec 13 01:10 encoding.py
+-rw-r--r-- 1 Sasha 197121  3064 Dec 13 01:10 entrypoints.py
+-rw-r--r-- 1 Sasha 197121  5122 Dec 13 01:10 filesystem.py
+-rw-r--r-- 1 Sasha 197121   716 Dec 13 01:10 filetypes.py
+-rw-r--r-- 1 Sasha 197121  3110 Dec 13 01:10 glibc.py
+-rw-r--r-- 1 Sasha 197121  5118 Dec 13 01:10 hashes.py
+-rw-r--r-- 1 Sasha 197121   795 Dec 13 01:10 inject_securetransport.py
+-rw-r--r-- 1 Sasha 197121 11632 Dec 13 01:10 logging.py
+-rw-r--r-- 1 Sasha 197121 22216 Dec 13 01:10 misc.py
+-rw-r--r-- 1 Sasha 197121  1193 Dec 13 01:10 models.py
+-rw-r--r-- 1 Sasha 197121  2108 Dec 13 01:10 packaging.py
+-rw-r--r-- 1 Sasha 197121  4435 Dec 13 01:10 setuptools_build.py
+-rw-r--r-- 1 Sasha 197121  9200 Dec 13 01:10 subprocess.py
+-rw-r--r-- 1 Sasha 197121  7702 Dec 13 01:10 temp_dir.py
+-rw-r--r-- 1 Sasha 197121  8821 Dec 13 01:10 unpacking.py
+-rw-r--r-- 1 Sasha 197121  1759 Dec 13 01:10 urls.py
+-rw-r--r-- 1 Sasha 197121  3456 Dec 13 01:10 virtualenv.py
+-rw-r--r-- 1 Sasha 197121  4549 Dec 13 01:10 wheel.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/utils/__pycache__:
+total 225
+-rw-r--r-- 1 Sasha 197121   202 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4766 Dec 13 01:10 _jaraco_text.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2023 Dec 13 01:10 _log.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2561 Dec 13 01:10 appdirs.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2269 Dec 13 01:10 compat.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6761 Dec 13 01:10 compatibility_tags.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   719 Dec 13 01:10 datetime.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4688 Dec 13 01:10 deprecation.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3725 Dec 13 01:10 direct_url_helpers.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3240 Dec 13 01:10 egg_link.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2325 Dec 13 01:10 encoding.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4247 Dec 13 01:10 entrypoints.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  8232 Dec 13 01:10 filesystem.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1318 Dec 13 01:10 filetypes.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2561 Dec 13 01:10 glibc.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  8773 Dec 13 01:10 hashes.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1336 Dec 13 01:10 inject_securetransport.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 15461 Dec 13 01:10 logging.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 36785 Dec 13 01:10 misc.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2942 Dec 13 01:10 models.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2809 Dec 13 01:10 packaging.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4874 Dec 13 01:10 setuptools_build.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  9896 Dec 13 01:10 subprocess.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 11423 Dec 13 01:10 temp_dir.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 12898 Dec 13 01:10 unpacking.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2695 Dec 13 01:10 urls.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4942 Dec 13 01:10 virtualenv.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7112 Dec 13 01:10 wheel.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/vcs:
+total 73
+-rw-r--r-- 1 Sasha 197121   596 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  3519 Dec 13 01:10 bazaar.py
+-rw-r--r-- 1 Sasha 197121 18116 Dec 13 01:10 git.py
+-rw-r--r-- 1 Sasha 197121  5238 Dec 13 01:10 mercurial.py
+-rw-r--r-- 1 Sasha 197121 11729 Dec 13 01:10 subversion.py
+-rw-r--r-- 1 Sasha 197121 22811 Dec 13 01:10 versioncontrol.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_internal/vcs/__pycache__:
+total 93
+-rw-r--r-- 1 Sasha 197121   637 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  5862 Dec 13 01:10 bazaar.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 21526 Dec 13 01:10 git.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  8708 Dec 13 01:10 mercurial.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 14605 Dec 13 01:10 subversion.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 31874 Dec 13 01:10 versioncontrol.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor:
+total 201
+-rw-r--r-- 1 Sasha 197121  4966 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 cachecontrol/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 certifi/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 chardet/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 colorama/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 distlib/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 distro/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 idna/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 msgpack/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 packaging/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 pkg_resources/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 platformdirs/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 pygments/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 pyparsing/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 pyproject_hooks/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 requests/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 resolvelib/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 rich/
+-rw-r--r-- 1 Sasha 197121 34549 Dec 13 01:10 six.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 tenacity/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 tomli/
+-rw-r--r-- 1 Sasha 197121 84101 Dec 13 01:10 typing_extensions.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 urllib3/
+-rw-r--r-- 1 Sasha 197121   476 Dec 13 01:10 vendor.txt
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 webencodings/
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/__pycache__:
+total 156
+-rw-r--r-- 1 Sasha 197121   5615 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  46417 Dec 13 01:10 six.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 101844 Dec 13 01:10 typing_extensions.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/cachecontrol:
+total 69
+-rw-r--r-- 1 Sasha 197121   465 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  1379 Dec 13 01:10 _cmd.py
+-rw-r--r-- 1 Sasha 197121  5033 Dec 13 01:10 adapter.py
+-rw-r--r-- 1 Sasha 197121  1535 Dec 13 01:10 cache.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 caches/
+-rw-r--r-- 1 Sasha 197121   778 Dec 13 01:10 compat.py
+-rw-r--r-- 1 Sasha 197121 16416 Dec 13 01:10 controller.py
+-rw-r--r-- 1 Sasha 197121  3946 Dec 13 01:10 filewrapper.py
+-rw-r--r-- 1 Sasha 197121  4154 Dec 13 01:10 heuristics.py
+-rw-r--r-- 1 Sasha 197121  7105 Dec 13 01:10 serialize.py
+-rw-r--r-- 1 Sasha 197121   774 Dec 13 01:10 wrapper.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/cachecontrol/__pycache__:
+total 76
+-rw-r--r-- 1 Sasha 197121   844 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2699 Dec 13 01:10 _cmd.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  5506 Dec 13 01:10 adapter.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3780 Dec 13 01:10 cache.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1137 Dec 13 01:10 compat.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 16452 Dec 13 01:10 controller.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4239 Dec 13 01:10 filewrapper.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6684 Dec 13 01:10 heuristics.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  8399 Dec 13 01:10 serialize.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   965 Dec 13 01:10 wrapper.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/cachecontrol/caches:
+total 13
+-rw-r--r-- 1 Sasha 197121  242 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121    0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 5271 Dec 13 01:10 file_cache.py
+-rw-r--r-- 1 Sasha 197121 1033 Dec 13 01:10 redis_cache.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/cachecontrol/caches/__pycache__:
+total 17
+-rw-r--r-- 1 Sasha 197121  419 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 8402 Dec 13 01:10 file_cache.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 2499 Dec 13 01:10 redis_cache.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/certifi:
+total 282
+-rw-r--r-- 1 Sasha 197121     94 Dec 13 01:10 __init__.py
+-rw-r--r-- 1 Sasha 197121    255 Dec 13 01:10 __main__.py
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 275233 Dec 13 01:10 cacert.pem
+-rw-r--r-- 1 Sasha 197121   4279 Dec 13 01:10 core.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/certifi/__pycache__:
+total 9
+-rw-r--r-- 1 Sasha 197121  344 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  745 Dec 13 01:10 __main__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 3367 Dec 13 01:10 core.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/chardet:
+total 1163
+-rw-r--r-- 1 Sasha 197121   4797 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  31274 Dec 13 01:10 big5freq.py
+-rw-r--r-- 1 Sasha 197121   1763 Dec 13 01:10 big5prober.py
+-rw-r--r-- 1 Sasha 197121  10032 Dec 13 01:10 chardistribution.py
+-rw-r--r-- 1 Sasha 197121   3915 Dec 13 01:10 charsetgroupprober.py
+-rw-r--r-- 1 Sasha 197121   5420 Dec 13 01:10 charsetprober.py
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 cli/
+-rw-r--r-- 1 Sasha 197121   3732 Dec 13 01:10 codingstatemachine.py
+-rw-r--r-- 1 Sasha 197121    542 Dec 13 01:10 codingstatemachinedict.py
+-rw-r--r-- 1 Sasha 197121   1860 Dec 13 01:10 cp949prober.py
+-rw-r--r-- 1 Sasha 197121   1683 Dec 13 01:10 enums.py
+-rw-r--r-- 1 Sasha 197121   4006 Dec 13 01:10 escprober.py
+-rw-r--r-- 1 Sasha 197121  12176 Dec 13 01:10 escsm.py
+-rw-r--r-- 1 Sasha 197121   3934 Dec 13 01:10 eucjpprober.py
+-rw-r--r-- 1 Sasha 197121  13566 Dec 13 01:10 euckrfreq.py
+-rw-r--r-- 1 Sasha 197121   1753 Dec 13 01:10 euckrprober.py
+-rw-r--r-- 1 Sasha 197121  36913 Dec 13 01:10 euctwfreq.py
+-rw-r--r-- 1 Sasha 197121   1753 Dec 13 01:10 euctwprober.py
+-rw-r--r-- 1 Sasha 197121  20735 Dec 13 01:10 gb2312freq.py
+-rw-r--r-- 1 Sasha 197121   1759 Dec 13 01:10 gb2312prober.py
+-rw-r--r-- 1 Sasha 197121  14537 Dec 13 01:10 hebrewprober.py
+-rw-r--r-- 1 Sasha 197121  25796 Dec 13 01:10 jisfreq.py
+-rw-r--r-- 1 Sasha 197121  42498 Dec 13 01:10 johabfreq.py
+-rw-r--r-- 1 Sasha 197121   1752 Dec 13 01:10 johabprober.py
+-rw-r--r-- 1 Sasha 197121  27055 Dec 13 01:10 jpcntx.py
+-rw-r--r-- 1 Sasha 197121 104562 Dec 13 01:10 langbulgarianmodel.py
+-rw-r--r-- 1 Sasha 197121  98484 Dec 13 01:10 langgreekmodel.py
+-rw-r--r-- 1 Sasha 197121  98196 Dec 13 01:10 langhebrewmodel.py
+-rw-r--r-- 1 Sasha 197121 101363 Dec 13 01:10 langhungarianmodel.py
+-rw-r--r-- 1 Sasha 197121 128035 Dec 13 01:10 langrussianmodel.py
+-rw-r--r-- 1 Sasha 197121 102774 Dec 13 01:10 langthaimodel.py
+-rw-r--r-- 1 Sasha 197121  95372 Dec 13 01:10 langturkishmodel.py
+-rw-r--r-- 1 Sasha 197121   5380 Dec 13 01:10 latin1prober.py
+-rw-r--r-- 1 Sasha 197121   6077 Dec 13 01:10 macromanprober.py
+-rw-r--r-- 1 Sasha 197121   3715 Dec 13 01:10 mbcharsetprober.py
+-rw-r--r-- 1 Sasha 197121   2131 Dec 13 01:10 mbcsgroupprober.py
+-rw-r--r-- 1 Sasha 197121  30391 Dec 13 01:10 mbcssm.py
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 metadata/
+-rw-r--r-- 1 Sasha 197121    402 Dec 13 01:10 resultdict.py
+-rw-r--r-- 1 Sasha 197121   6400 Dec 13 01:10 sbcharsetprober.py
+-rw-r--r-- 1 Sasha 197121   4137 Dec 13 01:10 sbcsgroupprober.py
+-rw-r--r-- 1 Sasha 197121   4007 Dec 13 01:10 sjisprober.py
+-rw-r--r-- 1 Sasha 197121  14848 Dec 13 01:10 universaldetector.py
+-rw-r--r-- 1 Sasha 197121   8505 Dec 13 01:10 utf1632prober.py
+-rw-r--r-- 1 Sasha 197121   2812 Dec 13 01:10 utf8prober.py
+-rw-r--r-- 1 Sasha 197121    244 Dec 13 01:10 version.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/chardet/__pycache__:
+total 1061
+-rw-r--r-- 1 Sasha 197121   5076 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  27206 Dec 13 01:10 big5freq.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   1681 Dec 13 01:10 big5prober.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  11273 Dec 13 01:10 chardistribution.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   4303 Dec 13 01:10 charsetgroupprober.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   5549 Dec 13 01:10 charsetprober.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   4000 Dec 13 01:10 codingstatemachine.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121    956 Dec 13 01:10 codingstatemachinedict.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   1690 Dec 13 01:10 cp949prober.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   3391 Dec 13 01:10 enums.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   4907 Dec 13 01:10 escprober.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  12646 Dec 13 01:10 escsm.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   4733 Dec 13 01:10 eucjpprober.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  12089 Dec 13 01:10 euckrfreq.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   1682 Dec 13 01:10 euckrprober.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  27211 Dec 13 01:10 euctwfreq.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   1682 Dec 13 01:10 euctwprober.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  19133 Dec 13 01:10 gb2312freq.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   1697 Dec 13 01:10 gb2312prober.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   5686 Dec 13 01:10 hebrewprober.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  22162 Dec 13 01:10 jisfreq.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  84666 Dec 13 01:10 johabfreq.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   1688 Dec 13 01:10 johabprober.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  40170 Dec 13 01:10 jpcntx.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  85840 Dec 13 01:10 langbulgarianmodel.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  79262 Dec 13 01:10 langgreekmodel.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  80024 Dec 13 01:10 langhebrewmodel.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  85794 Dec 13 01:10 langhungarianmodel.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 108741 Dec 13 01:10 langrussianmodel.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  80202 Dec 13 01:10 langthaimodel.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  80041 Dec 13 01:10 langturkishmodel.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   7337 Dec 13 01:10 latin1prober.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   7504 Dec 13 01:10 macromanprober.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   4125 Dec 13 01:10 mbcharsetprober.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   1995 Dec 13 01:10 mbcsgroupprober.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  31735 Dec 13 01:10 mbcssm.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121    774 Dec 13 01:10 resultdict.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   6400 Dec 13 01:10 sbcharsetprober.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   2945 Dec 13 01:10 sbcsgroupprober.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   4838 Dec 13 01:10 sjisprober.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  12466 Dec 13 01:10 universaldetector.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  10586 Dec 13 01:10 utf1632prober.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   3473 Dec 13 01:10 utf8prober.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121    509 Dec 13 01:10 version.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/chardet/cli:
+total 4
+-rw-r--r-- 1 Sasha 197121    0 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121    0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 3242 Dec 13 01:10 chardetect.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/chardet/cli/__pycache__:
+total 9
+-rw-r--r-- 1 Sasha 197121  206 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 4345 Dec 13 01:10 chardetect.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/chardet/metadata:
+total 16
+-rw-r--r-- 1 Sasha 197121     0 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 13560 Dec 13 01:10 languages.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/chardet/metadata/__pycache__:
+total 13
+-rw-r--r-- 1 Sasha 197121   211 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 10811 Dec 13 01:10 languages.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/colorama:
+total 45
+-rw-r--r-- 1 Sasha 197121   266 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  2522 Dec 13 01:10 ansi.py
+-rw-r--r-- 1 Sasha 197121 11128 Dec 13 01:10 ansitowin32.py
+-rw-r--r-- 1 Sasha 197121  3325 Dec 13 01:10 initialise.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 tests/
+-rw-r--r-- 1 Sasha 197121  6181 Dec 13 01:10 win32.py
+-rw-r--r-- 1 Sasha 197121  7134 Dec 13 01:10 winterm.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/colorama/__pycache__:
+total 49
+-rw-r--r-- 1 Sasha 197121   578 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4576 Dec 13 01:10 ansi.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 16222 Dec 13 01:10 ansitowin32.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3939 Dec 13 01:10 initialise.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7927 Dec 13 01:10 win32.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  9153 Dec 13 01:10 winterm.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/colorama/tests:
+total 41
+-rw-r--r-- 1 Sasha 197121    75 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  2839 Dec 13 01:10 ansi_test.py
+-rw-r--r-- 1 Sasha 197121 10678 Dec 13 01:10 ansitowin32_test.py
+-rw-r--r-- 1 Sasha 197121  6741 Dec 13 01:10 initialise_test.py
+-rw-r--r-- 1 Sasha 197121  1866 Dec 13 01:10 isatty_test.py
+-rw-r--r-- 1 Sasha 197121  1079 Dec 13 01:10 utils.py
+-rw-r--r-- 1 Sasha 197121  3709 Dec 13 01:10 winterm_test.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/colorama/tests/__pycache__:
+total 69
+-rw-r--r-- 1 Sasha 197121   209 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  5854 Dec 13 01:10 ansi_test.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 21521 Dec 13 01:10 ansitowin32_test.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 14148 Dec 13 01:10 initialise_test.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6713 Dec 13 01:10 isatty_test.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2888 Dec 13 01:10 utils.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7241 Dec 13 01:10 winterm_test.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/distlib:
+total 1153
+-rw-r--r-- 1 Sasha 197121    581 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  41259 Dec 13 01:10 compat.py
+-rw-r--r-- 1 Sasha 197121  51697 Dec 13 01:10 database.py
+-rw-r--r-- 1 Sasha 197121  20834 Dec 13 01:10 index.py
+-rw-r--r-- 1 Sasha 197121  51991 Dec 13 01:10 locators.py
+-rw-r--r-- 1 Sasha 197121  14811 Dec 13 01:10 manifest.py
+-rw-r--r-- 1 Sasha 197121   5058 Dec 13 01:10 markers.py
+-rw-r--r-- 1 Sasha 197121  39801 Dec 13 01:10 metadata.py
+-rw-r--r-- 1 Sasha 197121  10820 Dec 13 01:10 resources.py
+-rw-r--r-- 1 Sasha 197121  18102 Dec 13 01:10 scripts.py
+-rwxr-xr-x 1 Sasha 197121  97792 Dec 13 01:10 t32.exe*
+-rwxr-xr-x 1 Sasha 197121 182784 Dec 13 01:10 t64-arm.exe*
+-rwxr-xr-x 1 Sasha 197121 108032 Dec 13 01:10 t64.exe*
+-rw-r--r-- 1 Sasha 197121  66262 Dec 13 01:10 util.py
+-rw-r--r-- 1 Sasha 197121  23513 Dec 13 01:10 version.py
+-rwxr-xr-x 1 Sasha 197121  91648 Dec 13 01:10 w32.exe*
+-rwxr-xr-x 1 Sasha 197121 168448 Dec 13 01:10 w64-arm.exe*
+-rwxr-xr-x 1 Sasha 197121 101888 Dec 13 01:10 w64.exe*
+-rw-r--r-- 1 Sasha 197121  43898 Dec 13 01:10 wheel.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/distlib/__pycache__:
+total 536
+-rw-r--r-- 1 Sasha 197121  1447 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 52313 Dec 13 01:10 compat.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 72101 Dec 13 01:10 database.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 26690 Dec 13 01:10 index.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 65866 Dec 13 01:10 locators.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 17033 Dec 13 01:10 manifest.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  8169 Dec 13 01:10 markers.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 47117 Dec 13 01:10 metadata.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 18996 Dec 13 01:10 resources.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 21272 Dec 13 01:10 scripts.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 97451 Dec 13 01:10 util.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 34578 Dec 13 01:10 version.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 60382 Dec 13 01:10 wheel.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/distro:
+total 57
+-rw-r--r-- 1 Sasha 197121   981 Dec 13 01:10 __init__.py
+-rw-r--r-- 1 Sasha 197121    64 Dec 13 01:10 __main__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rwxr-xr-x 1 Sasha 197121 49330 Dec 13 01:10 distro.py*
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/distro/__pycache__:
+total 65
+-rw-r--r-- 1 Sasha 197121  1200 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   334 Dec 13 01:10 __main__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 57733 Dec 13 01:10 distro.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/idna:
+total 282
+-rw-r--r-- 1 Sasha 197121    849 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121   3374 Dec 13 01:10 codec.py
+-rw-r--r-- 1 Sasha 197121    321 Dec 13 01:10 compat.py
+-rw-r--r-- 1 Sasha 197121  12950 Dec 13 01:10 core.py
+-rw-r--r-- 1 Sasha 197121  44375 Dec 13 01:10 idnadata.py
+-rw-r--r-- 1 Sasha 197121   1881 Dec 13 01:10 intranges.py
+-rw-r--r-- 1 Sasha 197121     21 Dec 13 01:10 package_data.py
+-rw-r--r-- 1 Sasha 197121 206539 Dec 13 01:10 uts46data.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/idna/__pycache__:
+total 241
+-rw-r--r-- 1 Sasha 197121   1101 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   5392 Dec 13 01:10 codec.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   1018 Dec 13 01:10 compat.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  19453 Dec 13 01:10 core.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  38977 Dec 13 01:10 idnadata.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   2986 Dec 13 01:10 intranges.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121    221 Dec 13 01:10 package_data.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 163201 Dec 13 01:10 uts46data.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/msgpack:
+total 52
+-rw-r--r-- 1 Sasha 197121  1132 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  1081 Dec 13 01:10 exceptions.py
+-rw-r--r-- 1 Sasha 197121  6079 Dec 13 01:10 ext.py
+-rw-r--r-- 1 Sasha 197121 34544 Dec 13 01:10 fallback.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/msgpack/__pycache__:
+total 68
+-rw-r--r-- 1 Sasha 197121  2080 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2381 Dec 13 01:10 exceptions.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  9166 Dec 13 01:10 ext.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 47154 Dec 13 01:10 fallback.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/packaging:
+total 122
+-rw-r--r-- 1 Sasha 197121   661 Dec 13 01:10 __about__.py
+-rw-r--r-- 1 Sasha 197121   497 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 11488 Dec 13 01:10 _manylinux.py
+-rw-r--r-- 1 Sasha 197121  4378 Dec 13 01:10 _musllinux.py
+-rw-r--r-- 1 Sasha 197121  1431 Dec 13 01:10 _structures.py
+-rw-r--r-- 1 Sasha 197121  8487 Dec 13 01:10 markers.py
+-rw-r--r-- 1 Sasha 197121  4676 Dec 13 01:10 requirements.py
+-rw-r--r-- 1 Sasha 197121 30110 Dec 13 01:10 specifiers.py
+-rw-r--r-- 1 Sasha 197121 15699 Dec 13 01:10 tags.py
+-rw-r--r-- 1 Sasha 197121  4200 Dec 13 01:10 utils.py
+-rw-r--r-- 1 Sasha 197121 14665 Dec 13 01:10 version.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/packaging/__pycache__:
+total 150
+-rw-r--r-- 1 Sasha 197121   645 Dec 13 01:10 __about__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   566 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 13232 Dec 13 01:10 _manylinux.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  8000 Dec 13 01:10 _musllinux.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3688 Dec 13 01:10 _structures.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 16528 Dec 13 01:10 markers.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7643 Dec 13 01:10 requirements.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 34366 Dec 13 01:10 specifiers.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 21351 Dec 13 01:10 tags.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6686 Dec 13 01:10 utils.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 21878 Dec 13 01:10 version.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/pkg_resources:
+total 108
+-rw-r--r-- 1 Sasha 197121 109388 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 __pycache__/
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/pkg_resources/__pycache__:
+total 160
+-rw-r--r-- 1 Sasha 197121 160192 Dec 13 01:10 __init__.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/platformdirs:
+total 65
+-rw-r--r-- 1 Sasha 197121 18003 Dec 13 01:10 __init__.py
+-rw-r--r-- 1 Sasha 197121  1198 Dec 13 01:10 __main__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  4303 Dec 13 01:10 android.py
+-rw-r--r-- 1 Sasha 197121  5706 Dec 13 01:10 api.py
+-rw-r--r-- 1 Sasha 197121  2800 Dec 13 01:10 macos.py
+-rw-r--r-- 1 Sasha 197121  7448 Dec 13 01:10 unix.py
+-rw-r--r-- 1 Sasha 197121   160 Dec 13 01:10 version.py
+-rw-r--r-- 1 Sasha 197121  7098 Dec 13 01:10 windows.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/platformdirs/__pycache__:
+total 73
+-rw-r--r-- 1 Sasha 197121 15687 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2146 Dec 13 01:10 __main__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6693 Dec 13 01:10 android.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  8302 Dec 13 01:10 api.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4729 Dec 13 01:10 macos.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 11795 Dec 13 01:10 unix.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   316 Dec 13 01:10 version.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 10684 Dec 13 01:10 windows.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/pygments:
+total 197
+-rw-r--r-- 1 Sasha 197121  2999 Dec 13 01:10 __init__.py
+-rw-r--r-- 1 Sasha 197121   353 Dec 13 01:10 __main__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 23685 Dec 13 01:10 cmdline.py
+-rw-r--r-- 1 Sasha 197121  1697 Dec 13 01:10 console.py
+-rw-r--r-- 1 Sasha 197121  1938 Dec 13 01:10 filter.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 filters/
+-rw-r--r-- 1 Sasha 197121  2917 Dec 13 01:10 formatter.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 formatters/
+-rw-r--r-- 1 Sasha 197121 32064 Dec 13 01:10 lexer.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 lexers/
+-rw-r--r-- 1 Sasha 197121   986 Dec 13 01:10 modeline.py
+-rw-r--r-- 1 Sasha 197121  2591 Dec 13 01:10 plugin.py
+-rw-r--r-- 1 Sasha 197121  3072 Dec 13 01:10 regexopt.py
+-rw-r--r-- 1 Sasha 197121  3092 Dec 13 01:10 scanner.py
+-rw-r--r-- 1 Sasha 197121  6882 Dec 13 01:10 sphinxext.py
+-rw-r--r-- 1 Sasha 197121  6257 Dec 13 01:10 style.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 styles/
+-rw-r--r-- 1 Sasha 197121  6184 Dec 13 01:10 token.py
+-rw-r--r-- 1 Sasha 197121 63187 Dec 13 01:10 unistring.py
+-rw-r--r-- 1 Sasha 197121  9110 Dec 13 01:10 util.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/pygments/__pycache__:
+total 200
+-rw-r--r-- 1 Sasha 197121  3848 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   784 Dec 13 01:10 __main__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 30295 Dec 13 01:10 cmdline.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3047 Dec 13 01:10 console.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3508 Dec 13 01:10 filter.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3874 Dec 13 01:10 formatter.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 40506 Dec 13 01:10 lexer.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1727 Dec 13 01:10 modeline.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3740 Dec 13 01:10 plugin.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  5034 Dec 13 01:10 regexopt.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4889 Dec 13 01:10 scanner.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 12834 Dec 13 01:10 sphinxext.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7428 Dec 13 01:10 style.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7468 Dec 13 01:10 token.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 33802 Dec 13 01:10 unistring.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 14595 Dec 13 01:10 util.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/pygments/filters:
+total 40
+-rw-r--r-- 1 Sasha 197121 40386 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/pygments/filters/__pycache__:
+total 40
+-rw-r--r-- 1 Sasha 197121 40108 Dec 13 01:10 __init__.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/pygments/formatters:
+total 168
+-rw-r--r-- 1 Sasha 197121  4800 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  4104 Dec 13 01:10 _mapping.py
+-rw-r--r-- 1 Sasha 197121  3314 Dec 13 01:10 bbcode.py
+-rw-r--r-- 1 Sasha 197121  5086 Dec 13 01:10 groff.py
+-rw-r--r-- 1 Sasha 197121 35601 Dec 13 01:10 html.py
+-rw-r--r-- 1 Sasha 197121 21938 Dec 13 01:10 img.py
+-rw-r--r-- 1 Sasha 197121  4981 Dec 13 01:10 irc.py
+-rw-r--r-- 1 Sasha 197121 19351 Dec 13 01:10 latex.py
+-rw-r--r-- 1 Sasha 197121  5073 Dec 13 01:10 other.py
+-rw-r--r-- 1 Sasha 197121  2212 Dec 13 01:10 pangomarkup.py
+-rw-r--r-- 1 Sasha 197121  5014 Dec 13 01:10 rtf.py
+-rw-r--r-- 1 Sasha 197121  7335 Dec 13 01:10 svg.py
+-rw-r--r-- 1 Sasha 197121  4674 Dec 13 01:10 terminal.py
+-rw-r--r-- 1 Sasha 197121 11753 Dec 13 01:10 terminal256.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/pygments/formatters/__pycache__:
+total 196
+-rw-r--r-- 1 Sasha 197121  6853 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4156 Dec 13 01:10 _mapping.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4482 Dec 13 01:10 bbcode.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7815 Dec 13 01:10 groff.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 42610 Dec 13 01:10 html.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 28572 Dec 13 01:10 img.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6408 Dec 13 01:10 irc.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 21808 Dec 13 01:10 latex.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7636 Dec 13 01:10 other.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3180 Dec 13 01:10 pangomarkup.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6847 Dec 13 01:10 rtf.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  9667 Dec 13 01:10 svg.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6046 Dec 13 01:10 terminal.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 16412 Dec 13 01:10 terminal256.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/pygments/lexers:
+total 140
+-rw-r--r-- 1 Sasha 197121 11164 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 71556 Dec 13 01:10 _mapping.py
+-rw-r--r-- 1 Sasha 197121 53572 Dec 13 01:10 python.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/pygments/lexers/__pycache__:
+total 124
+-rw-r--r-- 1 Sasha 197121 15130 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 64226 Dec 13 01:10 _mapping.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 43997 Dec 13 01:10 python.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/pygments/styles:
+total 4
+-rw-r--r-- 1 Sasha 197121 3419 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121    0 Dec 13 01:10 __pycache__/
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/pygments/styles/__pycache__:
+total 8
+-rw-r--r-- 1 Sasha 197121 4461 Dec 13 01:10 __init__.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/pyparsing:
+total 368
+-rw-r--r-- 1 Sasha 197121   9171 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121   6426 Dec 13 01:10 actions.py
+-rw-r--r-- 1 Sasha 197121  12936 Dec 13 01:10 common.py
+-rw-r--r-- 1 Sasha 197121 213344 Dec 13 01:10 core.py
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 diagram/
+-rw-r--r-- 1 Sasha 197121   9023 Dec 13 01:10 exceptions.py
+-rw-r--r-- 1 Sasha 197121  39129 Dec 13 01:10 helpers.py
+-rw-r--r-- 1 Sasha 197121  25341 Dec 13 01:10 results.py
+-rw-r--r-- 1 Sasha 197121  13402 Dec 13 01:10 testing.py
+-rw-r--r-- 1 Sasha 197121  10787 Dec 13 01:10 unicode.py
+-rw-r--r-- 1 Sasha 197121   6805 Dec 13 01:10 util.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/pyparsing/__pycache__:
+total 472
+-rw-r--r-- 1 Sasha 197121   8351 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   8465 Dec 13 01:10 actions.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  14787 Dec 13 01:10 common.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 277673 Dec 13 01:10 core.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  12929 Dec 13 01:10 exceptions.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  53630 Dec 13 01:10 helpers.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  36313 Dec 13 01:10 results.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  19509 Dec 13 01:10 testing.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  15367 Dec 13 01:10 unicode.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  14266 Dec 13 01:10 util.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/pyparsing/diagram:
+total 24
+-rw-r--r-- 1 Sasha 197121 23685 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/pyparsing/diagram/__pycache__:
+total 28
+-rw-r--r-- 1 Sasha 197121 28032 Dec 13 01:10 __init__.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/pyproject_hooks:
+total 14
+-rw-r--r-- 1 Sasha 197121   491 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121   138 Dec 13 01:10 _compat.py
+-rw-r--r-- 1 Sasha 197121 11920 Dec 13 01:10 _impl.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 _in_process/
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/pyproject_hooks/__pycache__:
+total 25
+-rw-r--r-- 1 Sasha 197121   709 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   407 Dec 13 01:10 _compat.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 16673 Dec 13 01:10 _impl.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/pyproject_hooks/_in_process:
+total 13
+-rw-r--r-- 1 Sasha 197121   546 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 10927 Dec 13 01:10 _in_process.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/pyproject_hooks/_in_process/__pycache__:
+total 24
+-rw-r--r-- 1 Sasha 197121  1169 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 16491 Dec 13 01:10 _in_process.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/requests:
+total 215
+-rw-r--r-- 1 Sasha 197121  5178 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121   435 Dec 13 01:10 __version__.py
+-rw-r--r-- 1 Sasha 197121  1397 Dec 13 01:10 _internal_utils.py
+-rw-r--r-- 1 Sasha 197121 21443 Dec 13 01:10 adapters.py
+-rw-r--r-- 1 Sasha 197121  6377 Dec 13 01:10 api.py
+-rw-r--r-- 1 Sasha 197121 10187 Dec 13 01:10 auth.py
+-rwxr-xr-x 1 Sasha 197121   575 Dec 13 01:10 certs.py*
+-rw-r--r-- 1 Sasha 197121  1286 Dec 13 01:10 compat.py
+-rw-r--r-- 1 Sasha 197121 18560 Dec 13 01:10 cookies.py
+-rw-r--r-- 1 Sasha 197121  3823 Dec 13 01:10 exceptions.py
+-rw-r--r-- 1 Sasha 197121  3879 Dec 13 01:10 help.py
+-rw-r--r-- 1 Sasha 197121   733 Dec 13 01:10 hooks.py
+-rw-r--r-- 1 Sasha 197121 35288 Dec 13 01:10 models.py
+-rw-r--r-- 1 Sasha 197121   695 Dec 13 01:10 packages.py
+-rw-r--r-- 1 Sasha 197121 30180 Dec 13 01:10 sessions.py
+-rw-r--r-- 1 Sasha 197121  4235 Dec 13 01:10 status_codes.py
+-rw-r--r-- 1 Sasha 197121  2912 Dec 13 01:10 structures.py
+-rw-r--r-- 1 Sasha 197121 33240 Dec 13 01:10 utils.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/requests/__pycache__:
+total 257
+-rw-r--r-- 1 Sasha 197121  6453 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   590 Dec 13 01:10 __version__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2087 Dec 13 01:10 _internal_utils.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 24890 Dec 13 01:10 adapters.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7435 Dec 13 01:10 api.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 14634 Dec 13 01:10 auth.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   986 Dec 13 01:10 certs.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1812 Dec 13 01:10 compat.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 27114 Dec 13 01:10 cookies.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  8529 Dec 13 01:10 exceptions.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4524 Dec 13 01:10 help.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1254 Dec 13 01:10 hooks.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 38785 Dec 13 01:10 models.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   834 Dec 13 01:10 packages.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 29623 Dec 13 01:10 sessions.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6241 Dec 13 01:10 status_codes.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6226 Dec 13 01:10 structures.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 40140 Dec 13 01:10 utils.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/resolvelib:
+total 49
+-rw-r--r-- 1 Sasha 197121   537 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 compat/
+-rw-r--r-- 1 Sasha 197121  5871 Dec 13 01:10 providers.py
+-rw-r--r-- 1 Sasha 197121  1601 Dec 13 01:10 reporters.py
+-rw-r--r-- 1 Sasha 197121 20511 Dec 13 01:10 resolvers.py
+-rw-r--r-- 1 Sasha 197121  4963 Dec 13 01:10 structs.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/resolvelib/__pycache__:
+total 60
+-rw-r--r-- 1 Sasha 197121   757 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7075 Dec 13 01:10 providers.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2839 Dec 13 01:10 reporters.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 29239 Dec 13 01:10 resolvers.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 11476 Dec 13 01:10 structs.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/resolvelib/compat:
+total 1
+-rw-r--r-- 1 Sasha 197121   0 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121   0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 156 Dec 13 01:10 collections_abc.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/resolvelib/compat/__pycache__:
+total 2
+-rw-r--r-- 1 Sasha 197121 212 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 487 Dec 13 01:10 collections_abc.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/rich:
+total 1047
+-rw-r--r-- 1 Sasha 197121   6090 Dec 13 01:10 __init__.py
+-rw-r--r-- 1 Sasha 197121   8478 Dec 13 01:10 __main__.py
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  10096 Dec 13 01:10 _cell_widths.py
+-rw-r--r-- 1 Sasha 197121 140235 Dec 13 01:10 _emoji_codes.py
+-rw-r--r-- 1 Sasha 197121   1064 Dec 13 01:10 _emoji_replace.py
+-rw-r--r-- 1 Sasha 197121   2100 Dec 13 01:10 _export_format.py
+-rw-r--r-- 1 Sasha 197121    265 Dec 13 01:10 _extension.py
+-rw-r--r-- 1 Sasha 197121    799 Dec 13 01:10 _fileno.py
+-rw-r--r-- 1 Sasha 197121   9695 Dec 13 01:10 _inspect.py
+-rw-r--r-- 1 Sasha 197121   3225 Dec 13 01:10 _log_render.py
+-rw-r--r-- 1 Sasha 197121   1236 Dec 13 01:10 _loop.py
+-rw-r--r-- 1 Sasha 197121   1387 Dec 13 01:10 _null_file.py
+-rw-r--r-- 1 Sasha 197121   7063 Dec 13 01:10 _palettes.py
+-rw-r--r-- 1 Sasha 197121    423 Dec 13 01:10 _pick.py
+-rw-r--r-- 1 Sasha 197121   5472 Dec 13 01:10 _ratio.py
+-rw-r--r-- 1 Sasha 197121  19919 Dec 13 01:10 _spinners.py
+-rw-r--r-- 1 Sasha 197121    351 Dec 13 01:10 _stack.py
+-rw-r--r-- 1 Sasha 197121    417 Dec 13 01:10 _timer.py
+-rw-r--r-- 1 Sasha 197121  22820 Dec 13 01:10 _win32_console.py
+-rw-r--r-- 1 Sasha 197121   1926 Dec 13 01:10 _windows.py
+-rw-r--r-- 1 Sasha 197121   2783 Dec 13 01:10 _windows_renderer.py
+-rw-r--r-- 1 Sasha 197121   1840 Dec 13 01:10 _wrap.py
+-rw-r--r-- 1 Sasha 197121    890 Dec 13 01:10 abc.py
+-rw-r--r-- 1 Sasha 197121  10368 Dec 13 01:10 align.py
+-rw-r--r-- 1 Sasha 197121   6906 Dec 13 01:10 ansi.py
+-rw-r--r-- 1 Sasha 197121   3264 Dec 13 01:10 bar.py
+-rw-r--r-- 1 Sasha 197121   9842 Dec 13 01:10 box.py
+-rw-r--r-- 1 Sasha 197121   4509 Dec 13 01:10 cells.py
+-rw-r--r-- 1 Sasha 197121  18224 Dec 13 01:10 color.py
+-rw-r--r-- 1 Sasha 197121   1054 Dec 13 01:10 color_triplet.py
+-rw-r--r-- 1 Sasha 197121   7131 Dec 13 01:10 columns.py
+-rw-r--r-- 1 Sasha 197121  99195 Dec 13 01:10 console.py
+-rw-r--r-- 1 Sasha 197121   1288 Dec 13 01:10 constrain.py
+-rw-r--r-- 1 Sasha 197121   5497 Dec 13 01:10 containers.py
+-rw-r--r-- 1 Sasha 197121   6630 Dec 13 01:10 control.py
+-rw-r--r-- 1 Sasha 197121   8082 Dec 13 01:10 default_styles.py
+-rw-r--r-- 1 Sasha 197121    972 Dec 13 01:10 diagnose.py
+-rw-r--r-- 1 Sasha 197121   2501 Dec 13 01:10 emoji.py
+-rw-r--r-- 1 Sasha 197121    642 Dec 13 01:10 errors.py
+-rw-r--r-- 1 Sasha 197121   1683 Dec 13 01:10 file_proxy.py
+-rw-r--r-- 1 Sasha 197121   2508 Dec 13 01:10 filesize.py
+-rw-r--r-- 1 Sasha 197121   9584 Dec 13 01:10 highlighter.py
+-rw-r--r-- 1 Sasha 197121   5032 Dec 13 01:10 json.py
+-rw-r--r-- 1 Sasha 197121   3252 Dec 13 01:10 jupyter.py
+-rw-r--r-- 1 Sasha 197121  14007 Dec 13 01:10 layout.py
+-rw-r--r-- 1 Sasha 197121  14273 Dec 13 01:10 live.py
+-rw-r--r-- 1 Sasha 197121   3667 Dec 13 01:10 live_render.py
+-rw-r--r-- 1 Sasha 197121  11903 Dec 13 01:10 logging.py
+-rw-r--r-- 1 Sasha 197121   8198 Dec 13 01:10 markup.py
+-rw-r--r-- 1 Sasha 197121   5305 Dec 13 01:10 measure.py
+-rw-r--r-- 1 Sasha 197121   4970 Dec 13 01:10 padding.py
+-rw-r--r-- 1 Sasha 197121    828 Dec 13 01:10 pager.py
+-rw-r--r-- 1 Sasha 197121   3396 Dec 13 01:10 palette.py
+-rw-r--r-- 1 Sasha 197121  10574 Dec 13 01:10 panel.py
+-rw-r--r-- 1 Sasha 197121  35852 Dec 13 01:10 pretty.py
+-rw-r--r-- 1 Sasha 197121  59706 Dec 13 01:10 progress.py
+-rw-r--r-- 1 Sasha 197121   8165 Dec 13 01:10 progress_bar.py
+-rw-r--r-- 1 Sasha 197121  11303 Dec 13 01:10 prompt.py
+-rw-r--r-- 1 Sasha 197121   1391 Dec 13 01:10 protocol.py
+-rw-r--r-- 1 Sasha 197121    166 Dec 13 01:10 region.py
+-rw-r--r-- 1 Sasha 197121   4431 Dec 13 01:10 repr.py
+-rw-r--r-- 1 Sasha 197121   4602 Dec 13 01:10 rule.py
+-rw-r--r-- 1 Sasha 197121   2843 Dec 13 01:10 scope.py
+-rw-r--r-- 1 Sasha 197121   1591 Dec 13 01:10 screen.py
+-rw-r--r-- 1 Sasha 197121  24247 Dec 13 01:10 segment.py
+-rw-r--r-- 1 Sasha 197121   4339 Dec 13 01:10 spinner.py
+-rw-r--r-- 1 Sasha 197121   4425 Dec 13 01:10 status.py
+-rw-r--r-- 1 Sasha 197121  27073 Dec 13 01:10 style.py
+-rw-r--r-- 1 Sasha 197121   1258 Dec 13 01:10 styled.py
+-rw-r--r-- 1 Sasha 197121  35153 Dec 13 01:10 syntax.py
+-rw-r--r-- 1 Sasha 197121  39684 Dec 13 01:10 table.py
+-rw-r--r-- 1 Sasha 197121   3370 Dec 13 01:10 terminal_theme.py
+-rw-r--r-- 1 Sasha 197121  45525 Dec 13 01:10 text.py
+-rw-r--r-- 1 Sasha 197121   3777 Dec 13 01:10 theme.py
+-rw-r--r-- 1 Sasha 197121    102 Dec 13 01:10 themes.py
+-rw-r--r-- 1 Sasha 197121  29604 Dec 13 01:10 traceback.py
+-rw-r--r-- 1 Sasha 197121   9169 Dec 13 01:10 tree.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/rich/__pycache__:
+total 1323
+-rw-r--r-- 1 Sasha 197121   7500 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  11578 Dec 13 01:10 __main__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   7839 Dec 13 01:10 _cell_widths.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 208526 Dec 13 01:10 _emoji_codes.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   1938 Dec 13 01:10 _emoji_replace.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   2329 Dec 13 01:10 _export_format.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121    639 Dec 13 01:10 _extension.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121    981 Dec 13 01:10 _fileno.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  14191 Dec 13 01:10 _inspect.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   4773 Dec 13 01:10 _log_render.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   2119 Dec 13 01:10 _loop.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   4178 Dec 13 01:10 _null_file.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   5255 Dec 13 01:10 _palettes.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121    800 Dec 13 01:10 _pick.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   7938 Dec 13 01:10 _ratio.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  13688 Dec 13 01:10 _spinners.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   1134 Dec 13 01:10 _stack.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121    987 Dec 13 01:10 _timer.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  30175 Dec 13 01:10 _win32_console.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   2834 Dec 13 01:10 _windows.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   4025 Dec 13 01:10 _windows_renderer.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   2790 Dec 13 01:10 _wrap.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   1931 Dec 13 01:10 abc.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  13473 Dec 13 01:10 align.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  10504 Dec 13 01:10 ansi.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   4553 Dec 13 01:10 bar.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  12995 Dec 13 01:10 box.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   6625 Dec 13 01:10 cells.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  27809 Dec 13 01:10 color.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   1879 Dec 13 01:10 color_triplet.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  10650 Dec 13 01:10 columns.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 123744 Dec 13 01:10 console.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   2471 Dec 13 01:10 constrain.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  10812 Dec 13 01:10 containers.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  11903 Dec 13 01:10 control.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  12606 Dec 13 01:10 default_styles.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   1826 Dec 13 01:10 diagnose.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   4804 Dec 13 01:10 emoji.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   2335 Dec 13 01:10 errors.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   4039 Dec 13 01:10 file_proxy.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   3307 Dec 13 01:10 filesize.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  10993 Dec 13 01:10 highlighter.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   6550 Dec 13 01:10 json.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   6410 Dec 13 01:10 jupyter.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  23317 Dec 13 01:10 layout.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  21303 Dec 13 01:10 live.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   5151 Dec 13 01:10 live_render.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  14522 Dec 13 01:10 logging.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  10444 Dec 13 01:10 markup.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   7277 Dec 13 01:10 measure.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   7493 Dec 13 01:10 padding.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   2251 Dec 13 01:10 pager.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   5984 Dec 13 01:10 palette.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  12740 Dec 13 01:10 panel.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  44354 Dec 13 01:10 pretty.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  82620 Dec 13 01:10 progress.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  11018 Dec 13 01:10 progress_bar.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  16384 Dec 13 01:10 prompt.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   2102 Dec 13 01:10 protocol.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121    665 Dec 13 01:10 region.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   7632 Dec 13 01:10 repr.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   7171 Dec 13 01:10 rule.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   4357 Dec 13 01:10 scope.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   2780 Dec 13 01:10 screen.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  31610 Dec 13 01:10 segment.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   6886 Dec 13 01:10 spinner.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   6764 Dec 13 01:10 status.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  35204 Dec 13 01:10 style.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   2445 Dec 13 01:10 styled.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  42597 Dec 13 01:10 syntax.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  48806 Dec 13 01:10 table.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   3711 Dec 13 01:10 terminal_theme.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  64964 Dec 13 01:10 text.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   7310 Dec 13 01:10 theme.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121    361 Dec 13 01:10 themes.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  34573 Dec 13 01:10 traceback.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  12532 Dec 13 01:10 tree.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/tenacity:
+total 80
+-rw-r--r-- 1 Sasha 197121 20493 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  3551 Dec 13 01:10 _asyncio.py
+-rw-r--r-- 1 Sasha 197121  2179 Dec 13 01:10 _utils.py
+-rw-r--r-- 1 Sasha 197121  1682 Dec 13 01:10 after.py
+-rw-r--r-- 1 Sasha 197121  1562 Dec 13 01:10 before.py
+-rw-r--r-- 1 Sasha 197121  2372 Dec 13 01:10 before_sleep.py
+-rw-r--r-- 1 Sasha 197121  1383 Dec 13 01:10 nap.py
+-rw-r--r-- 1 Sasha 197121  8746 Dec 13 01:10 retry.py
+-rw-r--r-- 1 Sasha 197121  3086 Dec 13 01:10 stop.py
+-rw-r--r-- 1 Sasha 197121  2142 Dec 13 01:10 tornadoweb.py
+-rw-r--r-- 1 Sasha 197121  8024 Dec 13 01:10 wait.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/tenacity/__pycache__:
+total 104
+-rw-r--r-- 1 Sasha 197121 29052 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  5228 Dec 13 01:10 _asyncio.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2568 Dec 13 01:10 _utils.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1763 Dec 13 01:10 after.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1597 Dec 13 01:10 before.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2380 Dec 13 01:10 before_sleep.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1571 Dec 13 01:10 nap.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 15947 Dec 13 01:10 retry.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6300 Dec 13 01:10 stop.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2917 Dec 13 01:10 tornadoweb.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 13306 Dec 13 01:10 wait.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/tomli:
+total 30
+-rw-r--r-- 1 Sasha 197121   396 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 22633 Dec 13 01:10 _parser.py
+-rw-r--r-- 1 Sasha 197121  2943 Dec 13 01:10 _re.py
+-rw-r--r-- 1 Sasha 197121   254 Dec 13 01:10 _types.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/tomli/__pycache__:
+total 42
+-rw-r--r-- 1 Sasha 197121   416 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 30855 Dec 13 01:10 _parser.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4495 Dec 13 01:10 _re.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   408 Dec 13 01:10 _types.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/urllib3:
+total 177
+-rw-r--r-- 1 Sasha 197121  3333 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 10811 Dec 13 01:10 _collections.py
+-rw-r--r-- 1 Sasha 197121    64 Dec 13 01:10 _version.py
+-rw-r--r-- 1 Sasha 197121 20300 Dec 13 01:10 connection.py
+-rw-r--r-- 1 Sasha 197121 39128 Dec 13 01:10 connectionpool.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 contrib/
+-rw-r--r-- 1 Sasha 197121  8217 Dec 13 01:10 exceptions.py
+-rw-r--r-- 1 Sasha 197121  8579 Dec 13 01:10 fields.py
+-rw-r--r-- 1 Sasha 197121  2440 Dec 13 01:10 filepost.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 packages/
+-rw-r--r-- 1 Sasha 197121 19786 Dec 13 01:10 poolmanager.py
+-rw-r--r-- 1 Sasha 197121  5985 Dec 13 01:10 request.py
+-rw-r--r-- 1 Sasha 197121 30641 Dec 13 01:10 response.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 util/
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/urllib3/__pycache__:
+total 193
+-rw-r--r-- 1 Sasha 197121  3714 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 18302 Dec 13 01:10 _collections.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   224 Dec 13 01:10 _version.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 22070 Dec 13 01:10 connection.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 37713 Dec 13 01:10 connectionpool.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 16128 Dec 13 01:10 exceptions.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 11421 Dec 13 01:10 fields.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4502 Dec 13 01:10 filepost.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 21825 Dec 13 01:10 poolmanager.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6665 Dec 13 01:10 request.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 36548 Dec 13 01:10 response.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/urllib3/contrib:
+total 92
+-rw-r--r-- 1 Sasha 197121     0 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121   957 Dec 13 01:10 _appengine_environ.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 _securetransport/
+-rw-r--r-- 1 Sasha 197121 11036 Dec 13 01:10 appengine.py
+-rw-r--r-- 1 Sasha 197121  4528 Dec 13 01:10 ntlmpool.py
+-rw-r--r-- 1 Sasha 197121 17081 Dec 13 01:10 pyopenssl.py
+-rw-r--r-- 1 Sasha 197121 34448 Dec 13 01:10 securetransport.py
+-rw-r--r-- 1 Sasha 197121  7097 Dec 13 01:10 socks.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/urllib3/contrib/__pycache__:
+total 97
+-rw-r--r-- 1 Sasha 197121   210 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1949 Dec 13 01:10 _appengine_environ.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 12156 Dec 13 01:10 appengine.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6233 Dec 13 01:10 ntlmpool.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 25742 Dec 13 01:10 pyopenssl.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 36849 Dec 13 01:10 securetransport.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  8094 Dec 13 01:10 socks.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/urllib3/contrib/_securetransport:
+total 36
+-rw-r--r-- 1 Sasha 197121     0 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 17632 Dec 13 01:10 bindings.py
+-rw-r--r-- 1 Sasha 197121 13922 Dec 13 01:10 low_level.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/urllib3/contrib/_securetransport/__pycache__:
+total 37
+-rw-r--r-- 1 Sasha 197121   227 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 16974 Dec 13 01:10 bindings.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 15611 Dec 13 01:10 low_level.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/urllib3/packages:
+total 36
+-rw-r--r-- 1 Sasha 197121     0 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 backports/
+-rw-r--r-- 1 Sasha 197121 34665 Dec 13 01:10 six.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/urllib3/packages/__pycache__:
+total 49
+-rw-r--r-- 1 Sasha 197121   211 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 46453 Dec 13 01:10 six.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/urllib3/packages/backports:
+total 4
+-rw-r--r-- 1 Sasha 197121    0 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121    0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 1417 Dec 13 01:10 makefile.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/urllib3/packages/backports/__pycache__:
+total 5
+-rw-r--r-- 1 Sasha 197121  221 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 1968 Dec 13 01:10 makefile.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/urllib3/util:
+total 125
+-rw-r--r-- 1 Sasha 197121  1155 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  4901 Dec 13 01:10 connection.py
+-rw-r--r-- 1 Sasha 197121  1605 Dec 13 01:10 proxy.py
+-rw-r--r-- 1 Sasha 197121   498 Dec 13 01:10 queue.py
+-rw-r--r-- 1 Sasha 197121  3997 Dec 13 01:10 request.py
+-rw-r--r-- 1 Sasha 197121  3510 Dec 13 01:10 response.py
+-rw-r--r-- 1 Sasha 197121 22003 Dec 13 01:10 retry.py
+-rw-r--r-- 1 Sasha 197121 17177 Dec 13 01:10 ssl_.py
+-rw-r--r-- 1 Sasha 197121  5758 Dec 13 01:10 ssl_match_hostname.py
+-rw-r--r-- 1 Sasha 197121  6895 Dec 13 01:10 ssltransport.py
+-rw-r--r-- 1 Sasha 197121 10168 Dec 13 01:10 timeout.py
+-rw-r--r-- 1 Sasha 197121 14296 Dec 13 01:10 url.py
+-rw-r--r-- 1 Sasha 197121  5403 Dec 13 01:10 wait.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/urllib3/util/__pycache__:
+total 136
+-rw-r--r-- 1 Sasha 197121  1413 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  5140 Dec 13 01:10 connection.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1722 Dec 13 01:10 proxy.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1505 Dec 13 01:10 queue.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4625 Dec 13 01:10 request.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3494 Dec 13 01:10 response.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 22762 Dec 13 01:10 retry.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 16825 Dec 13 01:10 ssl_.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  5804 Dec 13 01:10 ssl_match_hostname.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 11633 Dec 13 01:10 ssltransport.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 11347 Dec 13 01:10 timeout.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 17588 Dec 13 01:10 url.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  5007 Dec 13 01:10 wait.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/webencodings:
+total 48
+-rw-r--r-- 1 Sasha 197121 10579 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  8979 Dec 13 01:10 labels.py
+-rw-r--r-- 1 Sasha 197121  1305 Dec 13 01:10 mklabels.py
+-rw-r--r-- 1 Sasha 197121  6563 Dec 13 01:10 tests.py
+-rw-r--r-- 1 Sasha 197121  4307 Dec 13 01:10 x_user_defined.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip/_vendor/webencodings/__pycache__:
+total 44
+-rw-r--r-- 1 Sasha 197121 12887 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7287 Dec 13 01:10 labels.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3215 Dec 13 01:10 mklabels.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 11193 Dec 13 01:10 tests.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3567 Dec 13 01:10 x_user_defined.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pip-23.1.2.dist-info:
+total 104
+-rw-r--r-- 1 Sasha 197121  9953 Dec 13 01:10 AUTHORS.txt
+-rw-r--r-- 1 Sasha 197121     4 Dec 13 01:10 INSTALLER
+-rw-r--r-- 1 Sasha 197121  1093 Dec 13 01:10 LICENSE.txt
+-rw-r--r-- 1 Sasha 197121  4098 Dec 13 01:10 METADATA
+-rw-r--r-- 1 Sasha 197121 77077 Dec 13 01:10 RECORD
+-rw-r--r-- 1 Sasha 197121     0 Dec 13 01:10 REQUESTED
+-rw-r--r-- 1 Sasha 197121    92 Dec 13 01:10 WHEEL
+-rw-r--r-- 1 Sasha 197121   125 Dec 13 01:10 entry_points.txt
+-rw-r--r-- 1 Sasha 197121     4 Dec 13 01:10 top_level.txt
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pkg_resources:
+total 112
+-rw-r--r-- 1 Sasha 197121 108568 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 __pycache__/
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 _vendor/
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 extern/
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pkg_resources/__pycache__:
+total 156
+-rw-r--r-- 1 Sasha 197121 159576 Dec 13 01:10 __init__.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pkg_resources/_vendor:
+total 52
+-rw-r--r-- 1 Sasha 197121     0 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rwxr-xr-x 1 Sasha 197121 24701 Dec 13 01:10 appdirs.py*
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 importlib_resources/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 jaraco/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 more_itertools/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 packaging/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 pyparsing/
+-rw-r--r-- 1 Sasha 197121  8425 Dec 13 01:10 zipp.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pkg_resources/_vendor/__pycache__:
+total 49
+-rw-r--r-- 1 Sasha 197121   204 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 29452 Dec 13 01:10 appdirs.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 15997 Dec 13 01:10 zipp.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pkg_resources/_vendor/importlib_resources:
+total 41
+-rw-r--r-- 1 Sasha 197121  506 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121    0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 4504 Dec 13 01:10 _adapters.py
+-rw-r--r-- 1 Sasha 197121 2741 Dec 13 01:10 _common.py
+-rw-r--r-- 1 Sasha 197121 2706 Dec 13 01:10 _compat.py
+-rw-r--r-- 1 Sasha 197121  884 Dec 13 01:10 _itertools.py
+-rw-r--r-- 1 Sasha 197121 3494 Dec 13 01:10 _legacy.py
+-rw-r--r-- 1 Sasha 197121 3886 Dec 13 01:10 abc.py
+-rw-r--r-- 1 Sasha 197121 3566 Dec 13 01:10 readers.py
+-rw-r--r-- 1 Sasha 197121 2836 Dec 13 01:10 simple.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pkg_resources/_vendor/importlib_resources/__pycache__:
+total 72
+-rw-r--r-- 1 Sasha 197121   838 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 10755 Dec 13 01:10 _adapters.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4282 Dec 13 01:10 _common.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  5567 Dec 13 01:10 _compat.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1400 Dec 13 01:10 _itertools.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6498 Dec 13 01:10 _legacy.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7499 Dec 13 01:10 abc.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  8373 Dec 13 01:10 readers.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6395 Dec 13 01:10 simple.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pkg_resources/_vendor/jaraco:
+total 24
+-rw-r--r-- 1 Sasha 197121     0 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  5420 Dec 13 01:10 context.py
+-rw-r--r-- 1 Sasha 197121 13515 Dec 13 01:10 functools.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 text/
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pkg_resources/_vendor/jaraco/__pycache__:
+total 33
+-rw-r--r-- 1 Sasha 197121   211 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  9434 Dec 13 01:10 context.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 20297 Dec 13 01:10 functools.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pkg_resources/_vendor/jaraco/text:
+total 16
+-rw-r--r-- 1 Sasha 197121 15526 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pkg_resources/_vendor/jaraco/text/__pycache__:
+total 28
+-rw-r--r-- 1 Sasha 197121 26614 Dec 13 01:10 __init__.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pkg_resources/_vendor/more_itertools:
+total 153
+-rw-r--r-- 1 Sasha 197121     83 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 132569 Dec 13 01:10 more.py
+-rw-r--r-- 1 Sasha 197121  18410 Dec 13 01:10 recipes.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pkg_resources/_vendor/more_itertools/__pycache__:
+total 197
+-rw-r--r-- 1 Sasha 197121    305 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 167966 Dec 13 01:10 more.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  26957 Dec 13 01:10 recipes.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pkg_resources/_vendor/packaging:
+total 122
+-rw-r--r-- 1 Sasha 197121   661 Dec 13 01:10 __about__.py
+-rw-r--r-- 1 Sasha 197121   497 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 11488 Dec 13 01:10 _manylinux.py
+-rw-r--r-- 1 Sasha 197121  4378 Dec 13 01:10 _musllinux.py
+-rw-r--r-- 1 Sasha 197121  1431 Dec 13 01:10 _structures.py
+-rw-r--r-- 1 Sasha 197121  8496 Dec 13 01:10 markers.py
+-rw-r--r-- 1 Sasha 197121  4706 Dec 13 01:10 requirements.py
+-rw-r--r-- 1 Sasha 197121 30110 Dec 13 01:10 specifiers.py
+-rw-r--r-- 1 Sasha 197121 15699 Dec 13 01:10 tags.py
+-rw-r--r-- 1 Sasha 197121  4200 Dec 13 01:10 utils.py
+-rw-r--r-- 1 Sasha 197121 14665 Dec 13 01:10 version.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pkg_resources/_vendor/packaging/__pycache__:
+total 150
+-rw-r--r-- 1 Sasha 197121   655 Dec 13 01:10 __about__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   576 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 13242 Dec 13 01:10 _manylinux.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  8010 Dec 13 01:10 _musllinux.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3698 Dec 13 01:10 _structures.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 16547 Dec 13 01:10 markers.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7662 Dec 13 01:10 requirements.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 34376 Dec 13 01:10 specifiers.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 21361 Dec 13 01:10 tags.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6696 Dec 13 01:10 utils.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 21888 Dec 13 01:10 version.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pkg_resources/_vendor/pyparsing:
+total 368
+-rw-r--r-- 1 Sasha 197121   9159 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121   6426 Dec 13 01:10 actions.py
+-rw-r--r-- 1 Sasha 197121  12936 Dec 13 01:10 common.py
+-rw-r--r-- 1 Sasha 197121 213310 Dec 13 01:10 core.py
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 diagram/
+-rw-r--r-- 1 Sasha 197121   9023 Dec 13 01:10 exceptions.py
+-rw-r--r-- 1 Sasha 197121  39129 Dec 13 01:10 helpers.py
+-rw-r--r-- 1 Sasha 197121  25341 Dec 13 01:10 results.py
+-rw-r--r-- 1 Sasha 197121  13402 Dec 13 01:10 testing.py
+-rw-r--r-- 1 Sasha 197121  10787 Dec 13 01:10 unicode.py
+-rw-r--r-- 1 Sasha 197121   6805 Dec 13 01:10 util.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pkg_resources/_vendor/pyparsing/__pycache__:
+total 472
+-rw-r--r-- 1 Sasha 197121   8349 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   8475 Dec 13 01:10 actions.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  14797 Dec 13 01:10 common.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 277649 Dec 13 01:10 core.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  12939 Dec 13 01:10 exceptions.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  53640 Dec 13 01:10 helpers.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  36323 Dec 13 01:10 results.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  19519 Dec 13 01:10 testing.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  15377 Dec 13 01:10 unicode.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  14276 Dec 13 01:10 util.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pkg_resources/_vendor/pyparsing/diagram:
+total 24
+-rw-r--r-- 1 Sasha 197121 23668 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pkg_resources/_vendor/pyparsing/diagram/__pycache__:
+total 28
+-rw-r--r-- 1 Sasha 197121 28012 Dec 13 01:10 __init__.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pkg_resources/extern:
+total 4
+-rw-r--r-- 1 Sasha 197121 2426 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121    0 Dec 13 01:10 __pycache__/
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/pkg_resources/extern/__pycache__:
+total 8
+-rw-r--r-- 1 Sasha 197121 4323 Dec 13 01:10 __init__.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools:
+total 1019
+-rw-r--r-- 1 Sasha 197121   8429 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121    218 Dec 13 01:10 _deprecation_warning.py
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 _distutils/
+-rw-r--r-- 1 Sasha 197121   1972 Dec 13 01:10 _entry_points.py
+-rw-r--r-- 1 Sasha 197121   2392 Dec 13 01:10 _imp.py
+-rw-r--r-- 1 Sasha 197121   1311 Dec 13 01:10 _importlib.py
+-rw-r--r-- 1 Sasha 197121    675 Dec 13 01:10 _itertools.py
+-rw-r--r-- 1 Sasha 197121    749 Dec 13 01:10 _path.py
+-rw-r--r-- 1 Sasha 197121    501 Dec 13 01:10 _reqs.py
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 _vendor/
+-rw-r--r-- 1 Sasha 197121   7346 Dec 13 01:10 archive_util.py
+-rw-r--r-- 1 Sasha 197121  19539 Dec 13 01:10 build_meta.py
+-rwxr-xr-x 1 Sasha 197121  65536 Dec 13 01:10 cli-32.exe*
+-rwxr-xr-x 1 Sasha 197121  74752 Dec 13 01:10 cli-64.exe*
+-rwxr-xr-x 1 Sasha 197121 137216 Dec 13 01:10 cli-arm64.exe*
+-rwxr-xr-x 1 Sasha 197121  65536 Dec 13 01:10 cli.exe*
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 command/
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 config/
+-rw-r--r-- 1 Sasha 197121    949 Dec 13 01:10 dep_util.py
+-rw-r--r-- 1 Sasha 197121   5499 Dec 13 01:10 depends.py
+-rw-r--r-- 1 Sasha 197121  20799 Dec 13 01:10 discovery.py
+-rw-r--r-- 1 Sasha 197121  45578 Dec 13 01:10 dist.py
+-rw-r--r-- 1 Sasha 197121   2464 Dec 13 01:10 errors.py
+-rw-r--r-- 1 Sasha 197121   5591 Dec 13 01:10 extension.py
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 extern/
+-rw-r--r-- 1 Sasha 197121   4873 Dec 13 01:10 glob.py
+-rwxr-xr-x 1 Sasha 197121  65536 Dec 13 01:10 gui-32.exe*
+-rwxr-xr-x 1 Sasha 197121  75264 Dec 13 01:10 gui-64.exe*
+-rwxr-xr-x 1 Sasha 197121 137728 Dec 13 01:10 gui-arm64.exe*
+-rwxr-xr-x 1 Sasha 197121  65536 Dec 13 01:10 gui.exe*
+-rw-r--r-- 1 Sasha 197121   3824 Dec 13 01:10 installer.py
+-rw-r--r-- 1 Sasha 197121    812 Dec 13 01:10 launch.py
+-rw-r--r-- 1 Sasha 197121   1210 Dec 13 01:10 logging.py
+-rw-r--r-- 1 Sasha 197121   4857 Dec 13 01:10 monkey.py
+-rw-r--r-- 1 Sasha 197121  47724 Dec 13 01:10 msvc.py
+-rw-r--r-- 1 Sasha 197121   3093 Dec 13 01:10 namespaces.py
+-rw-r--r-- 1 Sasha 197121  40020 Dec 13 01:10 package_index.py
+-rw-r--r-- 1 Sasha 197121    245 Dec 13 01:10 py34compat.py
+-rw-r--r-- 1 Sasha 197121  14348 Dec 13 01:10 sandbox.py
+-rw-r--r-- 1 Sasha 197121    218 Dec 13 01:10 script (dev).tmpl
+-rw-r--r-- 1 Sasha 197121    138 Dec 13 01:10 script.tmpl
+-rw-r--r-- 1 Sasha 197121    941 Dec 13 01:10 unicode_utils.py
+-rw-r--r-- 1 Sasha 197121    144 Dec 13 01:10 version.py
+-rw-r--r-- 1 Sasha 197121   8376 Dec 13 01:10 wheel.py
+-rw-r--r-- 1 Sasha 197121    718 Dec 13 01:10 windows_support.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/__pycache__:
+total 426
+-rw-r--r-- 1 Sasha 197121 12913 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   648 Dec 13 01:10 _deprecation_warning.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4797 Dec 13 01:10 _entry_points.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3661 Dec 13 01:10 _imp.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1961 Dec 13 01:10 _importlib.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1160 Dec 13 01:10 _itertools.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1481 Dec 13 01:10 _path.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1142 Dec 13 01:10 _reqs.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 10170 Dec 13 01:10 archive_util.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 28103 Dec 13 01:10 build_meta.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1296 Dec 13 01:10 dep_util.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7981 Dec 13 01:10 depends.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 31125 Dec 13 01:10 discovery.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 64063 Dec 13 01:10 dist.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2957 Dec 13 01:10 errors.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6813 Dec 13 01:10 extension.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6570 Dec 13 01:10 glob.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  5620 Dec 13 01:10 installer.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1536 Dec 13 01:10 launch.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2054 Dec 13 01:10 logging.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7013 Dec 13 01:10 monkey.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 64186 Dec 13 01:10 msvc.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  5668 Dec 13 01:10 namespaces.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 60763 Dec 13 01:10 package_index.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   723 Dec 13 01:10 py34compat.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 27339 Dec 13 01:10 sandbox.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1825 Dec 13 01:10 unicode_utils.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   443 Dec 13 01:10 version.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 15499 Dec 13 01:10 wheel.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1440 Dec 13 01:10 windows_support.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_distutils:
+total 458
+-rw-r--r-- 1 Sasha 197121   537 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  1330 Dec 13 01:10 _collections.py
+-rw-r--r-- 1 Sasha 197121   411 Dec 13 01:10 _functools.py
+-rw-r--r-- 1 Sasha 197121   239 Dec 13 01:10 _macos_compat.py
+-rw-r--r-- 1 Sasha 197121 19672 Dec 13 01:10 _msvccompiler.py
+-rw-r--r-- 1 Sasha 197121  8603 Dec 13 01:10 archive_util.py
+-rw-r--r-- 1 Sasha 197121 14789 Dec 13 01:10 bcppcompiler.py
+-rw-r--r-- 1 Sasha 197121 47369 Dec 13 01:10 ccompiler.py
+-rw-r--r-- 1 Sasha 197121 17973 Dec 13 01:10 cmd.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 command/
+-rw-r--r-- 1 Sasha 197121  4920 Dec 13 01:10 config.py
+-rw-r--r-- 1 Sasha 197121  9451 Dec 13 01:10 core.py
+-rw-r--r-- 1 Sasha 197121 12537 Dec 13 01:10 cygwinccompiler.py
+-rw-r--r-- 1 Sasha 197121   139 Dec 13 01:10 debug.py
+-rw-r--r-- 1 Sasha 197121  3423 Dec 13 01:10 dep_util.py
+-rw-r--r-- 1 Sasha 197121  8082 Dec 13 01:10 dir_util.py
+-rw-r--r-- 1 Sasha 197121 50186 Dec 13 01:10 dist.py
+-rw-r--r-- 1 Sasha 197121  3589 Dec 13 01:10 errors.py
+-rw-r--r-- 1 Sasha 197121 10270 Dec 13 01:10 extension.py
+-rw-r--r-- 1 Sasha 197121 17910 Dec 13 01:10 fancy_getopt.py
+-rw-r--r-- 1 Sasha 197121  8226 Dec 13 01:10 file_util.py
+-rw-r--r-- 1 Sasha 197121 13713 Dec 13 01:10 filelist.py
+-rw-r--r-- 1 Sasha 197121  1972 Dec 13 01:10 log.py
+-rw-r--r-- 1 Sasha 197121 30235 Dec 13 01:10 msvc9compiler.py
+-rw-r--r-- 1 Sasha 197121 23602 Dec 13 01:10 msvccompiler.py
+-rw-r--r-- 1 Sasha 197121   217 Dec 13 01:10 py38compat.py
+-rw-r--r-- 1 Sasha 197121   639 Dec 13 01:10 py39compat.py
+-rw-r--r-- 1 Sasha 197121  3517 Dec 13 01:10 spawn.py
+-rw-r--r-- 1 Sasha 197121 18858 Dec 13 01:10 sysconfig.py
+-rw-r--r-- 1 Sasha 197121 12096 Dec 13 01:10 text_file.py
+-rw-r--r-- 1 Sasha 197121 15641 Dec 13 01:10 unixccompiler.py
+-rw-r--r-- 1 Sasha 197121 18128 Dec 13 01:10 util.py
+-rw-r--r-- 1 Sasha 197121 12952 Dec 13 01:10 version.py
+-rw-r--r-- 1 Sasha 197121  5248 Dec 13 01:10 versionpredicate.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_distutils/__pycache__:
+total 499
+-rw-r--r-- 1 Sasha 197121   778 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2928 Dec 13 01:10 _collections.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   869 Dec 13 01:10 _functools.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   578 Dec 13 01:10 _macos_compat.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 25113 Dec 13 01:10 _msvccompiler.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 10665 Dec 13 01:10 archive_util.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 13491 Dec 13 01:10 bcppcompiler.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 46390 Dec 13 01:10 ccompiler.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 18904 Dec 13 01:10 cmd.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6053 Dec 13 01:10 config.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  9997 Dec 13 01:10 core.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 13621 Dec 13 01:10 cygwinccompiler.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   330 Dec 13 01:10 debug.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3997 Dec 13 01:10 dep_util.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 10372 Dec 13 01:10 dir_util.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 55419 Dec 13 01:10 dist.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6803 Dec 13 01:10 errors.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 10184 Dec 13 01:10 extension.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 17248 Dec 13 01:10 fancy_getopt.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 10692 Dec 13 01:10 file_util.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 17638 Dec 13 01:10 filelist.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3938 Dec 13 01:10 log.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 33596 Dec 13 01:10 msvc9compiler.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 26998 Dec 13 01:10 msvccompiler.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   630 Dec 13 01:10 py38compat.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   998 Dec 13 01:10 py39compat.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4467 Dec 13 01:10 spawn.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 21994 Dec 13 01:10 sysconfig.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 11279 Dec 13 01:10 text_file.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 16535 Dec 13 01:10 unixccompiler.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 20889 Dec 13 01:10 util.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 11355 Dec 13 01:10 version.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7755 Dec 13 01:10 versionpredicate.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_distutils/command:
+total 254
+-rw-r--r-- 1 Sasha 197121   430 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  1614 Dec 13 01:10 _framework_compat.py
+-rw-r--r-- 1 Sasha 197121  5441 Dec 13 01:10 bdist.py
+-rw-r--r-- 1 Sasha 197121  4701 Dec 13 01:10 bdist_dumb.py
+-rw-r--r-- 1 Sasha 197121 22051 Dec 13 01:10 bdist_rpm.py
+-rw-r--r-- 1 Sasha 197121  5617 Dec 13 01:10 build.py
+-rw-r--r-- 1 Sasha 197121  7728 Dec 13 01:10 build_clib.py
+-rw-r--r-- 1 Sasha 197121 31558 Dec 13 01:10 build_ext.py
+-rw-r--r-- 1 Sasha 197121 16568 Dec 13 01:10 build_py.py
+-rw-r--r-- 1 Sasha 197121  5624 Dec 13 01:10 build_scripts.py
+-rw-r--r-- 1 Sasha 197121  4888 Dec 13 01:10 check.py
+-rw-r--r-- 1 Sasha 197121  2603 Dec 13 01:10 clean.py
+-rw-r--r-- 1 Sasha 197121 13137 Dec 13 01:10 config.py
+-rw-r--r-- 1 Sasha 197121 30221 Dec 13 01:10 install.py
+-rw-r--r-- 1 Sasha 197121  2779 Dec 13 01:10 install_data.py
+-rw-r--r-- 1 Sasha 197121  2785 Dec 13 01:10 install_egg_info.py
+-rw-r--r-- 1 Sasha 197121  1189 Dec 13 01:10 install_headers.py
+-rw-r--r-- 1 Sasha 197121  8434 Dec 13 01:10 install_lib.py
+-rw-r--r-- 1 Sasha 197121  1936 Dec 13 01:10 install_scripts.py
+-rw-r--r-- 1 Sasha 197121   672 Dec 13 01:10 py37compat.py
+-rw-r--r-- 1 Sasha 197121 11765 Dec 13 01:10 register.py
+-rw-r--r-- 1 Sasha 197121 19241 Dec 13 01:10 sdist.py
+-rw-r--r-- 1 Sasha 197121  7477 Dec 13 01:10 upload.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_distutils/command/__pycache__:
+total 269
+-rw-r--r-- 1 Sasha 197121   550 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2791 Dec 13 01:10 _framework_compat.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6044 Dec 13 01:10 bdist.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  5769 Dec 13 01:10 bdist_dumb.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 23303 Dec 13 01:10 bdist_rpm.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6099 Dec 13 01:10 build.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7802 Dec 13 01:10 build_clib.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 30344 Dec 13 01:10 build_ext.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 17620 Dec 13 01:10 build_py.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7871 Dec 13 01:10 build_scripts.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7533 Dec 13 01:10 check.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3201 Dec 13 01:10 clean.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 16264 Dec 13 01:10 config.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 29452 Dec 13 01:10 install.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3786 Dec 13 01:10 install_data.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  5212 Dec 13 01:10 install_egg_info.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2369 Dec 13 01:10 install_headers.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  8701 Dec 13 01:10 install_lib.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3166 Dec 13 01:10 install_scripts.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1547 Dec 13 01:10 py37compat.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 15533 Dec 13 01:10 register.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 23841 Dec 13 01:10 sdist.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 10482 Dec 13 01:10 upload.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_vendor:
+total 132
+-rw-r--r-- 1 Sasha 197121     0 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 importlib_metadata/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 importlib_resources/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 jaraco/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 more_itertools/
+-rw-r--r-- 1 Sasha 197121 15130 Dec 13 01:10 ordered_set.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 packaging/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 pyparsing/
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 tomli/
+-rw-r--r-- 1 Sasha 197121 87149 Dec 13 01:10 typing_extensions.py
+-rw-r--r-- 1 Sasha 197121  8425 Dec 13 01:10 zipp.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_vendor/__pycache__:
+total 149
+-rw-r--r-- 1 Sasha 197121    201 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  21787 Dec 13 01:10 ordered_set.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 107618 Dec 13 01:10 typing_extensions.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  15994 Dec 13 01:10 zipp.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_vendor/importlib_metadata:
+total 64
+-rw-r--r-- 1 Sasha 197121 30130 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  1862 Dec 13 01:10 _adapters.py
+-rw-r--r-- 1 Sasha 197121   743 Dec 13 01:10 _collections.py
+-rw-r--r-- 1 Sasha 197121  1828 Dec 13 01:10 _compat.py
+-rw-r--r-- 1 Sasha 197121  2895 Dec 13 01:10 _functools.py
+-rw-r--r-- 1 Sasha 197121  2068 Dec 13 01:10 _itertools.py
+-rw-r--r-- 1 Sasha 197121  1154 Dec 13 01:10 _meta.py
+-rw-r--r-- 1 Sasha 197121  2166 Dec 13 01:10 _text.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_vendor/importlib_metadata/__pycache__:
+total 92
+-rw-r--r-- 1 Sasha 197121 58240 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3853 Dec 13 01:10 _adapters.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2200 Dec 13 01:10 _collections.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2722 Dec 13 01:10 _compat.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3640 Dec 13 01:10 _functools.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  2603 Dec 13 01:10 _itertools.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3007 Dec 13 01:10 _meta.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4398 Dec 13 01:10 _text.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_vendor/importlib_resources:
+total 41
+-rw-r--r-- 1 Sasha 197121  506 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121    0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 4504 Dec 13 01:10 _adapters.py
+-rw-r--r-- 1 Sasha 197121 2741 Dec 13 01:10 _common.py
+-rw-r--r-- 1 Sasha 197121 2706 Dec 13 01:10 _compat.py
+-rw-r--r-- 1 Sasha 197121  884 Dec 13 01:10 _itertools.py
+-rw-r--r-- 1 Sasha 197121 3494 Dec 13 01:10 _legacy.py
+-rw-r--r-- 1 Sasha 197121 3886 Dec 13 01:10 abc.py
+-rw-r--r-- 1 Sasha 197121 3566 Dec 13 01:10 readers.py
+-rw-r--r-- 1 Sasha 197121 2836 Dec 13 01:10 simple.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_vendor/importlib_resources/__pycache__:
+total 72
+-rw-r--r-- 1 Sasha 197121   835 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 10752 Dec 13 01:10 _adapters.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4279 Dec 13 01:10 _common.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  5564 Dec 13 01:10 _compat.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  1397 Dec 13 01:10 _itertools.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6495 Dec 13 01:10 _legacy.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7496 Dec 13 01:10 abc.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  8370 Dec 13 01:10 readers.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6392 Dec 13 01:10 simple.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_vendor/jaraco:
+total 24
+-rw-r--r-- 1 Sasha 197121     0 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  5420 Dec 13 01:10 context.py
+-rw-r--r-- 1 Sasha 197121 13512 Dec 13 01:10 functools.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 text/
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_vendor/jaraco/__pycache__:
+total 33
+-rw-r--r-- 1 Sasha 197121   208 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  9431 Dec 13 01:10 context.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 20288 Dec 13 01:10 functools.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_vendor/jaraco/text:
+total 16
+-rw-r--r-- 1 Sasha 197121 15517 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_vendor/jaraco/text/__pycache__:
+total 28
+-rw-r--r-- 1 Sasha 197121 26602 Dec 13 01:10 __init__.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_vendor/more_itertools:
+total 133
+-rw-r--r-- 1 Sasha 197121     82 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 117959 Dec 13 01:10 more.py
+-rw-r--r-- 1 Sasha 197121  16256 Dec 13 01:10 recipes.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_vendor/more_itertools/__pycache__:
+total 173
+-rw-r--r-- 1 Sasha 197121    301 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 149188 Dec 13 01:10 more.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  23770 Dec 13 01:10 recipes.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_vendor/packaging:
+total 122
+-rw-r--r-- 1 Sasha 197121   661 Dec 13 01:10 __about__.py
+-rw-r--r-- 1 Sasha 197121   497 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 11488 Dec 13 01:10 _manylinux.py
+-rw-r--r-- 1 Sasha 197121  4378 Dec 13 01:10 _musllinux.py
+-rw-r--r-- 1 Sasha 197121  1431 Dec 13 01:10 _structures.py
+-rw-r--r-- 1 Sasha 197121  8493 Dec 13 01:10 markers.py
+-rw-r--r-- 1 Sasha 197121  4700 Dec 13 01:10 requirements.py
+-rw-r--r-- 1 Sasha 197121 30110 Dec 13 01:10 specifiers.py
+-rw-r--r-- 1 Sasha 197121 15699 Dec 13 01:10 tags.py
+-rw-r--r-- 1 Sasha 197121  4200 Dec 13 01:10 utils.py
+-rw-r--r-- 1 Sasha 197121 14665 Dec 13 01:10 version.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_vendor/packaging/__pycache__:
+total 150
+-rw-r--r-- 1 Sasha 197121   652 Dec 13 01:10 __about__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   573 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 13239 Dec 13 01:10 _manylinux.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  8007 Dec 13 01:10 _musllinux.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  3695 Dec 13 01:10 _structures.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 16541 Dec 13 01:10 markers.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  7656 Dec 13 01:10 requirements.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 34373 Dec 13 01:10 specifiers.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 21358 Dec 13 01:10 tags.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  6693 Dec 13 01:10 utils.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 21885 Dec 13 01:10 version.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_vendor/pyparsing:
+total 368
+-rw-r--r-- 1 Sasha 197121   9159 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121   6426 Dec 13 01:10 actions.py
+-rw-r--r-- 1 Sasha 197121  12936 Dec 13 01:10 common.py
+-rw-r--r-- 1 Sasha 197121 213310 Dec 13 01:10 core.py
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 diagram/
+-rw-r--r-- 1 Sasha 197121   9023 Dec 13 01:10 exceptions.py
+-rw-r--r-- 1 Sasha 197121  39129 Dec 13 01:10 helpers.py
+-rw-r--r-- 1 Sasha 197121  25341 Dec 13 01:10 results.py
+-rw-r--r-- 1 Sasha 197121  13402 Dec 13 01:10 testing.py
+-rw-r--r-- 1 Sasha 197121  10787 Dec 13 01:10 unicode.py
+-rw-r--r-- 1 Sasha 197121   6805 Dec 13 01:10 util.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_vendor/pyparsing/__pycache__:
+total 472
+-rw-r--r-- 1 Sasha 197121   8346 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   8472 Dec 13 01:10 actions.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  14794 Dec 13 01:10 common.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 277646 Dec 13 01:10 core.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  12936 Dec 13 01:10 exceptions.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  53637 Dec 13 01:10 helpers.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  36320 Dec 13 01:10 results.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  19516 Dec 13 01:10 testing.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  15374 Dec 13 01:10 unicode.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  14273 Dec 13 01:10 util.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_vendor/pyparsing/diagram:
+total 24
+-rw-r--r-- 1 Sasha 197121 23668 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_vendor/pyparsing/diagram/__pycache__:
+total 28
+-rw-r--r-- 1 Sasha 197121 28009 Dec 13 01:10 __init__.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_vendor/tomli:
+total 30
+-rw-r--r-- 1 Sasha 197121   396 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 22633 Dec 13 01:10 _parser.py
+-rw-r--r-- 1 Sasha 197121  2943 Dec 13 01:10 _re.py
+-rw-r--r-- 1 Sasha 197121   254 Dec 13 01:10 _types.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/_vendor/tomli/__pycache__:
+total 42
+-rw-r--r-- 1 Sasha 197121   423 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 30862 Dec 13 01:10 _parser.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  4502 Dec 13 01:10 _re.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   415 Dec 13 01:10 _types.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/command:
+total 309
+-rw-r--r-- 1 Sasha 197121   396 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  2381 Dec 13 01:10 alias.py
+-rw-r--r-- 1 Sasha 197121 16623 Dec 13 01:10 bdist_egg.py
+-rw-r--r-- 1 Sasha 197121  1182 Dec 13 01:10 bdist_rpm.py
+-rw-r--r-- 1 Sasha 197121  6595 Dec 13 01:10 build.py
+-rw-r--r-- 1 Sasha 197121  4415 Dec 13 01:10 build_clib.py
+-rw-r--r-- 1 Sasha 197121 15821 Dec 13 01:10 build_ext.py
+-rw-r--r-- 1 Sasha 197121 14115 Dec 13 01:10 build_py.py
+-rw-r--r-- 1 Sasha 197121  7012 Dec 13 01:10 develop.py
+-rw-r--r-- 1 Sasha 197121  4800 Dec 13 01:10 dist_info.py
+-rw-r--r-- 1 Sasha 197121 85662 Dec 13 01:10 easy_install.py
+-rw-r--r-- 1 Sasha 197121 31188 Dec 13 01:10 editable_wheel.py
+-rw-r--r-- 1 Sasha 197121 26795 Dec 13 01:10 egg_info.py
+-rw-r--r-- 1 Sasha 197121  5163 Dec 13 01:10 install.py
+-rw-r--r-- 1 Sasha 197121  2226 Dec 13 01:10 install_egg_info.py
+-rw-r--r-- 1 Sasha 197121  3875 Dec 13 01:10 install_lib.py
+-rw-r--r-- 1 Sasha 197121  2612 Dec 13 01:10 install_scripts.py
+-rw-r--r-- 1 Sasha 197121   628 Dec 13 01:10 launcher manifest.xml
+-rw-r--r-- 1 Sasha 197121  4946 Dec 13 01:10 py36compat.py
+-rw-r--r-- 1 Sasha 197121   468 Dec 13 01:10 register.py
+-rw-r--r-- 1 Sasha 197121  2128 Dec 13 01:10 rotate.py
+-rw-r--r-- 1 Sasha 197121   658 Dec 13 01:10 saveopts.py
+-rw-r--r-- 1 Sasha 197121  7071 Dec 13 01:10 sdist.py
+-rw-r--r-- 1 Sasha 197121  5086 Dec 13 01:10 setopt.py
+-rw-r--r-- 1 Sasha 197121  8102 Dec 13 01:10 test.py
+-rw-r--r-- 1 Sasha 197121   462 Dec 13 01:10 upload.py
+-rw-r--r-- 1 Sasha 197121  7494 Dec 13 01:10 upload_docs.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/command/__pycache__:
+total 445
+-rw-r--r-- 1 Sasha 197121    642 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   3909 Dec 13 01:10 alias.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  25591 Dec 13 01:10 bdist_egg.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   2197 Dec 13 01:10 bdist_rpm.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   7003 Dec 13 01:10 build.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   4130 Dec 13 01:10 build_clib.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  22017 Dec 13 01:10 build_ext.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  23183 Dec 13 01:10 build_py.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  10925 Dec 13 01:10 develop.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   7987 Dec 13 01:10 dist_info.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 119342 Dec 13 01:10 easy_install.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  51420 Dec 13 01:10 editable_wheel.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  39840 Dec 13 01:10 egg_info.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   6822 Dec 13 01:10 install.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   4135 Dec 13 01:10 install_egg_info.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   6417 Dec 13 01:10 install_lib.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   4286 Dec 13 01:10 install_scripts.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   8043 Dec 13 01:10 py36compat.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   1133 Dec 13 01:10 register.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   4193 Dec 13 01:10 rotate.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   1373 Dec 13 01:10 saveopts.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  13445 Dec 13 01:10 sdist.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   7685 Dec 13 01:10 setopt.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  14626 Dec 13 01:10 test.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   1097 Dec 13 01:10 upload.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  11948 Dec 13 01:10 upload_docs.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/config:
+total 92
+-rw-r--r-- 1 Sasha 197121  1121 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121 13398 Dec 13 01:10 _apply_pyprojecttoml.py
+drwxr-xr-x 1 Sasha 197121     0 Dec 13 01:10 _validate_pyproject/
+-rw-r--r-- 1 Sasha 197121 16319 Dec 13 01:10 expand.py
+-rw-r--r-- 1 Sasha 197121 19304 Dec 13 01:10 pyprojecttoml.py
+-rw-r--r-- 1 Sasha 197121 25198 Dec 13 01:10 setupcfg.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/config/__pycache__:
+total 120
+-rw-r--r-- 1 Sasha 197121  2037 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 22540 Dec 13 01:10 _apply_pyprojecttoml.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 28251 Dec 13 01:10 expand.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 27449 Dec 13 01:10 pyprojecttoml.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 33033 Dec 13 01:10 setupcfg.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/config/_validate_pyproject:
+total 304
+-rw-r--r-- 1 Sasha 197121   1038 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121      0 Dec 13 01:10 __pycache__/
+-rw-r--r-- 1 Sasha 197121  11266 Dec 13 01:10 error_reporting.py
+-rw-r--r-- 1 Sasha 197121   1153 Dec 13 01:10 extra_validations.py
+-rw-r--r-- 1 Sasha 197121   1612 Dec 13 01:10 fastjsonschema_exceptions.py
+-rw-r--r-- 1 Sasha 197121 269900 Dec 13 01:10 fastjsonschema_validations.py
+-rw-r--r-- 1 Sasha 197121   8736 Dec 13 01:10 formats.py
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/config/_validate_pyproject/__pycache__:
+total 240
+-rw-r--r-- 1 Sasha 197121   2325 Dec 13 01:10 __init__.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  20216 Dec 13 01:10 error_reporting.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   1874 Dec 13 01:10 extra_validations.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121   3249 Dec 13 01:10 fastjsonschema_exceptions.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121 192647 Dec 13 01:10 fastjsonschema_validations.cpython-311.pyc
+-rw-r--r-- 1 Sasha 197121  14364 Dec 13 01:10 formats.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/extern:
+total 4
+-rw-r--r-- 1 Sasha 197121 2512 Dec 13 01:10 __init__.py
+drwxr-xr-x 1 Sasha 197121    0 Dec 13 01:10 __pycache__/
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools/extern/__pycache__:
+total 8
+-rw-r--r-- 1 Sasha 197121 4401 Dec 13 01:10 __init__.cpython-311.pyc
+
+./ANFAN-Fund-Dashboard/venv/Lib/site-packages/setuptools-65.5.0.dist-info:
+total 59
+-rw-r--r-- 1 Sasha 197121     4 Dec 13 01:10 INSTALLER
+-rw-r--r-- 1 Sasha 197121  1050 Dec 13 01:10 LICENSE
+-rw-r--r-- 1 Sasha 197121  6301 Dec 13 01:10 METADATA
+-rw-r--r-- 1 Sasha 197121 37694 Dec 13 01:10 RECORD
+-rw-r--r-- 1 Sasha 197121     0 Dec 13 01:10 REQUESTED
+-rw-r--r-- 1 Sasha 197121    92 Dec 13 01:10 WHEEL
+-rw-r--r-- 1 Sasha 197121  2740 Dec 13 01:10 entry_points.txt
+-rw-r--r-- 1 Sasha 197121    41 Dec 13 01:10 top_level.txt
+
+./ANFAN-Fund-Dashboard/venv/Scripts:
+total 885
+-rw-r--r-- 1 Sasha 197121  26199 Dec 13 01:10 Activate.ps1
+-rw-r--r-- 1 Sasha 197121   2083 Dec 13 01:10 activate
+-rw-r--r-- 1 Sasha 197121   1012 Dec 13 01:10 activate.bat
+-rw-r--r-- 1 Sasha 197121    393 Dec 13 01:10 deactivate.bat
+-rwxr-xr-x 1 Sasha 197121 108421 Dec 13 01:10 pip.exe*
+-rwxr-xr-x 1 Sasha 197121 108421 Dec 13 01:10 pip3.11.exe*
+-rwxr-xr-x 1 Sasha 197121 108421 Dec 13 01:10 pip3.exe*
+-rwxr-xr-x 1 Sasha 197121 270608 Dec 13 01:10 python.exe*
+-rwxr-xr-x 1 Sasha 197121 259352 Dec 13 01:10 pythonw.exe*
+
+./OLTP:
+total 4
+drwxr-xr-x 1 Sasha 197121 0 Dec 25 04:23 OLTP/
+
+./OLTP/OLTP:
+total 85
+-rw-r--r-- 1 Sasha 197121   949 Dec 25 00:45 OLTP.ssmssln
+-rw-r--r-- 1 Sasha 197121  2632 Dec 25 02:50 OLTP.ssmssqlproj
+-rw-r--r-- 1 Sasha 197121   331 Dec 25 00:45 SQLQuery1.sql
+-rw-r--r-- 1 Sasha 197121  4553 Dec 25 00:46 SQLQuery2.sql
+-rw-r--r-- 1 Sasha 197121 38072 Dec 25 02:58 cTrader_database_script.sql
+-rw-r--r-- 1 Sasha 197121  4863 Dec 25 02:50 core_trading_tables.sql
+-rw-r--r-- 1 Sasha 197121  7955 Dec 25 01:56 draft.sql
+-rw-r--r-- 1 Sasha 197121   971 Dec 25 04:23 insert init data.sql
+drwxr-xr-x 1 Sasha 197121     0 Dec 25 03:55 text/
+-rw-r--r-- 1 Sasha 197121  1864 Dec 25 01:31 tradingTables.sql
+-rw-r--r-- 1 Sasha 197121  4048 Dec 25 00:43 tradingTablesCreate.sql
+
+./OLTP/OLTP/text:
+total 1
+-rw-r--r-- 1 Sasha 197121 672 Dec 25 03:55 initData.txt

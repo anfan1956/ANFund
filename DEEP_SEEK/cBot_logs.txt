@@ -1,0 +1,178 @@
+24.01.2026 18:46:55.719 | Info | Signal 444: Direction=buy, Volume=0.02, PositionLabel=62ba3cda-e911-4443-9e81-8c27b757d4bd
+24.01.2026 18:46:55.719 | Info | double volumeUnites: 0.02
+24.01.2026 18:46:55.719 | Info | [62ba3cda-e911-4443-9e81-8c27b757d4bd] NULL or less then mindif price detected, placing MARKET ORDER
+24.01.2026 18:46:55.719 | Trade | Executing Market Order to Buy 0.02 BTCUSD (SL: 26784.1, TP: 44640.2)
+24.01.2026 18:46:56.156 | Trade | → Executing Market Order to Buy 0.02 BTCUSD (SL: 26784.1, TP: 44640.2) SUCCEEDED, Position PID191428257
+24.01.2026 18:46:56.156 | Info | === EVENT: Position Opened ===
+24.01.2026 18:46:56.156 | Info | Position ID: 191428257
+24.01.2026 18:46:56.156 | Info | Symbol: BTCUSD
+24.01.2026 18:46:56.156 | Info | Label: 62ba3cda-e911-4443-9e81-8c27b757d4bd
+24.01.2026 18:46:56.156 | Info | UUID found: 62ba3cda-e911-4443-9e81-8c27b757d4bd - Signal opening
+24.01.2026 18:46:56.156 | Info | === TradeEventTrigger ===
+24.01.2026 18:46:56.156 | Info | Type: Position, Event: Signal, Category: Open
+24.01.2026 18:46:56.172 | Info | TradeEventTrigger executed, rows affected: -1
+24.01.2026 18:46:56.172 | Info | === END TradeEventTrigger ===
+24.01.2026 18:46:56.172 | Info | === END EVENT ===
+24.01.2026 18:46:56.172 | Info | === TradeResult Callback ===
+24.01.2026 18:46:56.172 | Info | UUID: 62ba3cda-e911-4443-9e81-8c27b757d4bd, Success: True
+24.01.2026 18:46:56.172 | Info | Position opened: ID=191428257
+24.01.2026 18:46:56.172 | Info | [Signal 62ba3cda-e911-4443-9e81-8c27b757d4bd] Status updated: ACCEPTED, ExecutionType: position
+24.01.2026 18:46:56.172 | Info | [Signal 62ba3cda-e911-4443-9e81-8c27b757d4bd] Position acceptance time updated
+24.01.2026 18:47:00.366 | Info | New Bar Started for timeframe: Minute
+24.01.2026 18:47:00.506 | Info | === DATASET RESULTS ===
+24.01.2026 18:47:00.506 | Info | Columns: 
+24.01.2026 18:47:00.506 | Info | ------------------
+24.01.2026 18:47:00.506 | Info | Row 1:  = success
+24.01.2026 18:47:00.506 | Info | Total rows: 1
+24.01.2026 18:47:00.506 | Info | =====================
+24.01.2026 18:47:00.506 | Info | Equity collected: 53001.73
+24.01.2026 18:47:00.553 | Info | === DATASET RESULTS ===
+24.01.2026 18:47:00.553 | Info | No rows returned
+24.01.2026 18:47:00.553 | Info | =====================
+24.01.2026 18:47:00.553 | Info |   SymbolsToCollect: USDJPY, EURJPY, EURGBP, GBPUSD, EURUSD, US500, BTCUSD, XPDUSD,XAUUSD,XAGUSD,NAS100, XPTUSD
+24.01.2026 18:47:00.553 | Info | === COLLECTING BARS DATA (ALL TIMEFRAMES) ===
+24.01.2026 18:48:00.460 | Info | New Bar Started for timeframe: Minute
+24.01.2026 18:48:00.475 | Info | === DATASET RESULTS ===
+24.01.2026 18:48:00.475 | Info | Columns: 
+24.01.2026 18:48:00.475 | Info | ------------------
+24.01.2026 18:48:00.475 | Info | Row 1:  = success
+24.01.2026 18:48:00.475 | Info | Total rows: 1
+24.01.2026 18:48:00.475 | Info | =====================
+24.01.2026 18:48:00.475 | Info | Equity collected: 53001.32
+24.01.2026 18:48:00.506 | Info | === DATASET RESULTS ===
+24.01.2026 18:48:00.506 | Info | No rows returned
+24.01.2026 18:48:00.506 | Info | =====================
+24.01.2026 18:48:00.506 | Info |   SymbolsToCollect: USDJPY, EURJPY, EURGBP, GBPUSD, EURUSD, US500, BTCUSD, XPDUSD,XAUUSD,XAGUSD,NAS100, XPTUSD
+24.01.2026 18:48:00.506 | Info | === COLLECTING BARS DATA (ALL TIMEFRAMES) ===
+24.01.2026 18:49:00.160 | Info | New Bar Started for timeframe: Minute
+24.01.2026 18:49:00.175 | Info | === DATASET RESULTS ===
+24.01.2026 18:49:00.175 | Info | Columns: 
+24.01.2026 18:49:00.175 | Info | ------------------
+24.01.2026 18:49:00.175 | Info | Row 1:  = success
+24.01.2026 18:49:00.175 | Info | Total rows: 1
+24.01.2026 18:49:00.175 | Info | =====================
+24.01.2026 18:49:00.175 | Info | Equity collected: 53001.57
+24.01.2026 18:49:00.207 | Info | === DATASET RESULTS ===
+24.01.2026 18:49:00.207 | Info | No rows returned
+24.01.2026 18:49:00.207 | Info | =====================
+24.01.2026 18:49:00.207 | Info |   SymbolsToCollect: USDJPY, EURJPY, EURGBP, GBPUSD, EURUSD, US500, BTCUSD, XPDUSD,XAUUSD,XAGUSD,NAS100, XPTUSD
+24.01.2026 18:49:00.207 | Info | === COLLECTING BARS DATA (ALL TIMEFRAMES) ===
+24.01.2026 18:50:00.425 | Info | New Bar Started for timeframe: Minute
+24.01.2026 18:50:00.457 | Info | === DATASET RESULTS ===
+24.01.2026 18:50:00.457 | Info | Columns: 
+24.01.2026 18:50:00.457 | Info | ------------------
+24.01.2026 18:50:00.457 | Info | Row 1:  = success
+24.01.2026 18:50:00.457 | Info | Total rows: 1
+24.01.2026 18:50:00.457 | Info | =====================
+24.01.2026 18:50:00.457 | Info | Equity collected: 53001.57
+24.01.2026 18:50:00.488 | Info | === DATASET RESULTS ===
+24.01.2026 18:50:00.488 | Info | No rows returned
+24.01.2026 18:50:00.488 | Info | =====================
+24.01.2026 18:50:00.488 | Info |   SymbolsToCollect: USDJPY, EURJPY, EURGBP, GBPUSD, EURUSD, US500, BTCUSD, XPDUSD,XAUUSD,XAGUSD,NAS100, XPTUSD
+24.01.2026 18:50:00.488 | Info | === COLLECTING BARS DATA (ALL TIMEFRAMES) ===
+24.01.2026 18:50:59.707 | Info | Signal 445: Direction=drop, Volume=0.02, PositionLabel=62ba3cda-e911-4443-9e81-8c27b757d4bd
+24.01.2026 18:50:59.707 | Info | === ATTEMPTING TO CLOSE POSITION ===
+24.01.2026 18:50:59.707 | Info | Position Label (UUID): 62ba3cda-e911-4443-9e81-8c27b757d4bd
+24.01.2026 18:50:59.707 | Info | Signal ID: 445
+24.01.2026 18:50:59.707 | Info | Volume to close: 0.02
+24.01.2026 18:50:59.707 | Info | Found position: ID=191428257, Symbol=BTCUSD, Volume=0.02
+24.01.2026 18:50:59.707 | Info | Closing 0.02 units out of 0.02 total
+24.01.2026 18:50:59.707 | Trade | Closing position PID191428257 (Volume: 0.02)
+24.01.2026 18:51:00.128 | Trade | → Closing position PID191428257 (Volume: 0.02) SUCCEEDED
+24.01.2026 18:51:00.128 | Info | Partial close successful: Closed 0.02 units
+24.01.2026 18:51:00.128 | Info | [Signal 62ba3cda-e911-4443-9e81-8c27b757d4bd] Status updated: ACCEPTED, ExecutionType: close
+24.01.2026 18:51:00.128 | Info | === END CLOSE ATTEMPT ===
+24.01.2026 18:51:00.160 | Info | === EVENT: Position Closed ===
+24.01.2026 18:51:00.160 | Info | Position ID: 191428257
+24.01.2026 18:51:00.160 | Info | Symbol: BTCUSD
+24.01.2026 18:51:00.160 | Info | P&L: -0.51
+24.01.2026 18:51:00.160 | Info | Label: 62ba3cda-e911-4443-9e81-8c27b757d4bd
+24.01.2026 18:51:00.160 | Info | UUID found: 62ba3cda-e911-4443-9e81-8c27b757d4bd
+24.01.2026 18:51:00.160 | Info | Position 62ba3cda-e911-4443-9e81-8c27b757d4bd closeTime updated, rows affected: 1
+24.01.2026 18:51:00.175 | Info | Position closed logged, rows affected: -1
+24.01.2026 18:51:00.175 | Info | === END EVENT ===
+24.01.2026 18:51:00.332 | Info | New Bar Started for timeframe: Minute
+24.01.2026 18:51:00.347 | Info | === DATASET RESULTS ===
+24.01.2026 18:51:00.347 | Info | Columns: 
+24.01.2026 18:51:00.347 | Info | ------------------
+24.01.2026 18:51:00.347 | Info | Row 1:  = success
+24.01.2026 18:51:00.347 | Info | Total rows: 1
+24.01.2026 18:51:00.347 | Info | =====================
+24.01.2026 18:51:00.347 | Info | Equity collected: 53001.55
+24.01.2026 18:51:00.378 | Info | === DATASET RESULTS ===
+24.01.2026 18:51:00.378 | Info | No rows returned
+24.01.2026 18:51:00.378 | Info | =====================
+24.01.2026 18:51:00.378 | Info |   SymbolsToCollect: USDJPY, EURJPY, EURGBP, GBPUSD, EURUSD, US500, BTCUSD, XPDUSD,XAUUSD,XAGUSD,NAS100, XPTUSD
+24.01.2026 18:51:00.378 | Info | === COLLECTING BARS DATA (ALL TIMEFRAMES) ===
+24.01.2026 18:52:00.238 | Info | New Bar Started for timeframe: Minute
+24.01.2026 18:52:00.253 | Info | === DATASET RESULTS ===
+24.01.2026 18:52:00.253 | Info | Columns: 
+24.01.2026 18:52:00.253 | Info | ------------------
+24.01.2026 18:52:00.253 | Info | Row 1:  = success
+24.01.2026 18:52:00.253 | Info | Total rows: 1
+24.01.2026 18:52:00.253 | Info | =====================
+24.01.2026 18:52:00.253 | Info | Equity collected: 53001.55
+24.01.2026 18:52:00.269 | Info | === DATASET RESULTS ===
+24.01.2026 18:52:00.269 | Info | No rows returned
+24.01.2026 18:52:00.269 | Info | =====================
+24.01.2026 18:52:00.269 | Info |   SymbolsToCollect: USDJPY, EURJPY, EURGBP, GBPUSD, EURUSD, US500, BTCUSD, XPDUSD,XAUUSD,XAGUSD,NAS100, XPTUSD
+24.01.2026 18:52:00.269 | Info | === COLLECTING BARS DATA (ALL TIMEFRAMES) ===
+24.01.2026 18:53:00.408 | Info | New Bar Started for timeframe: Minute
+24.01.2026 18:53:00.439 | Info | === DATASET RESULTS ===
+24.01.2026 18:53:00.439 | Info | Columns: 
+24.01.2026 18:53:00.439 | Info | ------------------
+24.01.2026 18:53:00.439 | Info | Row 1:  = success
+24.01.2026 18:53:00.439 | Info | Total rows: 1
+24.01.2026 18:53:00.439 | Info | =====================
+24.01.2026 18:53:00.439 | Info | Equity collected: 53001.55
+24.01.2026 18:53:00.470 | Info | === DATASET RESULTS ===
+24.01.2026 18:53:00.470 | Info | No rows returned
+24.01.2026 18:53:00.470 | Info | =====================
+24.01.2026 18:53:00.470 | Info |   SymbolsToCollect: USDJPY, EURJPY, EURGBP, GBPUSD, EURUSD, US500, BTCUSD, XPDUSD,XAUUSD,XAGUSD,NAS100, XPTUSD
+24.01.2026 18:53:00.470 | Info | === COLLECTING BARS DATA (ALL TIMEFRAMES) ===
+24.01.2026 18:53:13.705 | Info | Signal 446: Direction=buy, Volume=0.02, PositionLabel=d4936a92-2e9e-4251-9a25-02f1cb6637cc
+24.01.2026 18:53:13.705 | Info | double volumeUnites: 0.02
+24.01.2026 18:53:13.705 | Info | [d4936a92-2e9e-4251-9a25-02f1cb6637cc] NULL or less then mindif price detected, placing MARKET ORDER
+24.01.2026 18:53:13.705 | Trade | Executing Market Order to Buy 0.02 BTCUSD (SL: 26783, TP: 44638.4)
+24.01.2026 18:53:14.064 | Trade | → Executing Market Order to Buy 0.02 BTCUSD (SL: 26783, TP: 44638.4) SUCCEEDED, Position PID191428299
+24.01.2026 18:53:14.080 | Info | === EVENT: Position Opened ===
+24.01.2026 18:53:14.080 | Info | Position ID: 191428299
+24.01.2026 18:53:14.080 | Info | Symbol: BTCUSD
+24.01.2026 18:53:14.080 | Info | Label: d4936a92-2e9e-4251-9a25-02f1cb6637cc
+24.01.2026 18:53:14.080 | Info | UUID found: d4936a92-2e9e-4251-9a25-02f1cb6637cc - Signal opening
+24.01.2026 18:53:14.080 | Info | === TradeEventTrigger ===
+24.01.2026 18:53:14.080 | Info | Type: Position, Event: Signal, Category: Open
+24.01.2026 18:53:14.080 | Info | TradeEventTrigger executed, rows affected: -1
+24.01.2026 18:53:14.080 | Info | === END TradeEventTrigger ===
+24.01.2026 18:53:14.080 | Info | === END EVENT ===
+24.01.2026 18:53:14.080 | Info | === TradeResult Callback ===
+24.01.2026 18:53:14.080 | Info | UUID: d4936a92-2e9e-4251-9a25-02f1cb6637cc, Success: True
+24.01.2026 18:53:14.080 | Info | Position opened: ID=191428299
+24.01.2026 18:53:14.080 | Info | [Signal d4936a92-2e9e-4251-9a25-02f1cb6637cc] Status updated: ACCEPTED, ExecutionType: position
+24.01.2026 18:53:14.080 | Info | [Signal d4936a92-2e9e-4251-9a25-02f1cb6637cc] Position acceptance time updated
+24.01.2026 18:54:00.205 | Info | New Bar Started for timeframe: Minute
+24.01.2026 18:54:00.236 | Info | === DATASET RESULTS ===
+24.01.2026 18:54:00.236 | Info | Columns: 
+24.01.2026 18:54:00.236 | Info | ------------------
+24.01.2026 18:54:00.236 | Info | Row 1:  = success
+24.01.2026 18:54:00.236 | Info | Total rows: 1
+24.01.2026 18:54:00.236 | Info | =====================
+24.01.2026 18:54:00.236 | Info | Equity collected: 53001.20
+24.01.2026 18:54:00.283 | Info | === DATASET RESULTS ===
+24.01.2026 18:54:00.283 | Info | No rows returned
+24.01.2026 18:54:00.283 | Info | =====================
+24.01.2026 18:54:00.283 | Info |   SymbolsToCollect: USDJPY, EURJPY, EURGBP, GBPUSD, EURUSD, US500, BTCUSD, XPDUSD,XAUUSD,XAGUSD,NAS100, XPTUSD
+24.01.2026 18:54:00.283 | Info | === COLLECTING BARS DATA (ALL TIMEFRAMES) ===
+24.01.2026 18:55:00.283 | Info | New Bar Started for timeframe: Minute
+24.01.2026 18:55:00.298 | Info | === DATASET RESULTS ===
+24.01.2026 18:55:00.298 | Info | Columns: 
+24.01.2026 18:55:00.298 | Info | ------------------
+24.01.2026 18:55:00.298 | Info | Row 1:  = success
+24.01.2026 18:55:00.298 | Info | Total rows: 1
+24.01.2026 18:55:00.298 | Info | =====================
+24.01.2026 18:55:00.298 | Info | Equity collected: 53000.85
+24.01.2026 18:55:00.361 | Info | === DATASET RESULTS ===
+24.01.2026 18:55:00.361 | Info | No rows returned
+24.01.2026 18:55:00.361 | Info | =====================
+24.01.2026 18:55:00.361 | Info |   SymbolsToCollect: USDJPY, EURJPY, EURGBP, GBPUSD, EURUSD, US500, BTCUSD, XPDUSD,XAUUSD,XAGUSD,NAS100, XPTUSD
+24.01.2026 18:55:00.361 | Info | === COLLECTING BARS DATA (ALL TIMEFRAMES) ===

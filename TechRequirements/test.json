@@ -1,0 +1,70 @@
+    
+    {
+        "ticker": {
+            "type": "string",
+            "display_name": "ticker",
+            "description": "Trading instrument symbol (e.g. XAUUSD, XAGUSD)"
+        },
+        "timeframe_signal": {
+            "type": "integer",
+            "display_name": "Signal Timeframe ID",
+            "description": "Timeframe ID for signal generation (e.g. M1 = 1)"
+        },
+        "timeframe_confirmation": {
+            "type": "integer",
+            "display_name": "Confirmation Timeframe ID", 
+            "description": "Timeframe ID for signal confirmation (e.g. M15 = 3)"
+        },
+        "timeframe_trend": {
+            "type": "integer",
+            "display_name": "Trend Timeframe ID",
+            "description": "Timeframe ID for trend filter (e.g. H1 = 5)"
+        },
+        "open_volume": {
+            "type": "number",
+            "display_name": "Position Volume",
+            "description": "Initial position volume in lots",
+            "validation": {
+                "min": 0.01,
+                "max": 10,
+                "decimal_places": 2
+            }
+        },
+        "trading_close_utc": {
+            "type": "time",
+            "display_name": "Daily Close Time",
+            "description": "Time to force close positions (UTC HH:MM)"
+        },
+        "trading_start_utc": {
+            "type": "time",
+            "display_name": "Daily Start Time",
+            "description": "Time to allow positions (UTC HH:MM)"
+        },
+        "broker_id": {
+            "type": "integer",
+            "display_name": "Broker ID",
+            "description": "Broker identifier for trading signals"
+        },
+        "platform_id": {
+            "type": "integer",
+            "display_name": "Platform ID",
+            "description": "Trading platform identifier"
+        },
+        "max_position_checks": {
+            "type": "integer",
+            "display_name": "Max Position Checks",
+            "description": "Maximum attempts to verify position opening"
+        },
+        "check_interval_seconds": {
+            "type": "integer",
+            "display_name": "Check Interval",
+            "description": "Seconds between position verification checks"
+        }
+    }
+
+,
+
+
+ 
+        [{"ticker":"XAUUSD", "timeframe_signal":"M1", "timeframe_confirmation":"M30", "timeframe_trend":"H1", "open_volume":"0.01", "trading_close_utc":"0.916666666666667", "trading_start_utc":"0.958333333333333", "broker_id":"2", "platform_id":"1", "max_position_checks":"10", "check_interval_seconds":"10",}]
+
