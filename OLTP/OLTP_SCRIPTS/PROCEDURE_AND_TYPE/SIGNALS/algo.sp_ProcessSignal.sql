@@ -7,25 +7,32 @@ go
 
 CREATE PROCEDURE algo.sp_ProcessSignal
     @uuid uniqueidentifier,
-	@status nvarchar(20), 
-	@executionType NVARCHAR(20),	--(order, position)
+    @status nvarchar(20), 
+    @executionType NVARCHAR(20),    --(order, position)
     @executionID NVARCHAR(50) -- (for order or for position)
 AS
 BEGIN
-    UPDATE s set	
-		s.status = @status, 
-		s.executionType  = case when @status = 'ACCEPTED' then  @executionType end, 
-		s.executionID  = case when @status = 'ACCEPTED' then  @executionID end, 
-		s.executionTime = GETDATE()
-	FROM algo.tradingSignals s
+    -- 1. Обновляем tradingSignals
+    UPDATE s SET    
+        s.status = @status, 
+        s.executionType  = CASE WHEN @status = 'ACCEPTED' THEN @executionType END, 
+        s.executionID  = CASE WHEN @status = 'ACCEPTED' THEN @executionID END, 
+        s.executionTime = GETDATE()
+    FROM algo.tradingSignals s
     WHERE s.positionLabel = @uuid;
+
+    -- 2. Обновляем createdTime в strategies_positions для принятых сигналов
+    IF @status = 'ACCEPTED'
+    BEGIN
+        UPDATE sp
+        SET createdTime = GETUTCDATE()
+        FROM algo.strategies_positions sp
+        WHERE sp.trade_uuid = @uuid;
+    END
 END;
-go
-declare 
-    @signalID INT				= 1,
-	@status nvarchar(20)		= 'ACCEPTED', 
-	@executionType NVARCHAR(20) = 'order',	--(order, position)
-    @executionID NVARCHAR(50)	= 'OID309096229'-- in this case for 'order'	  	-- (for order or for position)
+GO
+
+
 /*
 exec algo.sp_ProcessSignal
 		@signalID		= @signalID,
@@ -36,5 +43,5 @@ exec algo.sp_ProcessSignal
 
 
 --exec algo.sp_GetActiveSignal;
-select * from algo.tradingSignals order by signalID desc;
+select top 10 * from algo.tradingSignals order by signalID desc;
 

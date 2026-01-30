@@ -1,10 +1,9 @@
-import pyodbc
-from dotenv import load_dotenv
+import pytz
+from datetime import datetime
 import os
 from abc import ABC, abstractmethod
-import pytz
-from datetime import datetime, time as time_type
-import time
+import pyodbc
+from dotenv import load_dotenv
 
 
 class EnvironmentConfig:
@@ -144,52 +143,45 @@ class StrategyBase:
         9: 2592000 # MN1
     }
 
-    def __init__(self, configuration_id: int, timeframe_id: int,
-                 connection_provider=None, timer_interval=0.5):
+    def __init__(self, configid, timer_interval=0.5):
         """
         Args:
-            configuration_id: Strategy configuration ID from database
-            timeframe_id: Minimum timeframe ID for bar checking (e.g., 1 for M1)
-            connection_provider: ConnectionProvider instance (optional)
+            configid: Strategy configuration ID (required)
             timer_interval: Timer interval in seconds (default 0.5s = 500ms)
         """
-        self.configuration_id = configuration_id
-        self.timeframe_id = timeframe_id
+        if configid is None:
+            raise ValueError("configid is required")
+
+        self.configid = configid
         self.timer_interval = timer_interval
-
-        # Calculate n (number of timer intervals per timeframe)
-        timeframe_seconds = self.TIMEFRAME_MAP.get(timeframe_id)
-        if not timeframe_seconds:
-            raise ValueError(f"Unknown timeframe_id: {timeframe_id}")
-
-        self.n = int(timeframe_seconds / timer_interval)
         self.current_cycle = 0
 
-        print(f"Strategy {configuration_id} initialized: "
-              f"timeframe={timeframe_id}, interval={timer_interval}s, n={self.n}")
+        print(f"StrategyBase initialized for config {configid} with {timer_interval}s interval")
 
         # Initialize connection provider
-        if connection_provider is None:
-            self.connection_provider = LocalConnectionProvider()
-        else:
-            self.connection_provider = connection_provider
-
-        # Initialize helpers
+        self.connection_provider = LocalConnectionProvider()
         self.db = DatabaseHelper(self.connection_provider)
-        self.position_manager = PositionManager(self)
 
-        # Register strategy and load configuration
-        self._register_and_load_configuration()
+        # Configuration storage
+        self.configs = {}  # configid -> configuration data
+        self.strategy_instances = {}  # configid -> strategy instance
+        self.n = 120  # Default for M1 timeframe, will be updated per config
+
+        # Position storage in memory
+        self.positions = {}  # configid -> position_data
 
     def _register_and_load_configuration(self):
         """Register strategy in database and load configuration"""
-        conn = self.db.get_connection()
+        conn = self.db.get_connection(autocommit=True)
         try:
             cursor = conn.cursor()
+
+            # 1. Регистрируем стратегию и получаем конфигурацию
             cursor.execute("EXEC algo.sp_strategyRegister @configID = ?",
-                           self.configuration_id)
+                           self.configid)  # ← ИЗМЕНИТЬ
 
             result = cursor.fetchone()
+
             if result and result[0]:
                 import json
                 config = json.loads(result[0])
@@ -210,8 +202,28 @@ class StrategyBase:
                         print(f"  Updated n={self.n}")
 
                 print(f"Strategy registered: {self.config_instance_guid}")
+
+                # 2. Логируем старт стратегии
+                cursor.execute("""
+                    EXEC logs.sp_LogStrategyExecution 
+                        @configID = ?, 
+                        @eventTypeName = 'start',
+                        @volume = ?,
+                        @price = NULL,
+                        @trade_uuid = ?
+                """, (self.configid, float(config['open_volume']), self.config_instance_guid))  # ← ИЗМЕНИТЬ
+
+                print(f"Strategy start logged")
+
             else:
-                raise ValueError(f"Failed to register strategy {self.configuration_id}")
+                raise ValueError(f"Failed to register strategy {self.configid}")  # ← ИЗМЕНИТЬ
+
+            # Добавляем стратегию в пул активных стратегий фреймворка
+            if not hasattr(self, '_framework_pool'):
+                self._framework_pool = {}  # Локальный пул этого экземпляра
+
+            self._framework_pool[self.configid] = self  # ← ИЗМЕНИТЬ
+            print(f"[StrategyBase] Strategy {self.configid} added to framework pool")  # ← ИЗМЕНИТЬ
 
         finally:
             self.db.return_connection(conn)
@@ -224,14 +236,293 @@ class StrategyBase:
         """Return connection to pool"""
         self.db.return_connection(connection)
 
-    # Остальные методы пока заглушки
-    def get_open_positions(self, connection):
-        """Get open positions for strategy - TO BE IMPLEMENTED"""
-        raise NotImplementedError
+    def run(self):
+        """
+        Main strategy execution loop.
+        """
+        print(f"[StrategyBase] Starting execution loop for config {self.configid}")  # ← ИЗМЕНИТЬ
 
-    def log_strategy_execution(self, connection, config_id, signal_type, volume, price=None, trade_uuid=None):
-        """Log strategy execution - TO BE IMPLEMENTED"""
-        raise NotImplementedError
+        try:
+            while True:
+                conn = self.get_connection()
+
+                try:
+                    if self.check_termination(conn):
+                        print(f"[StrategyBase] Termination condition met. Stopping strategy.")
+                        self.force_close(conn)
+                        break
+
+                    if self.check_suspend_trading(conn):  # ← ИЗМЕНИТЬ НАЗВАНИЕ
+                        print(f"[StrategyBase] Trading suspend time reached.")  # ← ИЗМЕНИТЬ ТЕКСТ
+                        self.force_close(conn)
+                        break
+
+                    # ← ВСТАВИТЬ ЗДЕСЬ ↓
+                    self.process_bars_and_signals(conn, close_existing=True)
+                    # ← ВСТАВИТЬ ЗДЕСЬ ↑
+
+                finally:
+                    self.return_connection(conn)
+
+                import time
+                time.sleep(self.timer_interval)
+
+                self.current_cycle += 1
+                if self.current_cycle >= self.n:
+                    self.current_cycle = 0
+
+        except KeyboardInterrupt:
+            print(f"[StrategyBase] Interrupted by user")
+        except Exception as e:
+            print(f"[StrategyBase] Error in execution loop: {e}")
+            import traceback
+            traceback.print_exc()
+        finally:
+            print(f"[StrategyBase] Strategy {self.configid} stopped")  # ← ИЗМЕНИТЬ
+
+    def check_termination(self, connection):
+        """Check if strategy should terminate from database queue"""
+        try:
+            cursor = connection.cursor()
+            cursor.execute("""
+                SELECT termination_id 
+                FROM cTrader.algo.strategy_termination_queue_v 
+                WHERE config_id = ? AND processed = 0
+            """, self.configid)
+            result = cursor.fetchone()
+            cursor.close()
+            return result is not None
+        except Exception as e:
+            print(f"[StrategyBase] Error checking termination: {e}")
+            return False
+
+    def check_suspend_trading(self, connection):
+        """Check if trading should be suspended (time-based)"""
+        try:
+            if not hasattr(self, 'config_data'):
+                return False
+
+            close_utc = self.config_data.get('trading_close_utc')
+            if not close_utc or str(close_utc) == '00:00:00':
+                return False
+
+            from datetime import time as dt_time
+            if len(str(close_utc)) == 8 and str(close_utc).count(':') == 2:
+                h, m, s = map(int, str(close_utc).split(':'))
+                close_time = dt_time(h, m, s)
+            else:
+                return False
+
+            current_utc = datetime.now(pytz.UTC).time()
+            return current_utc >= close_time
+        except Exception as e:
+            print(f"[StrategyBase] Error checking suspend trading: {e}")
+            return False
+
+    def force_close(self, connection):
+        """Force close all positions for this strategy"""
+        print(f"[StrategyBase] Force closing positions for config {self.configid}")
+
+        try:
+            # Get positions from database
+            cursor = connection.cursor()
+            cursor.execute("SELECT algo.fn_GetStrategyPositionIDs(?)", self.configid)
+            result = cursor.fetchone()
+
+            if not result or not result[0]:
+                print(f"[StrategyBase] No positions found")
+                return True
+
+            import json
+            positions_data = json.loads(result[0])
+
+            if len(positions_data) == 0:
+                print(f"[StrategyBase] No positions to close")
+                return True
+
+            # Close each position
+            for position in positions_data:
+                position_id = position['id']
+                print(f"[StrategyBase] Closing position ID {position_id}")
+
+                execute_signal_procedure(
+                    connection=connection,
+                    ticker=position['ticker'],
+                    direction='drop',
+                    volume=0,
+                    order_price=None,
+                    stop_loss=None,
+                    take_profit=None,
+                    expiry=None,
+                    broker_id=self.config_data.get('broker_id'),
+                    platform_id=self.config_data.get('platform_id'),
+                    trade_id=position_id,
+                    trade_type='POSITION',
+                    strategy_configuration_id=self.configid
+                )
+
+                # Log close
+                self.log_strategy_execution(
+                    connection=connection,
+                    signal_type='force_close',
+                    volume=0,
+                    trade_uuid=str(position_id)
+                )
+
+            connection.commit()
+            cursor.close()
+
+            # Remove from memory
+            if self.configid in self.positions:
+                del self.positions[self.configid]
+
+            print(f"[StrategyBase] Force close completed for {len(positions_data)} position(s)")
+            return True
+
+        except Exception as e:
+            print(f"[StrategyBase] Error in force close: {e}")
+            connection.rollback()
+            return False
+
+    def get_position(self, configid):
+        """Get position from memory for specified configid"""
+        return self.positions.get(configid)
+
+    def close_position(self, configid, position_id):
+        """Close specific position (command from strategy)"""
+        if configid != self.configid:
+            print(f"[StrategyBase] Warning: close_position called for config {configid} but instance is for config {self.configid}")
+            return False
+
+        try:
+            print(f"[StrategyBase] Closing position {position_id} for config {configid}")
+
+            # Get position details from memory or DB
+            position = self.positions.get(configid)
+            if not position:
+                # Try to get from DB
+                cursor = self.get_connection().cursor()
+                cursor.execute("SELECT algo.fn_GetStrategyPositionIDs(?)", configid)
+                result = cursor.fetchone()
+                if result and result[0]:
+                    import json
+                    positions_data = json.loads(result[0])
+                    if positions_data and len(positions_data) > 0:
+                        position = positions_data[0]
+
+            if not position:
+                print(f"[StrategyBase] Position {position_id} not found")
+                return False
+
+            # Execute close
+            conn = self.get_connection()
+            execute_signal_procedure(
+                connection=conn,
+                ticker=position['ticker'],
+                direction='drop',
+                volume=0,
+                order_price=None,
+                stop_loss=None,
+                take_profit=None,
+                expiry=None,
+                broker_id=self.config_data.get('broker_id'),
+                platform_id=self.config_data.get('platform_id'),
+                trade_id=position_id,
+                trade_type='POSITION',
+                strategy_configuration_id=configid
+            )
+
+            # Log
+            self.log_strategy_execution(
+                connection=conn,
+                signal_type='drop',
+                volume=0,
+                trade_uuid=str(position_id)
+            )
+
+            conn.commit()
+            self.return_connection(conn)
+
+            # Remove from memory
+            if configid in self.positions:
+                del self.positions[configid]
+
+            print(f"[StrategyBase] Position {position_id} closed")
+            return True
+
+        except Exception as e:
+            print(f"[StrategyBase] Error closing position: {e}")
+            return False
+
+    def open_position(self, configid, direction):
+        """Open new position (command from strategy)"""
+        if configid != self.configid:
+            print(f"[StrategyBase] Warning: open_position called for config {configid} but instance is for config {self.configid}")
+            return False
+
+        try:
+            if not hasattr(self, 'config_data'):
+                print(f"[StrategyBase] No config data loaded")
+                return False
+
+            print(f"[StrategyBase] Opening {direction} position for config {configid}")
+
+            conn = self.get_connection()
+
+            # Execute open
+            execute_signal_procedure(
+                connection=conn,
+                ticker=self.config_data['ticker'],
+                direction=direction,
+                volume=float(self.config_data['open_volume']),
+                order_price=None,
+                stop_loss=None,
+                take_profit=None,
+                expiry=None,
+                broker_id=self.config_data.get('broker_id'),
+                platform_id=self.config_data.get('platform_id'),
+                trade_id=None,
+                trade_type=None,
+                strategy_configuration_id=configid
+            )
+
+            # Log
+            self.log_strategy_execution(
+                connection=conn,
+                signal_type=direction,
+                volume=float(self.config_data['open_volume']),
+                price=None,
+                trade_uuid=None
+            )
+
+            conn.commit()
+            self.return_connection(conn)
+
+            print(f"[StrategyBase] {direction} position opened for {self.config_data['ticker']}")
+            return True
+
+        except Exception as e:
+            print(f"[StrategyBase] Error opening position: {e}")
+            return False
+
+    def log_strategy_execution(self, connection, signal_type, volume, price=None, trade_uuid=None):
+        """Log strategy execution - общий метод"""
+        try:
+            cursor = connection.cursor()
+            cursor.execute("""
+                EXEC logs.sp_LogStrategyExecution 
+                    @configID = ?, 
+                    @signalType = ?,
+                    @volume = ?,
+                    @price = ?,
+                    @trade_uuid = ?
+            """, (self.configid, signal_type, volume, price, trade_uuid))  # ← ИЗМЕНИТЬ
+            connection.commit()
+            cursor.close()
+            return True
+        except Exception as e:
+            print(f"[StrategyBase] Error logging execution: {e}")
+            return False
 
     def _cleanup(self):
         """Cleanup resources"""
@@ -240,6 +531,7 @@ class StrategyBase:
     def __del__(self):
         """Destructor"""
         self._cleanup()
+
 
 
 class PositionManager:
@@ -318,3 +610,45 @@ class PerformanceAnalyzer:
 class SignalValidator:
     """Signal validation - PLACEHOLDER"""
     pass
+
+
+# ===== SIGNAL EXECUTION FUNCTION =====
+def execute_signal_procedure(connection, ticker, direction, volume, order_price=None,
+                             stop_loss=None, take_profit=None, expiry=None,
+                             broker_id=None, platform_id=None, trade_id=None,
+                             trade_type=None, strategy_configuration_id=None):
+    """
+    Execute trading signal procedure
+    Based on sp_create_signal.py logic
+    """
+    try:
+        cursor = connection.cursor()
+
+        # Prepare parameters
+        params = [
+            ticker,
+            direction,
+            volume,
+            order_price if order_price is not None else None,
+            stop_loss if stop_loss is not None else None,
+            take_profit if take_profit is not None else None,
+            expiry,
+            broker_id if broker_id is not None else None,
+            platform_id if platform_id is not None else None,
+            trade_id,
+            trade_type,
+            strategy_configuration_id
+        ]
+
+        # Call stored procedure
+        cursor.execute("EXEC trd.sp_CreateSignal ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?", params)
+        connection.commit()
+        cursor.close()
+
+        print(f"[Signal] {ticker} {direction} volume={volume}")
+        return True
+
+    except Exception as e:
+        print(f"[Signal Error] {e}")
+        connection.rollback()
+        return False
