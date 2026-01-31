@@ -25,3 +25,7 @@ BEGIN
     
     -- Если createdTime уже был установлен, ничего не делаем (идемпотентно)
 END
+
+
+select top 5 * from algo.strategies_positions order by createdTime desc
+

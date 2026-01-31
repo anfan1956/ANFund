@@ -25,6 +25,7 @@ Create view algo.strategiesRunning_v as
 		join algo.ConfigurationSets cs on cs.Id = sp.strategy_configuration_id
 		join algo.ParameterSets ps on ps.Id=cs.ParameterSetId
 		join algo.strategies s on s.ID = ps.strategy_id
+		join 
 		OUTER APPLY (
 			select top 1 grossProfit, ps.netProfit
 			from trd.positionState ps

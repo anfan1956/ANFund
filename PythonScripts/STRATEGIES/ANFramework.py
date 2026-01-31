@@ -143,18 +143,21 @@ class StrategyBase:
         9: 2592000 # MN1
     }
 
-    def __init__(self, configid, timer_interval=0.5):
+    def __init__(self, configid, timer_interval=0.5, timeframe_id=1):
         """
         Args:
             configid: Strategy configuration ID (required)
             timer_interval: Timer interval in seconds (default 0.5s = 500ms)
+            timeframe_id: Default timeframe ID (default 1 = M1)
         """
+        self._termination_error_printed = None
         if configid is None:
             raise ValueError("configid is required")
 
         self.configid = configid
         self.timer_interval = timer_interval
         self.current_cycle = 0
+        self.timeframe_id = timeframe_id  # ← ДОБАВИТЬ ЭТУ СТРОКУ
 
         print(f"StrategyBase initialized for config {configid} with {timer_interval}s interval")
 
@@ -281,19 +284,33 @@ class StrategyBase:
             print(f"[StrategyBase] Strategy {self.configid} stopped")  # ← ИЗМЕНИТЬ
 
     def check_termination(self, connection):
-        """Check if strategy should terminate from database queue"""
+        """Check if strategy should terminate using database procedure"""
         try:
             cursor = connection.cursor()
+
+            # Check if config_instance_guid exists
+            if not hasattr(self, 'config_instance_guid'):
+                return False
+
+            # Call the termination procedure
             cursor.execute("""
-                SELECT termination_id 
-                FROM cTrader.algo.strategy_termination_queue_v 
-                WHERE config_id = ? AND processed = 0
-            """, self.configid)
+                EXEC algo.sp_TerminateInstance ?
+            """, self.config_instance_guid)
+
             result = cursor.fetchone()
             cursor.close()
-            return result is not None
+
+            # Procedure returns 1 (True) if should terminate
+            if result and result[0]:
+                return bool(result[0])  # Convert to Python bool
+
+            return False
+
         except Exception as e:
-            print(f"[StrategyBase] Error checking termination: {e}")
+            # Print error only first time
+            if not hasattr(self, '_termination_error_printed'):
+                self._termination_error_printed = True
+                print(f"[StrategyBase] Error checking termination: {e}")
             return False
 
     def check_suspend_trading(self, connection):
@@ -326,7 +343,7 @@ class StrategyBase:
         try:
             # Get positions from database
             cursor = connection.cursor()
-            cursor.execute("SELECT algo.fn_GetStrategyPositionIDs(?)", self.configid)
+            cursor.execute("SELECT algo.fn_GetInstancePositionIDs(?)", self.config_instance_guid)
             result = cursor.fetchone()
 
             if not result or not result[0]:

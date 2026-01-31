@@ -1,12 +1,21 @@
-IF OBJECT_ID('algo.fn_GetStrategyPositionIDs') IS NOT NULL
-    DROP FUNCTION algo.fn_GetStrategyPositionIDs;
+IF OBJECT_ID('algo.fn_GetInstancePositionIDs') IS NOT NULL
+    DROP FUNCTION algo.fn_GetInstancePositionIDs;
 GO
 
-CREATE FUNCTION algo.fn_GetStrategyPositionIDs(@config_id INT)
+CREATE FUNCTION algo.fn_GetInstancePositionIDs(@instance_guid UNIQUEIDENTIFIER)
 RETURNS NVARCHAR(MAX)
 AS
 BEGIN
     DECLARE @result NVARCHAR(MAX);
+    DECLARE @config_id INT;
+    
+    -- Get configID from strategyTracker using instance GUID
+    SELECT @config_id = configID 
+    FROM algo.strategyTracker 
+    WHERE configInstanceGUID = @instance_guid;
+    
+    IF @config_id IS NULL
+        RETURN '[]';
     
     SELECT @result = COALESCE(
         '[' + 
@@ -32,9 +41,5 @@ BEGIN
 END;
 GO
 
--- Тестовый запрос
-SELECT algo.fn_GetStrategyPositionIDs(3) as positions_json;
--- Тестовый запрос
-
-
-select * from trd.trades_v 
+-- Test query
+SELECT algo.fn_GetInstancePositionIDs('D05F3779-25C0-44A9-9FB5-7422C68EA7FE') as positions_json;
